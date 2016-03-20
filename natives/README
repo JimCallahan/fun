@@ -1,0 +1,2 @@
+The LWJGL native JNI libraries unpacked from the JARs in the ../lib directory
+placed here so that SBT can package them into the published binary JAR.

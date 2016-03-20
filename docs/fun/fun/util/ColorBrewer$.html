@@ -1,0 +1,1249 @@
+<!DOCTYPE html >
+<html>
+        <head>
+          <title>ColorBrewer - fun.util.ColorBrewer</title>
+          <meta name="description" content="ColorBrewer - fun.util.ColorBrewer" />
+          <meta name="keywords" content="ColorBrewer fun.util.ColorBrewer" />
+          <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+          
+      <link href="../../lib/template.css" media="screen" type="text/css" rel="stylesheet" />
+      <link href="../../lib/diagrams.css" media="screen" type="text/css" rel="stylesheet" id="diagrams-css" />
+      <script type="text/javascript" src="../../lib/jquery.js" id="jquery-js"></script>
+      <script type="text/javascript" src="../../lib/jquery-ui.js"></script>
+      <script type="text/javascript" src="../../lib/template.js"></script>
+      <script type="text/javascript" src="../../lib/tools.tooltip.js"></script>
+      
+      <script type="text/javascript">
+         if(top === self) {
+            var url = '../../index.html';
+            var hash = 'fun.util.ColorBrewer$';
+            var anchor = window.location.hash;
+            var anchor_opt = '';
+            if (anchor.length >= 1)
+              anchor_opt = '@' + anchor.substring(1);
+            window.location.href = url + '#' + hash + anchor_opt;
+         }
+   	  </script>
+    
+        </head>
+        <body class="value">
+      <div id="definition">
+        <img alt="Object" src="../../lib/object_big.png" />
+        <p id="owner"><a href="../package.html" class="extype" name="fun">fun</a>.<a href="package.html" class="extype" name="fun.util">util</a></p>
+        <h1>ColorBrewer</h1><h3><span class="morelinks"><div>Related Doc:
+            <a href="package.html" class="extype" name="fun.util">package util</a>
+          </div></span></h3><span class="permalink">
+      <a href="../../index.html#fun.util.ColorBrewer$" title="Permalink" target="_top">
+        <img src="../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      </div>
+
+      <h4 id="signature" class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">object</span>
+      </span>
+      <span class="symbol">
+        <span class="name">ColorBrewer</span><span class="result"> extends <a href="Logging.html" class="extype" name="fun.util.Logging">Logging</a></span>
+      </span>
+      </h4>
+      
+          <div id="comment" class="fullcommenttop"><div class="comment cmt"><p>The color schemes of Cynthia Brewer.</p></div><dl class="attributes block"> <dt>See also</dt><dd><span class="cmt"><p>Cynthia A. Brewer, 1994, <i>&quot;Guidelines for Use of the Perceptual Dimensions of Color
+for Mapping and Visualization,&quot;</i> Color Hard Copy and Graphic Arts III, edited by J. Bares,
+Proceedings of the International Society for Optical Engineering (SPIE), San Jose, February
+1994, Vol. 2171, pp. 54-63.</p></span><span class="cmt"><p>Cynthia A. Brewer, 1994, <i>&quot;Color Use Guidelines for Mapping and Visualization,&quot;</i>
+Chapter 7 (pp. 123-147) in Visualization in Modern Cartography, edited by A.M. MacEachren
+and D.R.F. Taylor, Elsevier Science, Tarrytown, NY.</p></span></dd></dl><div class="toggleContainer block">
+          <span class="toggle">Linear Supertypes</span>
+          <div class="superTypes hiddenContent"><a href="Logging.html" class="extype" name="fun.util.Logging">Logging</a>, <span class="extype" name="scala.AnyRef">AnyRef</span>, <span class="extype" name="scala.Any">Any</span></div>
+        </div></div>
+        
+
+      <div id="mbrsel">
+        <div id="textfilter"><span class="pre"></span><span class="input"><input id="mbrsel-input" type="text" accesskey="/" /></span><span class="post"></span></div>
+        <div id="order">
+              <span class="filtertype">Ordering</span>
+              <ol>
+                
+                <li class="alpha in"><span>Alphabetic</span></li>
+                <li class="inherit out"><span>By inheritance</span></li>
+              </ol>
+            </div>
+        <div id="ancestors">
+                <span class="filtertype">Inherited<br />
+                </span>
+                <ol id="linearization">
+                  <li class="in" name="fun.util.ColorBrewer"><span>ColorBrewer</span></li><li class="in" name="fun.util.Logging"><span>Logging</span></li><li class="in" name="scala.AnyRef"><span>AnyRef</span></li><li class="in" name="scala.Any"><span>Any</span></li>
+                </ol>
+              </div><div id="ancestors">
+            <span class="filtertype"></span>
+            <ol>
+              <li class="hideall out"><span>Hide All</span></li>
+              <li class="showall in"><span>Show all</span></li>
+            </ol>
+          </div>
+        <div id="visbl">
+            <span class="filtertype">Visibility</span>
+            <ol><li class="public in"><span>Public</span></li><li class="all out"><span>All</span></li></ol>
+          </div>
+      </div>
+
+      <div id="template">
+        <div id="allMembers">
+        
+
+        <div id="types" class="types members">
+              <h3>Type Members</h3>
+              <ol><li name="fun.util.ColorBrewer.ColorName" visbl="pub" data-isabs="true" fullComment="yes" group="Ungrouped">
+      <a id="ColorNameextendsAnyRef"></a>
+      <a id="ColorName:ColorName"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier">sealed </span>
+        <span class="kind">trait</span>
+      </span>
+      <span class="symbol">
+        <a href="ColorBrewer$$ColorName.html"><span class="name">ColorName</span></a><span class="result"> extends <span class="extype" name="scala.AnyRef">AnyRef</span></span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../index.html#fun.util.ColorBrewer$@ColorNameextendsAnyRef" title="Permalink" target="_top">
+        <img src="../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      <p class="shortcomment cmt">Named color palettes for use with ColorBrewer.</p><div class="fullcomment"><div class="comment cmt"><p>Named color palettes for use with ColorBrewer.</p></div><dl class="attributes block"> <dt>See also</dt><dd><span class="cmt"><p>The <a href="http://colorbrewer2.org" target="_blank">original site</a> for interactive display of the colors.</p></span></dd></dl></div>
+    </li><li name="fun.util.ColorBrewer.ColorScheme" visbl="pub" data-isabs="true" fullComment="no" group="Ungrouped">
+      <a id="ColorSchemeextendsAnyRef"></a>
+      <a id="ColorScheme:ColorScheme"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier">sealed </span>
+        <span class="kind">trait</span>
+      </span>
+      <span class="symbol">
+        <a href="ColorBrewer$$ColorScheme.html"><span class="name">ColorScheme</span></a><span class="result"> extends <span class="extype" name="scala.AnyRef">AnyRef</span></span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../index.html#fun.util.ColorBrewer$@ColorSchemeextendsAnyRef" title="Permalink" target="_top">
+        <img src="../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      <p class="shortcomment cmt">The scheme for mapping values to colors.</p>
+    </li></ol>
+            </div>
+
+        
+
+        <div id="values" class="values members">
+              <h3>Value Members</h3>
+              <ol><li name="scala.AnyRef#!=" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="!=(x$1:Any):Boolean"></a>
+      <a id="!=(Any):Boolean"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier">final </span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span title="gt4s: $bang$eq" class="name">!=</span><span class="params">(<span name="arg0">arg0: <span class="extype" name="scala.Any">Any</span></span>)</span><span class="result">: <span class="extype" name="scala.Boolean">Boolean</span></span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../index.html#fun.util.ColorBrewer$@!=(x$1:Any):Boolean" title="Permalink" target="_top">
+        <img src="../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>AnyRef → Any</dd></dl></div>
+    </li><li name="scala.AnyRef###" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="##():Int"></a>
+      <a id="##():Int"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier">final </span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span title="gt4s: $hash$hash" class="name">##</span><span class="params">()</span><span class="result">: <span class="extype" name="scala.Int">Int</span></span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../index.html#fun.util.ColorBrewer$@##():Int" title="Permalink" target="_top">
+        <img src="../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>AnyRef → Any</dd></dl></div>
+    </li><li name="scala.AnyRef#==" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="==(x$1:Any):Boolean"></a>
+      <a id="==(Any):Boolean"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier">final </span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span title="gt4s: $eq$eq" class="name">==</span><span class="params">(<span name="arg0">arg0: <span class="extype" name="scala.Any">Any</span></span>)</span><span class="result">: <span class="extype" name="scala.Boolean">Boolean</span></span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../index.html#fun.util.ColorBrewer$@==(x$1:Any):Boolean" title="Permalink" target="_top">
+        <img src="../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>AnyRef → Any</dd></dl></div>
+    </li><li name="fun.util.ColorBrewer.Accent" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
+      <a id="Accent"></a>
+      <a id="Accent:Accent"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">object</span>
+      </span>
+      <span class="symbol">
+        <a href="ColorBrewer$$Accent$.html"><span class="name">Accent</span></a><span class="result"> extends <a href="ColorBrewer$$ColorName.html" class="extype" name="fun.util.ColorBrewer.ColorName">ColorName</a> with <span class="extype" name="scala.Product">Product</span> with <span class="extype" name="scala.Serializable">Serializable</span></span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../index.html#fun.util.ColorBrewer$@Accent" title="Permalink" target="_top">
+        <img src="../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      
+    </li><li name="fun.util.ColorBrewer.Blues" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
+      <a id="Blues"></a>
+      <a id="Blues:Blues"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">object</span>
+      </span>
+      <span class="symbol">
+        <a href="ColorBrewer$$Blues$.html"><span class="name">Blues</span></a><span class="result"> extends <a href="ColorBrewer$$ColorName.html" class="extype" name="fun.util.ColorBrewer.ColorName">ColorName</a> with <span class="extype" name="scala.Product">Product</span> with <span class="extype" name="scala.Serializable">Serializable</span></span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../index.html#fun.util.ColorBrewer$@Blues" title="Permalink" target="_top">
+        <img src="../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      
+    </li><li name="fun.util.ColorBrewer.BrBG" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
+      <a id="BrBG"></a>
+      <a id="BrBG:BrBG"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">object</span>
+      </span>
+      <span class="symbol">
+        <a href="ColorBrewer$$BrBG$.html"><span class="name">BrBG</span></a><span class="result"> extends <a href="ColorBrewer$$ColorName.html" class="extype" name="fun.util.ColorBrewer.ColorName">ColorName</a> with <span class="extype" name="scala.Product">Product</span> with <span class="extype" name="scala.Serializable">Serializable</span></span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../index.html#fun.util.ColorBrewer$@BrBG" title="Permalink" target="_top">
+        <img src="../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      
+    </li><li name="fun.util.ColorBrewer.BuGn" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
+      <a id="BuGn"></a>
+      <a id="BuGn:BuGn"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">object</span>
+      </span>
+      <span class="symbol">
+        <a href="ColorBrewer$$BuGn$.html"><span class="name">BuGn</span></a><span class="result"> extends <a href="ColorBrewer$$ColorName.html" class="extype" name="fun.util.ColorBrewer.ColorName">ColorName</a> with <span class="extype" name="scala.Product">Product</span> with <span class="extype" name="scala.Serializable">Serializable</span></span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../index.html#fun.util.ColorBrewer$@BuGn" title="Permalink" target="_top">
+        <img src="../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      
+    </li><li name="fun.util.ColorBrewer.BuPu" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
+      <a id="BuPu"></a>
+      <a id="BuPu:BuPu"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">object</span>
+      </span>
+      <span class="symbol">
+        <a href="ColorBrewer$$BuPu$.html"><span class="name">BuPu</span></a><span class="result"> extends <a href="ColorBrewer$$ColorName.html" class="extype" name="fun.util.ColorBrewer.ColorName">ColorName</a> with <span class="extype" name="scala.Product">Product</span> with <span class="extype" name="scala.Serializable">Serializable</span></span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../index.html#fun.util.ColorBrewer$@BuPu" title="Permalink" target="_top">
+        <img src="../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      
+    </li><li name="fun.util.ColorBrewer.Dark2" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
+      <a id="Dark2"></a>
+      <a id="Dark2:Dark2"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">object</span>
+      </span>
+      <span class="symbol">
+        <a href="ColorBrewer$$Dark2$.html"><span class="name">Dark2</span></a><span class="result"> extends <a href="ColorBrewer$$ColorName.html" class="extype" name="fun.util.ColorBrewer.ColorName">ColorName</a> with <span class="extype" name="scala.Product">Product</span> with <span class="extype" name="scala.Serializable">Serializable</span></span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../index.html#fun.util.ColorBrewer$@Dark2" title="Permalink" target="_top">
+        <img src="../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      
+    </li><li name="fun.util.ColorBrewer.Diverging" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="Diverging"></a>
+      <a id="Diverging:Diverging"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">object</span>
+      </span>
+      <span class="symbol">
+        <a href="ColorBrewer$$Diverging$.html"><span class="name">Diverging</span></a><span class="result"> extends <a href="ColorBrewer$$ColorScheme.html" class="extype" name="fun.util.ColorBrewer.ColorScheme">ColorScheme</a> with <span class="extype" name="scala.Product">Product</span> with <span class="extype" name="scala.Serializable">Serializable</span></span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../index.html#fun.util.ColorBrewer$@Diverging" title="Permalink" target="_top">
+        <img src="../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      <p class="shortcomment cmt">Diverging schemes put equal emphasis on mid-range critical values and extremes at both
+ends of the data range.</p><div class="fullcomment"><div class="comment cmt"><p>Diverging schemes put equal emphasis on mid-range critical values and extremes at both
+ends of the data range. The critical class or break in the middle of the legend is
+emphasized with light colors and low and high extremes are emphasized with dark colors
+that have contrasting hues.</p></div></div>
+    </li><li name="fun.util.ColorBrewer.GnBu" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
+      <a id="GnBu"></a>
+      <a id="GnBu:GnBu"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">object</span>
+      </span>
+      <span class="symbol">
+        <a href="ColorBrewer$$GnBu$.html"><span class="name">GnBu</span></a><span class="result"> extends <a href="ColorBrewer$$ColorName.html" class="extype" name="fun.util.ColorBrewer.ColorName">ColorName</a> with <span class="extype" name="scala.Product">Product</span> with <span class="extype" name="scala.Serializable">Serializable</span></span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../index.html#fun.util.ColorBrewer$@GnBu" title="Permalink" target="_top">
+        <img src="../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      
+    </li><li name="fun.util.ColorBrewer.Greens" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
+      <a id="Greens"></a>
+      <a id="Greens:Greens"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">object</span>
+      </span>
+      <span class="symbol">
+        <a href="ColorBrewer$$Greens$.html"><span class="name">Greens</span></a><span class="result"> extends <a href="ColorBrewer$$ColorName.html" class="extype" name="fun.util.ColorBrewer.ColorName">ColorName</a> with <span class="extype" name="scala.Product">Product</span> with <span class="extype" name="scala.Serializable">Serializable</span></span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../index.html#fun.util.ColorBrewer$@Greens" title="Permalink" target="_top">
+        <img src="../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      
+    </li><li name="fun.util.ColorBrewer.Greys" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
+      <a id="Greys"></a>
+      <a id="Greys:Greys"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">object</span>
+      </span>
+      <span class="symbol">
+        <a href="ColorBrewer$$Greys$.html"><span class="name">Greys</span></a><span class="result"> extends <a href="ColorBrewer$$ColorName.html" class="extype" name="fun.util.ColorBrewer.ColorName">ColorName</a> with <span class="extype" name="scala.Product">Product</span> with <span class="extype" name="scala.Serializable">Serializable</span></span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../index.html#fun.util.ColorBrewer$@Greys" title="Permalink" target="_top">
+        <img src="../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      
+    </li><li name="fun.util.ColorBrewer.OrRd" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
+      <a id="OrRd"></a>
+      <a id="OrRd:OrRd"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">object</span>
+      </span>
+      <span class="symbol">
+        <a href="ColorBrewer$$OrRd$.html"><span class="name">OrRd</span></a><span class="result"> extends <a href="ColorBrewer$$ColorName.html" class="extype" name="fun.util.ColorBrewer.ColorName">ColorName</a> with <span class="extype" name="scala.Product">Product</span> with <span class="extype" name="scala.Serializable">Serializable</span></span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../index.html#fun.util.ColorBrewer$@OrRd" title="Permalink" target="_top">
+        <img src="../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      
+    </li><li name="fun.util.ColorBrewer.Oranges" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
+      <a id="Oranges"></a>
+      <a id="Oranges:Oranges"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">object</span>
+      </span>
+      <span class="symbol">
+        <a href="ColorBrewer$$Oranges$.html"><span class="name">Oranges</span></a><span class="result"> extends <a href="ColorBrewer$$ColorName.html" class="extype" name="fun.util.ColorBrewer.ColorName">ColorName</a> with <span class="extype" name="scala.Product">Product</span> with <span class="extype" name="scala.Serializable">Serializable</span></span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../index.html#fun.util.ColorBrewer$@Oranges" title="Permalink" target="_top">
+        <img src="../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      
+    </li><li name="fun.util.ColorBrewer.PRGn" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
+      <a id="PRGn"></a>
+      <a id="PRGn:PRGn"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">object</span>
+      </span>
+      <span class="symbol">
+        <a href="ColorBrewer$$PRGn$.html"><span class="name">PRGn</span></a><span class="result"> extends <a href="ColorBrewer$$ColorName.html" class="extype" name="fun.util.ColorBrewer.ColorName">ColorName</a> with <span class="extype" name="scala.Product">Product</span> with <span class="extype" name="scala.Serializable">Serializable</span></span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../index.html#fun.util.ColorBrewer$@PRGn" title="Permalink" target="_top">
+        <img src="../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      
+    </li><li name="fun.util.ColorBrewer.Paired" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
+      <a id="Paired"></a>
+      <a id="Paired:Paired"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">object</span>
+      </span>
+      <span class="symbol">
+        <a href="ColorBrewer$$Paired$.html"><span class="name">Paired</span></a><span class="result"> extends <a href="ColorBrewer$$ColorName.html" class="extype" name="fun.util.ColorBrewer.ColorName">ColorName</a> with <span class="extype" name="scala.Product">Product</span> with <span class="extype" name="scala.Serializable">Serializable</span></span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../index.html#fun.util.ColorBrewer$@Paired" title="Permalink" target="_top">
+        <img src="../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      
+    </li><li name="fun.util.ColorBrewer.Pastel1" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
+      <a id="Pastel1"></a>
+      <a id="Pastel1:Pastel1"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">object</span>
+      </span>
+      <span class="symbol">
+        <a href="ColorBrewer$$Pastel1$.html"><span class="name">Pastel1</span></a><span class="result"> extends <a href="ColorBrewer$$ColorName.html" class="extype" name="fun.util.ColorBrewer.ColorName">ColorName</a> with <span class="extype" name="scala.Product">Product</span> with <span class="extype" name="scala.Serializable">Serializable</span></span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../index.html#fun.util.ColorBrewer$@Pastel1" title="Permalink" target="_top">
+        <img src="../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      
+    </li><li name="fun.util.ColorBrewer.Pastel2" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
+      <a id="Pastel2"></a>
+      <a id="Pastel2:Pastel2"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">object</span>
+      </span>
+      <span class="symbol">
+        <a href="ColorBrewer$$Pastel2$.html"><span class="name">Pastel2</span></a><span class="result"> extends <a href="ColorBrewer$$ColorName.html" class="extype" name="fun.util.ColorBrewer.ColorName">ColorName</a> with <span class="extype" name="scala.Product">Product</span> with <span class="extype" name="scala.Serializable">Serializable</span></span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../index.html#fun.util.ColorBrewer$@Pastel2" title="Permalink" target="_top">
+        <img src="../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      
+    </li><li name="fun.util.ColorBrewer.PiYG" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
+      <a id="PiYG"></a>
+      <a id="PiYG:PiYG"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">object</span>
+      </span>
+      <span class="symbol">
+        <a href="ColorBrewer$$PiYG$.html"><span class="name">PiYG</span></a><span class="result"> extends <a href="ColorBrewer$$ColorName.html" class="extype" name="fun.util.ColorBrewer.ColorName">ColorName</a> with <span class="extype" name="scala.Product">Product</span> with <span class="extype" name="scala.Serializable">Serializable</span></span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../index.html#fun.util.ColorBrewer$@PiYG" title="Permalink" target="_top">
+        <img src="../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      
+    </li><li name="fun.util.ColorBrewer.PuBu" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
+      <a id="PuBu"></a>
+      <a id="PuBu:PuBu"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">object</span>
+      </span>
+      <span class="symbol">
+        <a href="ColorBrewer$$PuBu$.html"><span class="name">PuBu</span></a><span class="result"> extends <a href="ColorBrewer$$ColorName.html" class="extype" name="fun.util.ColorBrewer.ColorName">ColorName</a> with <span class="extype" name="scala.Product">Product</span> with <span class="extype" name="scala.Serializable">Serializable</span></span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../index.html#fun.util.ColorBrewer$@PuBu" title="Permalink" target="_top">
+        <img src="../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      
+    </li><li name="fun.util.ColorBrewer.PuBuGn" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
+      <a id="PuBuGn"></a>
+      <a id="PuBuGn:PuBuGn"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">object</span>
+      </span>
+      <span class="symbol">
+        <a href="ColorBrewer$$PuBuGn$.html"><span class="name">PuBuGn</span></a><span class="result"> extends <a href="ColorBrewer$$ColorName.html" class="extype" name="fun.util.ColorBrewer.ColorName">ColorName</a> with <span class="extype" name="scala.Product">Product</span> with <span class="extype" name="scala.Serializable">Serializable</span></span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../index.html#fun.util.ColorBrewer$@PuBuGn" title="Permalink" target="_top">
+        <img src="../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      
+    </li><li name="fun.util.ColorBrewer.PuOr" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
+      <a id="PuOr"></a>
+      <a id="PuOr:PuOr"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">object</span>
+      </span>
+      <span class="symbol">
+        <a href="ColorBrewer$$PuOr$.html"><span class="name">PuOr</span></a><span class="result"> extends <a href="ColorBrewer$$ColorName.html" class="extype" name="fun.util.ColorBrewer.ColorName">ColorName</a> with <span class="extype" name="scala.Product">Product</span> with <span class="extype" name="scala.Serializable">Serializable</span></span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../index.html#fun.util.ColorBrewer$@PuOr" title="Permalink" target="_top">
+        <img src="../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      
+    </li><li name="fun.util.ColorBrewer.PuRd" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
+      <a id="PuRd"></a>
+      <a id="PuRd:PuRd"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">object</span>
+      </span>
+      <span class="symbol">
+        <a href="ColorBrewer$$PuRd$.html"><span class="name">PuRd</span></a><span class="result"> extends <a href="ColorBrewer$$ColorName.html" class="extype" name="fun.util.ColorBrewer.ColorName">ColorName</a> with <span class="extype" name="scala.Product">Product</span> with <span class="extype" name="scala.Serializable">Serializable</span></span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../index.html#fun.util.ColorBrewer$@PuRd" title="Permalink" target="_top">
+        <img src="../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      
+    </li><li name="fun.util.ColorBrewer.Purples" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
+      <a id="Purples"></a>
+      <a id="Purples:Purples"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">object</span>
+      </span>
+      <span class="symbol">
+        <a href="ColorBrewer$$Purples$.html"><span class="name">Purples</span></a><span class="result"> extends <a href="ColorBrewer$$ColorName.html" class="extype" name="fun.util.ColorBrewer.ColorName">ColorName</a> with <span class="extype" name="scala.Product">Product</span> with <span class="extype" name="scala.Serializable">Serializable</span></span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../index.html#fun.util.ColorBrewer$@Purples" title="Permalink" target="_top">
+        <img src="../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      
+    </li><li name="fun.util.ColorBrewer.Qualitative" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="Qualitative"></a>
+      <a id="Qualitative:Qualitative"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">object</span>
+      </span>
+      <span class="symbol">
+        <a href="ColorBrewer$$Qualitative$.html"><span class="name">Qualitative</span></a><span class="result"> extends <a href="ColorBrewer$$ColorScheme.html" class="extype" name="fun.util.ColorBrewer.ColorScheme">ColorScheme</a> with <span class="extype" name="scala.Product">Product</span> with <span class="extype" name="scala.Serializable">Serializable</span></span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../index.html#fun.util.ColorBrewer$@Qualitative" title="Permalink" target="_top">
+        <img src="../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      <p class="shortcomment cmt">Qualitative schemes do not imply magnitude differences between legend classes, and hues
+are used to create the primary visual differences between classes.</p><div class="fullcomment"><div class="comment cmt"><p>Qualitative schemes do not imply magnitude differences between legend classes, and hues
+are used to create the primary visual differences between classes. Qualitative schemes
+are best suited to representing nominal or categorical data.</p></div></div>
+    </li><li name="fun.util.ColorBrewer.RdBu" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
+      <a id="RdBu"></a>
+      <a id="RdBu:RdBu"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">object</span>
+      </span>
+      <span class="symbol">
+        <a href="ColorBrewer$$RdBu$.html"><span class="name">RdBu</span></a><span class="result"> extends <a href="ColorBrewer$$ColorName.html" class="extype" name="fun.util.ColorBrewer.ColorName">ColorName</a> with <span class="extype" name="scala.Product">Product</span> with <span class="extype" name="scala.Serializable">Serializable</span></span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../index.html#fun.util.ColorBrewer$@RdBu" title="Permalink" target="_top">
+        <img src="../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      
+    </li><li name="fun.util.ColorBrewer.RdGy" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
+      <a id="RdGy"></a>
+      <a id="RdGy:RdGy"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">object</span>
+      </span>
+      <span class="symbol">
+        <a href="ColorBrewer$$RdGy$.html"><span class="name">RdGy</span></a><span class="result"> extends <a href="ColorBrewer$$ColorName.html" class="extype" name="fun.util.ColorBrewer.ColorName">ColorName</a> with <span class="extype" name="scala.Product">Product</span> with <span class="extype" name="scala.Serializable">Serializable</span></span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../index.html#fun.util.ColorBrewer$@RdGy" title="Permalink" target="_top">
+        <img src="../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      
+    </li><li name="fun.util.ColorBrewer.RdPu" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
+      <a id="RdPu"></a>
+      <a id="RdPu:RdPu"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">object</span>
+      </span>
+      <span class="symbol">
+        <a href="ColorBrewer$$RdPu$.html"><span class="name">RdPu</span></a><span class="result"> extends <a href="ColorBrewer$$ColorName.html" class="extype" name="fun.util.ColorBrewer.ColorName">ColorName</a> with <span class="extype" name="scala.Product">Product</span> with <span class="extype" name="scala.Serializable">Serializable</span></span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../index.html#fun.util.ColorBrewer$@RdPu" title="Permalink" target="_top">
+        <img src="../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      
+    </li><li name="fun.util.ColorBrewer.RdYlBu" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
+      <a id="RdYlBu"></a>
+      <a id="RdYlBu:RdYlBu"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">object</span>
+      </span>
+      <span class="symbol">
+        <a href="ColorBrewer$$RdYlBu$.html"><span class="name">RdYlBu</span></a><span class="result"> extends <a href="ColorBrewer$$ColorName.html" class="extype" name="fun.util.ColorBrewer.ColorName">ColorName</a> with <span class="extype" name="scala.Product">Product</span> with <span class="extype" name="scala.Serializable">Serializable</span></span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../index.html#fun.util.ColorBrewer$@RdYlBu" title="Permalink" target="_top">
+        <img src="../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      
+    </li><li name="fun.util.ColorBrewer.RdYlGn" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
+      <a id="RdYlGn"></a>
+      <a id="RdYlGn:RdYlGn"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">object</span>
+      </span>
+      <span class="symbol">
+        <a href="ColorBrewer$$RdYlGn$.html"><span class="name">RdYlGn</span></a><span class="result"> extends <a href="ColorBrewer$$ColorName.html" class="extype" name="fun.util.ColorBrewer.ColorName">ColorName</a> with <span class="extype" name="scala.Product">Product</span> with <span class="extype" name="scala.Serializable">Serializable</span></span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../index.html#fun.util.ColorBrewer$@RdYlGn" title="Permalink" target="_top">
+        <img src="../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      
+    </li><li name="fun.util.ColorBrewer.Reds" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
+      <a id="Reds"></a>
+      <a id="Reds:Reds"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">object</span>
+      </span>
+      <span class="symbol">
+        <a href="ColorBrewer$$Reds$.html"><span class="name">Reds</span></a><span class="result"> extends <a href="ColorBrewer$$ColorName.html" class="extype" name="fun.util.ColorBrewer.ColorName">ColorName</a> with <span class="extype" name="scala.Product">Product</span> with <span class="extype" name="scala.Serializable">Serializable</span></span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../index.html#fun.util.ColorBrewer$@Reds" title="Permalink" target="_top">
+        <img src="../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      
+    </li><li name="fun.util.ColorBrewer.Sequential" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="Sequential"></a>
+      <a id="Sequential:Sequential"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">object</span>
+      </span>
+      <span class="symbol">
+        <a href="ColorBrewer$$Sequential$.html"><span class="name">Sequential</span></a><span class="result"> extends <a href="ColorBrewer$$ColorScheme.html" class="extype" name="fun.util.ColorBrewer.ColorScheme">ColorScheme</a> with <span class="extype" name="scala.Product">Product</span> with <span class="extype" name="scala.Serializable">Serializable</span></span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../index.html#fun.util.ColorBrewer$@Sequential" title="Permalink" target="_top">
+        <img src="../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      <p class="shortcomment cmt">Sequential schemes are suited to ordered data that progress from low to high.</p><div class="fullcomment"><div class="comment cmt"><p>Sequential schemes are suited to ordered data that progress from low to high. Lightness
+steps dominate the look of these schemes, with light colors for low data values to dark
+colors for high data values.</p></div></div>
+    </li><li name="fun.util.ColorBrewer.Set1" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
+      <a id="Set1"></a>
+      <a id="Set1:Set1"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">object</span>
+      </span>
+      <span class="symbol">
+        <a href="ColorBrewer$$Set1$.html"><span class="name">Set1</span></a><span class="result"> extends <a href="ColorBrewer$$ColorName.html" class="extype" name="fun.util.ColorBrewer.ColorName">ColorName</a> with <span class="extype" name="scala.Product">Product</span> with <span class="extype" name="scala.Serializable">Serializable</span></span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../index.html#fun.util.ColorBrewer$@Set1" title="Permalink" target="_top">
+        <img src="../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      
+    </li><li name="fun.util.ColorBrewer.Set2" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
+      <a id="Set2"></a>
+      <a id="Set2:Set2"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">object</span>
+      </span>
+      <span class="symbol">
+        <a href="ColorBrewer$$Set2$.html"><span class="name">Set2</span></a><span class="result"> extends <a href="ColorBrewer$$ColorName.html" class="extype" name="fun.util.ColorBrewer.ColorName">ColorName</a> with <span class="extype" name="scala.Product">Product</span> with <span class="extype" name="scala.Serializable">Serializable</span></span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../index.html#fun.util.ColorBrewer$@Set2" title="Permalink" target="_top">
+        <img src="../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      
+    </li><li name="fun.util.ColorBrewer.Set3" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
+      <a id="Set3"></a>
+      <a id="Set3:Set3"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">object</span>
+      </span>
+      <span class="symbol">
+        <a href="ColorBrewer$$Set3$.html"><span class="name">Set3</span></a><span class="result"> extends <a href="ColorBrewer$$ColorName.html" class="extype" name="fun.util.ColorBrewer.ColorName">ColorName</a> with <span class="extype" name="scala.Product">Product</span> with <span class="extype" name="scala.Serializable">Serializable</span></span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../index.html#fun.util.ColorBrewer$@Set3" title="Permalink" target="_top">
+        <img src="../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      
+    </li><li name="fun.util.ColorBrewer.Spectral" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
+      <a id="Spectral"></a>
+      <a id="Spectral:Spectral"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">object</span>
+      </span>
+      <span class="symbol">
+        <a href="ColorBrewer$$Spectral$.html"><span class="name">Spectral</span></a><span class="result"> extends <a href="ColorBrewer$$ColorName.html" class="extype" name="fun.util.ColorBrewer.ColorName">ColorName</a> with <span class="extype" name="scala.Product">Product</span> with <span class="extype" name="scala.Serializable">Serializable</span></span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../index.html#fun.util.ColorBrewer$@Spectral" title="Permalink" target="_top">
+        <img src="../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      
+    </li><li name="fun.util.ColorBrewer.YlGn" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
+      <a id="YlGn"></a>
+      <a id="YlGn:YlGn"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">object</span>
+      </span>
+      <span class="symbol">
+        <a href="ColorBrewer$$YlGn$.html"><span class="name">YlGn</span></a><span class="result"> extends <a href="ColorBrewer$$ColorName.html" class="extype" name="fun.util.ColorBrewer.ColorName">ColorName</a> with <span class="extype" name="scala.Product">Product</span> with <span class="extype" name="scala.Serializable">Serializable</span></span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../index.html#fun.util.ColorBrewer$@YlGn" title="Permalink" target="_top">
+        <img src="../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      
+    </li><li name="fun.util.ColorBrewer.YlGnBu" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
+      <a id="YlGnBu"></a>
+      <a id="YlGnBu:YlGnBu"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">object</span>
+      </span>
+      <span class="symbol">
+        <a href="ColorBrewer$$YlGnBu$.html"><span class="name">YlGnBu</span></a><span class="result"> extends <a href="ColorBrewer$$ColorName.html" class="extype" name="fun.util.ColorBrewer.ColorName">ColorName</a> with <span class="extype" name="scala.Product">Product</span> with <span class="extype" name="scala.Serializable">Serializable</span></span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../index.html#fun.util.ColorBrewer$@YlGnBu" title="Permalink" target="_top">
+        <img src="../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      
+    </li><li name="fun.util.ColorBrewer.YlOrBr" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
+      <a id="YlOrBr"></a>
+      <a id="YlOrBr:YlOrBr"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">object</span>
+      </span>
+      <span class="symbol">
+        <a href="ColorBrewer$$YlOrBr$.html"><span class="name">YlOrBr</span></a><span class="result"> extends <a href="ColorBrewer$$ColorName.html" class="extype" name="fun.util.ColorBrewer.ColorName">ColorName</a> with <span class="extype" name="scala.Product">Product</span> with <span class="extype" name="scala.Serializable">Serializable</span></span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../index.html#fun.util.ColorBrewer$@YlOrBr" title="Permalink" target="_top">
+        <img src="../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      
+    </li><li name="fun.util.ColorBrewer.YlOrRd" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
+      <a id="YlOrRd"></a>
+      <a id="YlOrRd:YlOrRd"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">object</span>
+      </span>
+      <span class="symbol">
+        <a href="ColorBrewer$$YlOrRd$.html"><span class="name">YlOrRd</span></a><span class="result"> extends <a href="ColorBrewer$$ColorName.html" class="extype" name="fun.util.ColorBrewer.ColorName">ColorName</a> with <span class="extype" name="scala.Product">Product</span> with <span class="extype" name="scala.Serializable">Serializable</span></span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../index.html#fun.util.ColorBrewer$@YlOrRd" title="Permalink" target="_top">
+        <img src="../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      
+    </li><li name="scala.Any#asInstanceOf" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="asInstanceOf[T0]:T0"></a>
+      <a id="asInstanceOf[T0]:T0"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier">final </span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">asInstanceOf</span><span class="tparams">[<span name="T0">T0</span>]</span><span class="result">: <span class="extype" name="scala.Any.asInstanceOf.T0">T0</span></span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../index.html#fun.util.ColorBrewer$@asInstanceOf[T0]:T0" title="Permalink" target="_top">
+        <img src="../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>Any</dd></dl></div>
+    </li><li name="scala.AnyRef#clone" visbl="prt" data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="clone():Object"></a>
+      <a id="clone():AnyRef"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">clone</span><span class="params">()</span><span class="result">: <span class="extype" name="scala.AnyRef">AnyRef</span></span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../index.html#fun.util.ColorBrewer$@clone():Object" title="Permalink" target="_top">
+        <img src="../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      <div class="fullcomment"><dl class="attributes block"> <dt>Attributes</dt><dd>protected[<a href="../../java$lang.html" class="extype" name="java.lang">java.lang</a>] </dd><dt>Definition Classes</dt><dd>AnyRef</dd><dt>Annotations</dt><dd>
+                <span class="name">@throws</span><span class="args">(<span>
+      
+      <span class="defval" name="classOf[java.lang.CloneNotSupportedException]">...</span>
+    </span>)</span>
+              
+        </dd></dl></div>
+    </li><li name="scala.AnyRef#eq" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="eq(x$1:AnyRef):Boolean"></a>
+      <a id="eq(AnyRef):Boolean"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier">final </span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">eq</span><span class="params">(<span name="arg0">arg0: <span class="extype" name="scala.AnyRef">AnyRef</span></span>)</span><span class="result">: <span class="extype" name="scala.Boolean">Boolean</span></span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../index.html#fun.util.ColorBrewer$@eq(x$1:AnyRef):Boolean" title="Permalink" target="_top">
+        <img src="../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>AnyRef</dd></dl></div>
+    </li><li name="scala.AnyRef#equals" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="equals(x$1:Any):Boolean"></a>
+      <a id="equals(Any):Boolean"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">equals</span><span class="params">(<span name="arg0">arg0: <span class="extype" name="scala.Any">Any</span></span>)</span><span class="result">: <span class="extype" name="scala.Boolean">Boolean</span></span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../index.html#fun.util.ColorBrewer$@equals(x$1:Any):Boolean" title="Permalink" target="_top">
+        <img src="../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>AnyRef → Any</dd></dl></div>
+    </li><li name="scala.AnyRef#finalize" visbl="prt" data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="finalize():Unit"></a>
+      <a id="finalize():Unit"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">finalize</span><span class="params">()</span><span class="result">: <span class="extype" name="scala.Unit">Unit</span></span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../index.html#fun.util.ColorBrewer$@finalize():Unit" title="Permalink" target="_top">
+        <img src="../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      <div class="fullcomment"><dl class="attributes block"> <dt>Attributes</dt><dd>protected[<a href="../../java$lang.html" class="extype" name="java.lang">java.lang</a>] </dd><dt>Definition Classes</dt><dd>AnyRef</dd><dt>Annotations</dt><dd>
+                <span class="name">@throws</span><span class="args">(<span>
+      
+      <span class="symbol">classOf[java.lang.Throwable]</span>
+    </span>)</span>
+              
+        </dd></dl></div>
+    </li><li name="scala.AnyRef#getClass" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="getClass():Class[_]"></a>
+      <a id="getClass():Class[_]"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier">final </span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">getClass</span><span class="params">()</span><span class="result">: <span class="extype" name="java.lang.Class">Class</span>[_]</span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../index.html#fun.util.ColorBrewer$@getClass():Class[_]" title="Permalink" target="_top">
+        <img src="../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>AnyRef → Any</dd></dl></div>
+    </li><li name="scala.AnyRef#hashCode" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="hashCode():Int"></a>
+      <a id="hashCode():Int"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">hashCode</span><span class="params">()</span><span class="result">: <span class="extype" name="scala.Int">Int</span></span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../index.html#fun.util.ColorBrewer$@hashCode():Int" title="Permalink" target="_top">
+        <img src="../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>AnyRef → Any</dd></dl></div>
+    </li><li name="scala.Any#isInstanceOf" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="isInstanceOf[T0]:Boolean"></a>
+      <a id="isInstanceOf[T0]:Boolean"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier">final </span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">isInstanceOf</span><span class="tparams">[<span name="T0">T0</span>]</span><span class="result">: <span class="extype" name="scala.Boolean">Boolean</span></span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../index.html#fun.util.ColorBrewer$@isInstanceOf[T0]:Boolean" title="Permalink" target="_top">
+        <img src="../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>Any</dd></dl></div>
+    </li><li name="fun.util.Logging#log" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="log:org.slf4j.Logger"></a>
+      <a id="log:Logger"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">val</span>
+      </span>
+      <span class="symbol">
+        <span class="name">log</span><span class="result">: <span class="extype" name="org.slf4j.Logger">Logger</span></span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../index.html#fun.util.ColorBrewer$@log:org.slf4j.Logger" title="Permalink" target="_top">
+        <img src="../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd><a href="Logging.html" class="extype" name="fun.util.Logging">Logging</a></dd></dl></div>
+    </li><li name="scala.AnyRef#ne" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="ne(x$1:AnyRef):Boolean"></a>
+      <a id="ne(AnyRef):Boolean"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier">final </span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">ne</span><span class="params">(<span name="arg0">arg0: <span class="extype" name="scala.AnyRef">AnyRef</span></span>)</span><span class="result">: <span class="extype" name="scala.Boolean">Boolean</span></span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../index.html#fun.util.ColorBrewer$@ne(x$1:AnyRef):Boolean" title="Permalink" target="_top">
+        <img src="../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>AnyRef</dd></dl></div>
+    </li><li name="scala.AnyRef#notify" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="notify():Unit"></a>
+      <a id="notify():Unit"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier">final </span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">notify</span><span class="params">()</span><span class="result">: <span class="extype" name="scala.Unit">Unit</span></span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../index.html#fun.util.ColorBrewer$@notify():Unit" title="Permalink" target="_top">
+        <img src="../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>AnyRef</dd></dl></div>
+    </li><li name="scala.AnyRef#notifyAll" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="notifyAll():Unit"></a>
+      <a id="notifyAll():Unit"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier">final </span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">notifyAll</span><span class="params">()</span><span class="result">: <span class="extype" name="scala.Unit">Unit</span></span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../index.html#fun.util.ColorBrewer$@notifyAll():Unit" title="Permalink" target="_top">
+        <img src="../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>AnyRef</dd></dl></div>
+    </li><li name="fun.util.ColorBrewer#palette" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="palette(scheme:fun.util.ColorBrewer.ColorScheme)(cname:fun.util.ColorBrewer.ColorName)(numColors:Int):IndexedSeq[fun.math.Vec3d]"></a>
+      <a id="palette(ColorScheme)(ColorName)(Int):IndexedSeq[Vec3d]"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">palette</span><span class="params">(<span name="scheme">scheme: <a href="ColorBrewer$$ColorScheme.html" class="extype" name="fun.util.ColorBrewer.ColorScheme">ColorScheme</a></span>)</span><span class="params">(<span name="cname">cname: <a href="ColorBrewer$$ColorName.html" class="extype" name="fun.util.ColorBrewer.ColorName">ColorName</a></span>)</span><span class="params">(<span name="numColors">numColors: <span class="extype" name="scala.Int">Int</span></span>)</span><span class="result">: <span class="extype" name="scala.IndexedSeq">IndexedSeq</span>[<a href="../math/Vec3d.html" class="extype" name="fun.math.Vec3d">Vec3d</a>]</span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../index.html#fun.util.ColorBrewer$@palette(scheme:fun.util.ColorBrewer.ColorScheme)(cname:fun.util.ColorBrewer.ColorName)(numColors:Int):IndexedSeq[fun.math.Vec3d]" title="Permalink" target="_top">
+        <img src="../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      <p class="shortcomment cmt">Choose a color palette based on scheme, name and number of colors.</p><div class="fullcomment"><div class="comment cmt"><p>Choose a color palette based on scheme, name and number of colors.</p></div><dl class="attributes block"> <dt>Note</dt><dd><span class="cmt"><p>Not all palette names are supported by all schemes.</p></span></dd><dt>See also</dt><dd><span class="cmt"><p>The <a href="http://colorbrewer2.org" target="_blank">original site</a> for interactive display of the colors.</p></span></dd></dl></div>
+    </li><li name="fun.util.ColorBrewer#pickColor" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="pickColor(palette:IndexedSeq[fun.math.Vec3d],alpha:Double):fun.math.Vec3d"></a>
+      <a id="pickColor(IndexedSeq[Vec3d],Double):Vec3d"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">pickColor</span><span class="params">(<span name="palette">palette: <span class="extype" name="scala.IndexedSeq">IndexedSeq</span>[<a href="../math/Vec3d.html" class="extype" name="fun.math.Vec3d">Vec3d</a>]</span>, <span name="alpha">alpha: <span class="extype" name="scala.Double">Double</span></span>)</span><span class="result">: <a href="../math/Vec3d.html" class="extype" name="fun.math.Vec3d">Vec3d</a></span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../index.html#fun.util.ColorBrewer$@pickColor(palette:IndexedSeq[fun.math.Vec3d],alpha:Double):fun.math.Vec3d" title="Permalink" target="_top">
+        <img src="../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      <p class="shortcomment cmt">Choose an interpolated color from the given palette.</p><div class="fullcomment"><div class="comment cmt"><p>Choose an interpolated color from the given palette.</p></div><dl class="paramcmts block"><dt class="param">palette</dt><dd class="cmt"><p>The colors.</p></dd><dt class="param">alpha</dt><dd class="cmt"><p>A value [0, 1] used to interpolated the range of colors in the palette.</p></dd></dl></div>
+    </li><li name="fun.util.Logging#report" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="report(ex:Throwable,title:String):Unit"></a>
+      <a id="report(Throwable,String):Unit"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">report</span><span class="params">(<span name="ex">ex: <span class="extype" name="scala.Throwable">Throwable</span></span>, <span name="title">title: <span class="extype" name="scala.Predef.String">String</span> = <span class="symbol">&quot;Uncaught Exception&quot;</span></span>)</span><span class="result">: <span class="extype" name="scala.Unit">Unit</span></span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../index.html#fun.util.ColorBrewer$@report(ex:Throwable,title:String):Unit" title="Permalink" target="_top">
+        <img src="../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      <p class="shortcomment cmt">Generate a full stack trace of the given Throwable.</p><div class="fullcomment"><div class="comment cmt"><p>Generate a full stack trace of the given Throwable.</p></div><dl class="attributes block"> <dt>Definition Classes</dt><dd><a href="Logging.html" class="extype" name="fun.util.Logging">Logging</a></dd></dl></div>
+    </li><li name="scala.AnyRef#synchronized" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="synchronized[T0](x$1:=&gt;T0):T0"></a>
+      <a id="synchronized[T0](⇒T0):T0"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier">final </span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">synchronized</span><span class="tparams">[<span name="T0">T0</span>]</span><span class="params">(<span name="arg0">arg0: ⇒ <span class="extype" name="java.lang.AnyRef.synchronized.T0">T0</span></span>)</span><span class="result">: <span class="extype" name="java.lang.AnyRef.synchronized.T0">T0</span></span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../index.html#fun.util.ColorBrewer$@synchronized[T0](x$1:=&gt;T0):T0" title="Permalink" target="_top">
+        <img src="../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>AnyRef</dd></dl></div>
+    </li><li name="scala.AnyRef#toString" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="toString():String"></a>
+      <a id="toString():String"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">toString</span><span class="params">()</span><span class="result">: <span class="extype" name="java.lang.String">String</span></span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../index.html#fun.util.ColorBrewer$@toString():String" title="Permalink" target="_top">
+        <img src="../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>AnyRef → Any</dd></dl></div>
+    </li><li name="scala.AnyRef#wait" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="wait():Unit"></a>
+      <a id="wait():Unit"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier">final </span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">wait</span><span class="params">()</span><span class="result">: <span class="extype" name="scala.Unit">Unit</span></span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../index.html#fun.util.ColorBrewer$@wait():Unit" title="Permalink" target="_top">
+        <img src="../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>AnyRef</dd><dt>Annotations</dt><dd>
+                <span class="name">@throws</span><span class="args">(<span>
+      
+      <span class="defval" name="classOf[java.lang.InterruptedException]">...</span>
+    </span>)</span>
+              
+        </dd></dl></div>
+    </li><li name="scala.AnyRef#wait" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="wait(x$1:Long,x$2:Int):Unit"></a>
+      <a id="wait(Long,Int):Unit"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier">final </span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">wait</span><span class="params">(<span name="arg0">arg0: <span class="extype" name="scala.Long">Long</span></span>, <span name="arg1">arg1: <span class="extype" name="scala.Int">Int</span></span>)</span><span class="result">: <span class="extype" name="scala.Unit">Unit</span></span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../index.html#fun.util.ColorBrewer$@wait(x$1:Long,x$2:Int):Unit" title="Permalink" target="_top">
+        <img src="../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>AnyRef</dd><dt>Annotations</dt><dd>
+                <span class="name">@throws</span><span class="args">(<span>
+      
+      <span class="defval" name="classOf[java.lang.InterruptedException]">...</span>
+    </span>)</span>
+              
+        </dd></dl></div>
+    </li><li name="scala.AnyRef#wait" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="wait(x$1:Long):Unit"></a>
+      <a id="wait(Long):Unit"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier">final </span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">wait</span><span class="params">(<span name="arg0">arg0: <span class="extype" name="scala.Long">Long</span></span>)</span><span class="result">: <span class="extype" name="scala.Unit">Unit</span></span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../index.html#fun.util.ColorBrewer$@wait(x$1:Long):Unit" title="Permalink" target="_top">
+        <img src="../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>AnyRef</dd><dt>Annotations</dt><dd>
+                <span class="name">@throws</span><span class="args">(<span>
+      
+      <span class="defval" name="classOf[java.lang.InterruptedException]">...</span>
+    </span>)</span>
+              
+        </dd></dl></div>
+    </li></ol>
+            </div>
+
+        
+
+        
+        </div>
+
+        <div id="inheritedMembers">
+        <div class="parent" name="fun.util.Logging">
+              <h3>Inherited from <a href="Logging.html" class="extype" name="fun.util.Logging">Logging</a></h3>
+            </div><div class="parent" name="scala.AnyRef">
+              <h3>Inherited from <span class="extype" name="scala.AnyRef">AnyRef</span></h3>
+            </div><div class="parent" name="scala.Any">
+              <h3>Inherited from <span class="extype" name="scala.Any">Any</span></h3>
+            </div>
+        
+        </div>
+
+        <div id="groupedMembers">
+        <div class="group" name="Ungrouped">
+              <h3>Ungrouped</h3>
+              
+            </div>
+        </div>
+
+      </div>
+
+      <div id="tooltip"></div>
+
+      <div id="footer">  </div>
+
+
+    </body>
+      </html>

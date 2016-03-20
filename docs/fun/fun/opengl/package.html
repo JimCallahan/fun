@@ -1,0 +1,1622 @@
+<!DOCTYPE html >
+<html>
+        <head>
+          <title>opengl - fun.opengl</title>
+          <meta name="description" content="opengl - fun.opengl" />
+          <meta name="keywords" content="opengl fun.opengl" />
+          <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+          
+      <link href="../../lib/template.css" media="screen" type="text/css" rel="stylesheet" />
+      <link href="../../lib/diagrams.css" media="screen" type="text/css" rel="stylesheet" id="diagrams-css" />
+      <script type="text/javascript" src="../../lib/jquery.js" id="jquery-js"></script>
+      <script type="text/javascript" src="../../lib/jquery-ui.js"></script>
+      <script type="text/javascript" src="../../lib/template.js"></script>
+      <script type="text/javascript" src="../../lib/tools.tooltip.js"></script>
+      
+      <script type="text/javascript">
+         if(top === self) {
+            var url = '../../index.html';
+            var hash = 'fun.opengl.package';
+            var anchor = window.location.hash;
+            var anchor_opt = '';
+            if (anchor.length >= 1)
+              anchor_opt = '@' + anchor.substring(1);
+            window.location.href = url + '#' + hash + anchor_opt;
+         }
+   	  </script>
+    
+        </head>
+        <body class="value">
+      <div id="definition">
+        <img alt="Package" src="../../lib/package_big.png" />
+        <p id="owner"><a href="../package.html" class="extype" name="fun">fun</a></p>
+        <h1>opengl</h1><span class="permalink">
+      <a href="../../index.html#fun.opengl.package" title="Permalink" target="_top">
+        <img src="../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      </div>
+
+      <h4 id="signature" class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">package</span>
+      </span>
+      <span class="symbol">
+        <span class="name">opengl</span>
+      </span>
+      </h4>
+      
+          <div id="comment" class="fullcommenttop"></div>
+        
+
+      <div id="mbrsel">
+        <div id="textfilter"><span class="pre"></span><span class="input"><input id="mbrsel-input" type="text" accesskey="/" /></span><span class="post"></span></div>
+        
+        
+        <div id="visbl">
+            <span class="filtertype">Visibility</span>
+            <ol><li class="public in"><span>Public</span></li><li class="all out"><span>All</span></li></ol>
+          </div>
+      </div>
+
+      <div id="template">
+        <div id="allMembers">
+        
+
+        <div id="types" class="types members">
+              <h3>Type Members</h3>
+              <ol><li name="fun.opengl.BaseObject" visbl="pub" data-isabs="true" fullComment="no" group="Ungrouped">
+      <a id="BaseObjectextendsBaseStateful"></a>
+      <a id="BaseObject:BaseObject"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier">abstract </span>
+        <span class="kind">class</span>
+      </span>
+      <span class="symbol">
+        <a href="BaseObject.html"><span class="name">BaseObject</span></a><span class="result"> extends <a href="BaseStateful.html" class="extype" name="fun.opengl.BaseStateful">BaseStateful</a></span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../index.html#fun.opengl.package@BaseObjectextendsBaseStateful" title="Permalink" target="_top">
+        <img src="../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      <p class="shortcomment cmt">The abstract base class of all OpenGL server-side objects.</p>
+    </li><li name="fun.opengl.BaseStateful" visbl="pub" data-isabs="true" fullComment="no" group="Ungrouped">
+      <a id="BaseStatefulextendsAnyRef"></a>
+      <a id="BaseStateful:BaseStateful"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier">abstract </span>
+        <span class="kind">class</span>
+      </span>
+      <span class="symbol">
+        <a href="BaseStateful.html"><span class="name">BaseStateful</span></a><span class="result"> extends <span class="extype" name="scala.AnyRef">AnyRef</span></span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../index.html#fun.opengl.package@BaseStatefulextendsAnyRef" title="Permalink" target="_top">
+        <img src="../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      <p class="shortcomment cmt">The abstract base class of all OpenGL server-side objects which maintain state.</p>
+    </li><li name="fun.opengl.BaseTextured" visbl="pub" data-isabs="true" fullComment="no" group="Ungrouped">
+      <a id="BaseTexturedextendsBaseStateful"></a>
+      <a id="BaseTextured:BaseTextured"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier">abstract </span>
+        <span class="kind">class</span>
+      </span>
+      <span class="symbol">
+        <a href="BaseTextured.html"><span class="name">BaseTextured</span></a><span class="result"> extends <a href="BaseStateful.html" class="extype" name="fun.opengl.BaseStateful">BaseStateful</a></span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../index.html#fun.opengl.package@BaseTexturedextendsBaseStateful" title="Permalink" target="_top">
+        <img src="../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      <p class="shortcomment cmt">The abstract base class of all OpenGL server-side objects associated with hardware texture units.</p>
+    </li><li name="fun.opengl.BufferObject" visbl="pub" data-isabs="true" fullComment="no" group="Ungrouped">
+      <a id="BufferObjectextendsBaseObject"></a>
+      <a id="BufferObject:BufferObject"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier">abstract </span>
+        <span class="kind">class</span>
+      </span>
+      <span class="symbol">
+        <a href="BufferObject.html"><span class="name">BufferObject</span></a><span class="result"> extends <a href="BaseObject.html" class="extype" name="fun.opengl.BaseObject">BaseObject</a></span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../index.html#fun.opengl.package@BufferObjectextendsBaseObject" title="Permalink" target="_top">
+        <img src="../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      <p class="shortcomment cmt">The abstract base class of all OpenGL server-side data buffer objects.</p>
+    </li><li name="fun.opengl.ByteIBO" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
+      <a id="ByteIBOextendsIndexBufferObject"></a>
+      <a id="ByteIBO:ByteIBO"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">class</span>
+      </span>
+      <span class="symbol">
+        <a href="ByteIBO.html"><span class="name">ByteIBO</span></a><span class="result"> extends <a href="IndexBufferObject.html" class="extype" name="fun.opengl.IndexBufferObject">IndexBufferObject</a></span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../index.html#fun.opengl.package@ByteIBOextendsIndexBufferObject" title="Permalink" target="_top">
+        <img src="../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      <p class="shortcomment cmt">Vertex Buffer Object containing Byte attribute data.</p>
+    </li><li name="fun.opengl.ByteVBO" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
+      <a id="ByteVBOextendsVertexBufferObject"></a>
+      <a id="ByteVBO:ByteVBO"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">class</span>
+      </span>
+      <span class="symbol">
+        <a href="ByteVBO.html"><span class="name">ByteVBO</span></a><span class="result"> extends <a href="VertexBufferObject.html" class="extype" name="fun.opengl.VertexBufferObject">VertexBufferObject</a></span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../index.html#fun.opengl.package@ByteVBOextendsVertexBufferObject" title="Permalink" target="_top">
+        <img src="../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      <p class="shortcomment cmt">Vertex Buffer Object containing Byte attribute data.</p>
+    </li><li name="fun.opengl.ClampedMipmapSampler" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
+      <a id="ClampedMipmapSamplerextendsMipmapSampler"></a>
+      <a id="ClampedMipmapSampler:ClampedMipmapSampler"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">class</span>
+      </span>
+      <span class="symbol">
+        <a href="ClampedMipmapSampler.html"><span class="name">ClampedMipmapSampler</span></a><span class="result"> extends <a href="MipmapSampler.html" class="extype" name="fun.opengl.MipmapSampler">MipmapSampler</a></span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../index.html#fun.opengl.package@ClampedMipmapSamplerextendsMipmapSampler" title="Permalink" target="_top">
+        <img src="../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      <p class="shortcomment cmt">An OpenGL sampler of mipmapped textures which clamps texture coordinates.</p>
+    </li><li name="fun.opengl.Director2d" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
+      <a id="Director2dextendsLoggingwithProductwithSerializable"></a>
+      <a id="Director2d:Director2d"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">case class</span>
+      </span>
+      <span class="symbol">
+        <a href="Director2d.html"><span class="name">Director2d</span></a><span class="params">(<span name="cam">cam: <a href="ZoomCamera.html" class="extype" name="fun.opengl.ZoomCamera">ZoomCamera</a></span>, <span name="drag">drag: <span class="extype" name="scala.Option">Option</span>[<a href="../math/Pos2d.html" class="extype" name="fun.math.Pos2d">Pos2d</a>]</span>)</span><span class="result"> extends <a href="../util/Logging.html" class="extype" name="fun.util.Logging">Logging</a> with <span class="extype" name="scala.Product">Product</span> with <span class="extype" name="scala.Serializable">Serializable</span></span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../index.html#fun.opengl.package@Director2dextendsLoggingwithProductwithSerializable" title="Permalink" target="_top">
+        <img src="../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      <p class="shortcomment cmt">Directs the position and zoom of an orthogonal camera based on user input.</p>
+    </li><li name="fun.opengl.DoubleVBO" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
+      <a id="DoubleVBOextendsVertexBufferObject"></a>
+      <a id="DoubleVBO:DoubleVBO"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">class</span>
+      </span>
+      <span class="symbol">
+        <a href="DoubleVBO.html"><span class="name">DoubleVBO</span></a><span class="result"> extends <a href="VertexBufferObject.html" class="extype" name="fun.opengl.VertexBufferObject">VertexBufferObject</a></span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../index.html#fun.opengl.package@DoubleVBOextendsVertexBufferObject" title="Permalink" target="_top">
+        <img src="../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      <p class="shortcomment cmt">Vertex Buffer Object containing Double attribute data.</p>
+    </li><li name="fun.opengl.FloatVBO" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
+      <a id="FloatVBOextendsVertexBufferObject"></a>
+      <a id="FloatVBO:FloatVBO"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">class</span>
+      </span>
+      <span class="symbol">
+        <a href="FloatVBO.html"><span class="name">FloatVBO</span></a><span class="result"> extends <a href="VertexBufferObject.html" class="extype" name="fun.opengl.VertexBufferObject">VertexBufferObject</a></span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../index.html#fun.opengl.package@FloatVBOextendsVertexBufferObject" title="Permalink" target="_top">
+        <img src="../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      <p class="shortcomment cmt">Vertex Buffer Object containing Float attribute data.</p>
+    </li><li name="fun.opengl.FontGlyph" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="FontGlyphextendsOrdered[fun.opengl.FontGlyph]withProductwithSerializable"></a>
+      <a id="FontGlyph:FontGlyph"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">case class</span>
+      </span>
+      <span class="symbol">
+        <a href="FontGlyph.html"><span class="name">FontGlyph</span></a><span class="params">(<span name="index">index: <span class="extype" name="scala.Int">Int</span></span>, <span name="char">char: <span class="extype" name="scala.Char">Char</span></span>, <span name="advance">advance: <span class="extype" name="scala.Double">Double</span></span>, <span name="bbox">bbox: <a href="../math/BBox2d.html" class="extype" name="fun.math.BBox2d">BBox2d</a></span>)</span><span class="result"> extends <span class="extype" name="scala.Ordered">Ordered</span>[<a href="FontGlyph.html" class="extype" name="fun.opengl.FontGlyph">FontGlyph</a>] with <span class="extype" name="scala.Product">Product</span> with <span class="extype" name="scala.Serializable">Serializable</span></span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../index.html#fun.opengl.package@FontGlyphextendsOrdered[fun.opengl.FontGlyph]withProductwithSerializable" title="Permalink" target="_top">
+        <img src="../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      <p class="shortcomment cmt">Metric information about a specific textured glyph.</p><div class="fullcomment"><div class="comment cmt"><p>Metric information about a specific textured glyph.</p></div><dl class="paramcmts block"><dt class="param">index</dt><dd class="cmt"><p>The index (depth) of the glyph within the 3D texture.</p></dd><dt class="param">char</dt><dd class="cmt"><p>The character represented by the glyph.</p></dd><dt class="param">advance</dt><dd class="cmt"><p>The amount to advance the position (in texture coords) after rendering the glyph.</p></dd><dt class="param">bbox</dt><dd class="cmt"><p>The bounds (relative to the glyph anchor in texture coords) of the visible glyph.</p></dd></dl></div>
+    </li><li name="fun.opengl.GLApp" visbl="pub" data-isabs="true" fullComment="no" group="Ungrouped">
+      <a id="GLAppextendsAppwithGLAppLikewithLogging"></a>
+      <a id="GLApp:GLApp"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier">abstract </span>
+        <span class="kind">class</span>
+      </span>
+      <span class="symbol">
+        <a href="GLApp.html"><span class="name">GLApp</span></a><span class="result"> extends <span class="extype" name="scala.App">App</span> with <a href="GLAppLike.html" class="extype" name="fun.opengl.GLAppLike">GLAppLike</a> with <a href="../util/Logging.html" class="extype" name="fun.util.Logging">Logging</a></span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../index.html#fun.opengl.package@GLAppextendsAppwithGLAppLikewithLogging" title="Permalink" target="_top">
+        <img src="../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      
+    </li><li name="fun.opengl.GLAppLike" visbl="pub" data-isabs="true" fullComment="no" group="Ungrouped">
+      <a id="GLAppLikeextendsAnyRef"></a>
+      <a id="GLAppLike:GLAppLike"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">trait</span>
+      </span>
+      <span class="symbol">
+        <a href="GLAppLike.html"><span class="name">GLAppLike</span></a><span class="result"> extends <span class="extype" name="scala.AnyRef">AnyRef</span></span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../index.html#fun.opengl.package@GLAppLikeextendsAnyRef" title="Permalink" target="_top">
+        <img src="../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      
+    </li><li name="fun.opengl.GraphicsState" visbl="pub" data-isabs="true" fullComment="no" group="Ungrouped">
+      <a id="GraphicsStateextendsAnyRef"></a>
+      <a id="GraphicsState:GraphicsState"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">trait</span>
+      </span>
+      <span class="symbol">
+        <a href="GraphicsState.html"><span class="name">GraphicsState</span></a><span class="result"> extends <span class="extype" name="scala.AnyRef">AnyRef</span></span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../index.html#fun.opengl.package@GraphicsStateextendsAnyRef" title="Permalink" target="_top">
+        <img src="../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      
+    </li><li name="fun.opengl.IndexBufferObject" visbl="pub" data-isabs="true" fullComment="no" group="Ungrouped">
+      <a id="IndexBufferObjectextendsBufferObject"></a>
+      <a id="IndexBufferObject:IndexBufferObject"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier">abstract </span>
+        <span class="kind">class</span>
+      </span>
+      <span class="symbol">
+        <a href="IndexBufferObject.html"><span class="name">IndexBufferObject</span></a><span class="result"> extends <a href="BufferObject.html" class="extype" name="fun.opengl.BufferObject">BufferObject</a></span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../index.html#fun.opengl.package@IndexBufferObjectextendsBufferObject" title="Permalink" target="_top">
+        <img src="../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      <p class="shortcomment cmt">Index Buffer Object.</p>
+    </li><li name="fun.opengl.Input" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="InputextendsProductwithSerializable"></a>
+      <a id="Input:Input"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">case class</span>
+      </span>
+      <span class="symbol">
+        <a href="Input.html"><span class="name">Input</span></a><span class="params">(<span name="mouse">mouse: <span class="extype" name="scala.Seq">Seq</span>[<a href="MouseEvent.html" class="extype" name="fun.opengl.MouseEvent">MouseEvent</a>]</span>, <span name="keyboard">keyboard: <span class="extype" name="scala.Seq">Seq</span>[<a href="KeyboardEvent.html" class="extype" name="fun.opengl.KeyboardEvent">KeyboardEvent</a>]</span>)</span><span class="result"> extends <span class="extype" name="scala.Product">Product</span> with <span class="extype" name="scala.Serializable">Serializable</span></span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../index.html#fun.opengl.package@InputextendsProductwithSerializable" title="Permalink" target="_top">
+        <img src="../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      <p class="shortcomment cmt">All input events which have occurred since the last
+<a href="http://lwjgl.org/javadoc/org/lwjgl/opengl/Display.html" target="_blank">org.lwjgl.opengl.Display.update</a>
+call.</p><div class="fullcomment"><div class="comment cmt"><p>All input events which have occurred since the last
+<a href="http://lwjgl.org/javadoc/org/lwjgl/opengl/Display.html" target="_blank">org.lwjgl.opengl.Display.update</a>
+call.</p></div><dl class="paramcmts block"><dt class="param">mouse</dt><dd class="cmt"><p>All mouse events in order.</p></dd><dt class="param">keyboard</dt><dd class="cmt"><p>All keyboard events in order.</p></dd></dl></div>
+    </li><li name="fun.opengl.IntIBO" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
+      <a id="IntIBOextendsIndexBufferObject"></a>
+      <a id="IntIBO:IntIBO"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">class</span>
+      </span>
+      <span class="symbol">
+        <a href="IntIBO.html"><span class="name">IntIBO</span></a><span class="result"> extends <a href="IndexBufferObject.html" class="extype" name="fun.opengl.IndexBufferObject">IndexBufferObject</a></span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../index.html#fun.opengl.package@IntIBOextendsIndexBufferObject" title="Permalink" target="_top">
+        <img src="../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      <p class="shortcomment cmt">Vertex Buffer Object containing Int attribute data.</p>
+    </li><li name="fun.opengl.IntVBO" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
+      <a id="IntVBOextendsVertexBufferObject"></a>
+      <a id="IntVBO:IntVBO"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">class</span>
+      </span>
+      <span class="symbol">
+        <a href="IntVBO.html"><span class="name">IntVBO</span></a><span class="result"> extends <a href="VertexBufferObject.html" class="extype" name="fun.opengl.VertexBufferObject">VertexBufferObject</a></span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../index.html#fun.opengl.package@IntVBOextendsVertexBufferObject" title="Permalink" target="_top">
+        <img src="../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      <p class="shortcomment cmt">Vertex Buffer Object containing Int attribute data.</p>
+    </li><li name="fun.opengl.KeyboardEvent" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="KeyboardEventextendsProductwithSerializable"></a>
+      <a id="KeyboardEvent:KeyboardEvent"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">case class</span>
+      </span>
+      <span class="symbol">
+        <a href="KeyboardEvent.html"><span class="name">KeyboardEvent</span></a><span class="params">(<span name="nanos">nanos: <span class="extype" name="scala.Long">Long</span></span>, <span name="character">character: <span class="extype" name="scala.Char">Char</span></span>, <span name="keyCode">keyCode: <span class="extype" name="scala.Int">Int</span></span>, <span name="action">action: <a href="KeyboardEvent$$KeyAction.html" class="extype" name="fun.opengl.KeyboardEvent.KeyAction">KeyAction</a></span>, <span name="shift">shift: <a href="KeyboardEvent$$ShiftKeyState.html" class="extype" name="fun.opengl.KeyboardEvent.ShiftKeyState">ShiftKeyState</a></span>, <span name="control">control: <a href="KeyboardEvent$$ControlKeyState.html" class="extype" name="fun.opengl.KeyboardEvent.ControlKeyState">ControlKeyState</a></span>, <span name="meta">meta: <a href="KeyboardEvent$$MetaKeyState.html" class="extype" name="fun.opengl.KeyboardEvent.MetaKeyState">MetaKeyState</a></span>)</span><span class="result"> extends <span class="extype" name="scala.Product">Product</span> with <span class="extype" name="scala.Serializable">Serializable</span></span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../index.html#fun.opengl.package@KeyboardEventextendsProductwithSerializable" title="Permalink" target="_top">
+        <img src="../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      <p class="shortcomment cmt">An event involving a change in keyboard state.</p><div class="fullcomment"><div class="comment cmt"><p>An event involving a change in keyboard state.</p></div><dl class="paramcmts block"><dt class="param">nanos</dt><dd class="cmt"><p>The time in nanoseconds of the current event.</p></dd><dt class="param">character</dt><dd class="cmt"><p>The character involved.</p></dd><dt class="param">keyCode</dt><dd class="cmt"><p>The org.lwjgl.input.Keyboard._ code for the key involved.</p></dd><dt class="param">action</dt><dd class="cmt"><p>The change of key state that caused the event.</p></dd><dt class="param">shift</dt><dd class="cmt"><p>The state of the SHIFT key during the event.</p></dd><dt class="param">control</dt><dd class="cmt"><p>The state of the CONTROL key during the event.</p></dd><dt class="param">meta</dt><dd class="cmt"><p>The state of the META key during the event.</p></dd></dl></div>
+    </li><li name="fun.opengl.Material" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
+      <a id="MaterialextendsAnyRef"></a>
+      <a id="Material:Material"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">class</span>
+      </span>
+      <span class="symbol">
+        <a href="Material.html"><span class="name">Material</span></a><span class="result"> extends <span class="extype" name="scala.AnyRef">AnyRef</span></span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../index.html#fun.opengl.package@MaterialextendsAnyRef" title="Permalink" target="_top">
+        <img src="../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      <p class="shortcomment cmt">The combined OpenGL shader programs and textures needed to render a set of geometry
+with the same appearance.</p>
+    </li><li name="fun.opengl.MipmapSampler" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
+      <a id="MipmapSamplerextendsSamplerObject"></a>
+      <a id="MipmapSampler:MipmapSampler"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">class</span>
+      </span>
+      <span class="symbol">
+        <a href="MipmapSampler.html"><span class="name">MipmapSampler</span></a><span class="result"> extends <a href="SamplerObject.html" class="extype" name="fun.opengl.SamplerObject">SamplerObject</a></span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../index.html#fun.opengl.package@MipmapSamplerextendsSamplerObject" title="Permalink" target="_top">
+        <img src="../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      <p class="shortcomment cmt">An OpenGL sampler of mipmapped textures.</p>
+    </li><li name="fun.opengl.MouseButton" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="MouseButtonextendsMouseEventwithProductwithSerializable"></a>
+      <a id="MouseButton:MouseButton"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">case class</span>
+      </span>
+      <span class="symbol">
+        <a href="MouseButton.html"><span class="name">MouseButton</span></a><span class="params">(<span name="nanos">nanos: <span class="extype" name="scala.Long">Long</span></span>, <span name="pos">pos: <span class="extype" name="scala.Predef.Map">Map</span>[<span class="extype" name="scala.Predef.String">String</span>, <a href="../math/Pos2d.html" class="extype" name="fun.math.Pos2d">Pos2d</a>]</span>, <span name="buttonID">buttonID: <span class="extype" name="scala.Int">Int</span></span>, <span name="isPressed">isPressed: <span class="extype" name="scala.Boolean">Boolean</span></span>)</span><span class="result"> extends <a href="MouseEvent.html" class="extype" name="fun.opengl.MouseEvent">MouseEvent</a> with <span class="extype" name="scala.Product">Product</span> with <span class="extype" name="scala.Serializable">Serializable</span></span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../index.html#fun.opengl.package@MouseButtonextendsMouseEventwithProductwithSerializable" title="Permalink" target="_top">
+        <img src="../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      <p class="shortcomment cmt">A mouse event that involves a change in button state.</p><div class="fullcomment"><div class="comment cmt"><p>A mouse event that involves a change in button state.</p></div><dl class="paramcmts block"><dt class="param">nanos</dt><dd class="cmt"><p>The time in nanoseconds of the current event.</p></dd><dt class="param">pos</dt><dd class="cmt"><p>The position of the mouse at the time of the event in each named camera space.</p></dd><dt class="param">buttonID</dt><dd class="cmt"><p>The button that changed.</p></dd><dt class="param">isPressed</dt><dd class="cmt"><p>Whether it is now pressed.</p></dd></dl></div>
+    </li><li name="fun.opengl.MouseCurrent" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="MouseCurrentextendsMouseEventwithProductwithSerializable"></a>
+      <a id="MouseCurrent:MouseCurrent"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">case class</span>
+      </span>
+      <span class="symbol">
+        <a href="MouseCurrent.html"><span class="name">MouseCurrent</span></a><span class="params">(<span name="nanos">nanos: <span class="extype" name="scala.Long">Long</span></span>, <span name="pos">pos: <span class="extype" name="scala.Predef.Map">Map</span>[<span class="extype" name="scala.Predef.String">String</span>, <a href="../math/Pos2d.html" class="extype" name="fun.math.Pos2d">Pos2d</a>]</span>)</span><span class="result"> extends <a href="MouseEvent.html" class="extype" name="fun.opengl.MouseEvent">MouseEvent</a> with <span class="extype" name="scala.Product">Product</span> with <span class="extype" name="scala.Serializable">Serializable</span></span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../index.html#fun.opengl.package@MouseCurrentextendsMouseEventwithProductwithSerializable" title="Permalink" target="_top">
+        <img src="../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      <p class="shortcomment cmt">The current mouse position.</p><div class="fullcomment"><div class="comment cmt"><p>The current mouse position.</p></div><dl class="paramcmts block"><dt class="param">nanos</dt><dd class="cmt"><p>The time in nanoseconds of the current event.</p></dd><dt class="param">pos</dt><dd class="cmt"><p>The position of the mouse at the time of the event in each named camera space.</p></dd></dl></div>
+    </li><li name="fun.opengl.MouseEvent" visbl="pub" data-isabs="true" fullComment="no" group="Ungrouped">
+      <a id="MouseEventextendsAnyRef"></a>
+      <a id="MouseEvent:MouseEvent"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">trait</span>
+      </span>
+      <span class="symbol">
+        <a href="MouseEvent.html"><span class="name">MouseEvent</span></a><span class="result"> extends <span class="extype" name="scala.AnyRef">AnyRef</span></span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../index.html#fun.opengl.package@MouseEventextendsAnyRef" title="Permalink" target="_top">
+        <img src="../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      <p class="shortcomment cmt">A mouse event.</p>
+    </li><li name="fun.opengl.MouseMove" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="MouseMoveextendsMouseEventwithProductwithSerializable"></a>
+      <a id="MouseMove:MouseMove"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">case class</span>
+      </span>
+      <span class="symbol">
+        <a href="MouseMove.html"><span class="name">MouseMove</span></a><span class="params">(<span name="nanos">nanos: <span class="extype" name="scala.Long">Long</span></span>, <span name="pos">pos: <span class="extype" name="scala.Predef.Map">Map</span>[<span class="extype" name="scala.Predef.String">String</span>, <a href="../math/Pos2d.html" class="extype" name="fun.math.Pos2d">Pos2d</a>]</span>)</span><span class="result"> extends <a href="MouseEvent.html" class="extype" name="fun.opengl.MouseEvent">MouseEvent</a> with <span class="extype" name="scala.Product">Product</span> with <span class="extype" name="scala.Serializable">Serializable</span></span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../index.html#fun.opengl.package@MouseMoveextendsMouseEventwithProductwithSerializable" title="Permalink" target="_top">
+        <img src="../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      <p class="shortcomment cmt">A mouse event that only involves movement.</p><div class="fullcomment"><div class="comment cmt"><p>A mouse event that only involves movement.</p></div><dl class="paramcmts block"><dt class="param">nanos</dt><dd class="cmt"><p>The time in nanoseconds of the current event.</p></dd><dt class="param">pos</dt><dd class="cmt"><p>The position of the mouse at the time of the event in each named camera space.</p></dd></dl></div>
+    </li><li name="fun.opengl.MouseWheel" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="MouseWheelextendsMouseEventwithProductwithSerializable"></a>
+      <a id="MouseWheel:MouseWheel"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">case class</span>
+      </span>
+      <span class="symbol">
+        <a href="MouseWheel.html"><span class="name">MouseWheel</span></a><span class="params">(<span name="nanos">nanos: <span class="extype" name="scala.Long">Long</span></span>, <span name="pos">pos: <span class="extype" name="scala.Predef.Map">Map</span>[<span class="extype" name="scala.Predef.String">String</span>, <a href="../math/Pos2d.html" class="extype" name="fun.math.Pos2d">Pos2d</a>]</span>, <span name="wheel">wheel: <span class="extype" name="scala.Int">Int</span></span>)</span><span class="result"> extends <a href="MouseEvent.html" class="extype" name="fun.opengl.MouseEvent">MouseEvent</a> with <span class="extype" name="scala.Product">Product</span> with <span class="extype" name="scala.Serializable">Serializable</span></span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../index.html#fun.opengl.package@MouseWheelextendsMouseEventwithProductwithSerializable" title="Permalink" target="_top">
+        <img src="../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      <p class="shortcomment cmt">A mouse event that only involves movement.</p><div class="fullcomment"><div class="comment cmt"><p>A mouse event that only involves movement.</p></div><dl class="paramcmts block"><dt class="param">nanos</dt><dd class="cmt"><p>The time in nanoseconds of the current event.</p></dd><dt class="param">pos</dt><dd class="cmt"><p>The position of the mouse at the time of the event in each named camera space.</p></dd></dl></div>
+    </li><li name="fun.opengl.OrthoCamera" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
+      <a id="OrthoCameraextendsAnyRef"></a>
+      <a id="OrthoCamera:OrthoCamera"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">class</span>
+      </span>
+      <span class="symbol">
+        <a href="OrthoCamera.html"><span class="name">OrthoCamera</span></a><span class="result"> extends <span class="extype" name="scala.AnyRef">AnyRef</span></span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../index.html#fun.opengl.package@OrthoCameraextendsAnyRef" title="Permalink" target="_top">
+        <img src="../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      <p class="shortcomment cmt">An orthogonal projection camara.</p>
+    </li><li name="fun.opengl.PaletteTexture" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
+      <a id="PaletteTextureextendsTexture1D"></a>
+      <a id="PaletteTexture:PaletteTexture"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">class</span>
+      </span>
+      <span class="symbol">
+        <a href="PaletteTexture.html"><span class="name">PaletteTexture</span></a><span class="result"> extends <a href="Texture1D.html" class="extype" name="fun.opengl.Texture1D">Texture1D</a></span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../index.html#fun.opengl.package@PaletteTextureextendsTexture1D" title="Permalink" target="_top">
+        <img src="../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      <p class="shortcomment cmt">A 1-dimensional OpenGL texture object based on interpolating a ColorBrewer palette.</p>
+    </li><li name="fun.opengl.PerspCamera" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
+      <a id="PerspCameraextendsAnyRef"></a>
+      <a id="PerspCamera:PerspCamera"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">class</span>
+      </span>
+      <span class="symbol">
+        <a href="PerspCamera.html"><span class="name">PerspCamera</span></a><span class="result"> extends <span class="extype" name="scala.AnyRef">AnyRef</span></span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../index.html#fun.opengl.package@PerspCameraextendsAnyRef" title="Permalink" target="_top">
+        <img src="../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      <p class="shortcomment cmt">A perspective projection camera.</p>
+    </li><li name="fun.opengl.SamplerObject" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
+      <a id="SamplerObjectextendsBaseTextured"></a>
+      <a id="SamplerObject:SamplerObject"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">class</span>
+      </span>
+      <span class="symbol">
+        <a href="SamplerObject.html"><span class="name">SamplerObject</span></a><span class="result"> extends <a href="BaseTextured.html" class="extype" name="fun.opengl.BaseTextured">BaseTextured</a></span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../index.html#fun.opengl.package@SamplerObjectextendsBaseTextured" title="Permalink" target="_top">
+        <img src="../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      <p class="shortcomment cmt">An OpenGL texture sampler object.</p>
+    </li><li name="fun.opengl.Shader" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
+      <a id="ShaderextendsLogging"></a>
+      <a id="Shader:Shader"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">class</span>
+      </span>
+      <span class="symbol">
+        <a href="Shader.html"><span class="name">Shader</span></a><span class="result"> extends <a href="../util/Logging.html" class="extype" name="fun.util.Logging">Logging</a></span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../index.html#fun.opengl.package@ShaderextendsLogging" title="Permalink" target="_top">
+        <img src="../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      <p class="shortcomment cmt">A GLSL shader.</p>
+    </li><li name="fun.opengl.ShaderProgram" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
+      <a id="ShaderProgramextendsLogging"></a>
+      <a id="ShaderProgram:ShaderProgram"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">class</span>
+      </span>
+      <span class="symbol">
+        <a href="ShaderProgram.html"><span class="name">ShaderProgram</span></a><span class="result"> extends <a href="../util/Logging.html" class="extype" name="fun.util.Logging">Logging</a></span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../index.html#fun.opengl.package@ShaderProgramextendsLogging" title="Permalink" target="_top">
+        <img src="../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      <p class="shortcomment cmt">A set of GLSL shaders which together make up a shader program.</p>
+    </li><li name="fun.opengl.ShaderType" visbl="pub" data-isabs="true" fullComment="no" group="Ungrouped">
+      <a id="ShaderTypeextendsAnyRef"></a>
+      <a id="ShaderType:ShaderType"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier">sealed </span>
+        <span class="kind">trait</span>
+      </span>
+      <span class="symbol">
+        <a href="ShaderType.html"><span class="name">ShaderType</span></a><span class="result"> extends <span class="extype" name="scala.AnyRef">AnyRef</span></span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../index.html#fun.opengl.package@ShaderTypeextendsAnyRef" title="Permalink" target="_top">
+        <img src="../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      <p class="shortcomment cmt">Types of GLSL shaders.</p>
+    </li><li name="fun.opengl.ShortIBO" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
+      <a id="ShortIBOextendsIndexBufferObject"></a>
+      <a id="ShortIBO:ShortIBO"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">class</span>
+      </span>
+      <span class="symbol">
+        <a href="ShortIBO.html"><span class="name">ShortIBO</span></a><span class="result"> extends <a href="IndexBufferObject.html" class="extype" name="fun.opengl.IndexBufferObject">IndexBufferObject</a></span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../index.html#fun.opengl.package@ShortIBOextendsIndexBufferObject" title="Permalink" target="_top">
+        <img src="../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      <p class="shortcomment cmt">Vertex Buffer Object containing Short attribute data.</p>
+    </li><li name="fun.opengl.ShortVBO" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
+      <a id="ShortVBOextendsVertexBufferObject"></a>
+      <a id="ShortVBO:ShortVBO"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">class</span>
+      </span>
+      <span class="symbol">
+        <a href="ShortVBO.html"><span class="name">ShortVBO</span></a><span class="result"> extends <a href="VertexBufferObject.html" class="extype" name="fun.opengl.VertexBufferObject">VertexBufferObject</a></span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../index.html#fun.opengl.package@ShortVBOextendsVertexBufferObject" title="Permalink" target="_top">
+        <img src="../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      <p class="shortcomment cmt">Vertex Buffer Object containing Short attribute data.</p>
+    </li><li name="fun.opengl.TestTexture2D" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
+      <a id="TestTexture2DextendsTexture2D"></a>
+      <a id="TestTexture2D:TestTexture2D"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">class</span>
+      </span>
+      <span class="symbol">
+        <a href="TestTexture2D.html"><span class="name">TestTexture2D</span></a><span class="result"> extends <a href="Texture2D.html" class="extype" name="fun.opengl.Texture2D">Texture2D</a></span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../index.html#fun.opengl.package@TestTexture2DextendsTexture2D" title="Permalink" target="_top">
+        <img src="../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      <p class="shortcomment cmt">A procedurally generated 2-dimensional mipmapped texture suitable for testing.</p>
+    </li><li name="fun.opengl.Texture1D" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
+      <a id="Texture1DextendsTextureObject"></a>
+      <a id="Texture1D:Texture1D"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">class</span>
+      </span>
+      <span class="symbol">
+        <a href="Texture1D.html"><span class="name">Texture1D</span></a><span class="result"> extends <a href="TextureObject.html" class="extype" name="fun.opengl.TextureObject">TextureObject</a></span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../index.html#fun.opengl.package@Texture1DextendsTextureObject" title="Permalink" target="_top">
+        <img src="../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      <p class="shortcomment cmt">A 1-dimensional simple texture.</p>
+    </li><li name="fun.opengl.Texture2D" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
+      <a id="Texture2DextendsTextureObject"></a>
+      <a id="Texture2D:Texture2D"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">class</span>
+      </span>
+      <span class="symbol">
+        <a href="Texture2D.html"><span class="name">Texture2D</span></a><span class="result"> extends <a href="TextureObject.html" class="extype" name="fun.opengl.TextureObject">TextureObject</a></span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../index.html#fun.opengl.package@Texture2DextendsTextureObject" title="Permalink" target="_top">
+        <img src="../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      <p class="shortcomment cmt">A 2-dimensional mipmapped texture.</p>
+    </li><li name="fun.opengl.TextureObject" visbl="pub" data-isabs="true" fullComment="no" group="Ungrouped">
+      <a id="TextureObjectextendsBaseTextured"></a>
+      <a id="TextureObject:TextureObject"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier">abstract </span>
+        <span class="kind">class</span>
+      </span>
+      <span class="symbol">
+        <a href="TextureObject.html"><span class="name">TextureObject</span></a><span class="result"> extends <a href="BaseTextured.html" class="extype" name="fun.opengl.BaseTextured">BaseTextured</a></span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../index.html#fun.opengl.package@TextureObjectextendsBaseTextured" title="Permalink" target="_top">
+        <img src="../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      <p class="shortcomment cmt">The abstract base class of all OpenGL texture objects.</p>
+    </li><li name="fun.opengl.TimingStats" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
+      <a id="TimingStatsextendsLogging"></a>
+      <a id="TimingStats:TimingStats"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">class</span>
+      </span>
+      <span class="symbol">
+        <a href="TimingStats.html"><span class="name">TimingStats</span></a><span class="result"> extends <a href="../util/Logging.html" class="extype" name="fun.util.Logging">Logging</a></span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../index.html#fun.opengl.package@TimingStatsextendsLogging" title="Permalink" target="_top">
+        <img src="../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      <p class="shortcomment cmt">Time statistics.</p>
+    </li><li name="fun.opengl.VectorFontTextures" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
+      <a id="VectorFontTexturesextendsXMLSaver"></a>
+      <a id="VectorFontTextures:VectorFontTextures"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">class</span>
+      </span>
+      <span class="symbol">
+        <a href="VectorFontTextures.html"><span class="name">VectorFontTextures</span></a><span class="result"> extends <a href="../util/XMLSaver.html" class="extype" name="fun.util.XMLSaver">XMLSaver</a></span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../index.html#fun.opengl.package@VectorFontTexturesextendsXMLSaver" title="Permalink" target="_top">
+        <img src="../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      <p class="shortcomment cmt">A set of textured glyphs corresponding to a specific TrueType font.</p>
+    </li><li name="fun.opengl.VectorSampler" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
+      <a id="VectorSamplerextendsSamplerObject"></a>
+      <a id="VectorSampler:VectorSampler"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">class</span>
+      </span>
+      <span class="symbol">
+        <a href="VectorSampler.html"><span class="name">VectorSampler</span></a><span class="result"> extends <a href="SamplerObject.html" class="extype" name="fun.opengl.SamplerObject">SamplerObject</a></span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../index.html#fun.opengl.package@VectorSamplerextendsSamplerObject" title="Permalink" target="_top">
+        <img src="../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      <p class="shortcomment cmt">An OpenGL sampler of vector textures.</p>
+    </li><li name="fun.opengl.VectorTexture2D" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
+      <a id="VectorTexture2DextendsTextureObject"></a>
+      <a id="VectorTexture2D:VectorTexture2D"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">class</span>
+      </span>
+      <span class="symbol">
+        <a href="VectorTexture2D.html"><span class="name">VectorTexture2D</span></a><span class="result"> extends <a href="TextureObject.html" class="extype" name="fun.opengl.TextureObject">TextureObject</a></span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../index.html#fun.opengl.package@VectorTexture2DextendsTextureObject" title="Permalink" target="_top">
+        <img src="../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      <p class="shortcomment cmt">A 2-dimensional height field texture representing vector art at the 0.5 level-set.</p>
+    </li><li name="fun.opengl.VectorTexture2DArray" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
+      <a id="VectorTexture2DArrayextendsTextureObject"></a>
+      <a id="VectorTexture2DArray:VectorTexture2DArray"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">class</span>
+      </span>
+      <span class="symbol">
+        <a href="VectorTexture2DArray.html"><span class="name">VectorTexture2DArray</span></a><span class="result"> extends <a href="TextureObject.html" class="extype" name="fun.opengl.TextureObject">TextureObject</a></span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../index.html#fun.opengl.package@VectorTexture2DArrayextendsTextureObject" title="Permalink" target="_top">
+        <img src="../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      <p class="shortcomment cmt">An array of 2-dimensional height field textures representing vector art at the 0.5 level-set.</p>
+    </li><li name="fun.opengl.VertexArrayObject" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
+      <a id="VertexArrayObjectextendsBaseObject"></a>
+      <a id="VertexArrayObject:VertexArrayObject"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">class</span>
+      </span>
+      <span class="symbol">
+        <a href="VertexArrayObject.html"><span class="name">VertexArrayObject</span></a><span class="result"> extends <a href="BaseObject.html" class="extype" name="fun.opengl.BaseObject">BaseObject</a></span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../index.html#fun.opengl.package@VertexArrayObjectextendsBaseObject" title="Permalink" target="_top">
+        <img src="../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      <p class="shortcomment cmt">Vertex Array Object.</p>
+    </li><li name="fun.opengl.VertexBufferObject" visbl="pub" data-isabs="true" fullComment="no" group="Ungrouped">
+      <a id="VertexBufferObjectextendsBufferObject"></a>
+      <a id="VertexBufferObject:VertexBufferObject"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier">abstract </span>
+        <span class="kind">class</span>
+      </span>
+      <span class="symbol">
+        <a href="VertexBufferObject.html"><span class="name">VertexBufferObject</span></a><span class="result"> extends <a href="BufferObject.html" class="extype" name="fun.opengl.BufferObject">BufferObject</a></span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../index.html#fun.opengl.package@VertexBufferObjectextendsBufferObject" title="Permalink" target="_top">
+        <img src="../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      <p class="shortcomment cmt">Abstract base class for all Vertex Buffer Objects.</p>
+    </li><li name="fun.opengl.VideoSampler" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
+      <a id="VideoSamplerextendsSamplerObject"></a>
+      <a id="VideoSampler:VideoSampler"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">class</span>
+      </span>
+      <span class="symbol">
+        <a href="VideoSampler.html"><span class="name">VideoSampler</span></a><span class="result"> extends <a href="SamplerObject.html" class="extype" name="fun.opengl.SamplerObject">SamplerObject</a></span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../index.html#fun.opengl.package@VideoSamplerextendsSamplerObject" title="Permalink" target="_top">
+        <img src="../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      <p class="shortcomment cmt">An OpenGL sampler of video textures.</p>
+    </li><li name="fun.opengl.VideoTexture" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
+      <a id="VideoTextureextendsTextureObject"></a>
+      <a id="VideoTexture:VideoTexture"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">class</span>
+      </span>
+      <span class="symbol">
+        <a href="VideoTexture.html"><span class="name">VideoTexture</span></a><span class="result"> extends <a href="TextureObject.html" class="extype" name="fun.opengl.TextureObject">TextureObject</a></span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../index.html#fun.opengl.package@VideoTextureextendsTextureObject" title="Permalink" target="_top">
+        <img src="../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      <p class="shortcomment cmt">A 2-dimensional rectangular texture frequently updated with video frames.</p>
+    </li><li name="fun.opengl.ZoomCamera" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="ZoomCameraextendsProductwithSerializable"></a>
+      <a id="ZoomCamera:ZoomCamera"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">case class</span>
+      </span>
+      <span class="symbol">
+        <a href="ZoomCamera.html"><span class="name">ZoomCamera</span></a><span class="params">(<span name="camera">camera: <a href="OrthoCamera.html" class="extype" name="fun.opengl.OrthoCamera">OrthoCamera</a></span>, <span name="zoom">zoom: <span class="extype" name="scala.Double">Double</span></span>, <span name="pos">pos: <a href="../math/Pos2d.html" class="extype" name="fun.math.Pos2d">Pos2d</a></span>, <span name="factor">factor: <a href="../math/Vec2d.html" class="extype" name="fun.math.Vec2d">Vec2d</a></span>, <span name="res">res: <a href="../math/Vec2d.html" class="extype" name="fun.math.Vec2d">Vec2d</a></span>)</span><span class="result"> extends <span class="extype" name="scala.Product">Product</span> with <span class="extype" name="scala.Serializable">Serializable</span></span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../index.html#fun.opengl.package@ZoomCameraextendsProductwithSerializable" title="Permalink" target="_top">
+        <img src="../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      <p class="shortcomment cmt">A 2D orthogonal camera which can be positioned and zoomed.</p><div class="fullcomment"><div class="comment cmt"><p>A 2D orthogonal camera which can be positioned and zoomed.</p></div><dl class="paramcmts block"><dt class="param">camera</dt><dd class="cmt"><p>The 3D orthogonal view transformation.</p></dd><dt class="param">zoom</dt><dd class="cmt"><p>The level of zoom (power of 2).</p></dd><dt class="param">pos</dt><dd class="cmt"><p>The camera viewing position.</p></dd><dt class="param">factor</dt><dd class="cmt"><p>The scaling factor from window to camera space.</p></dd></dl></div>
+    </li></ol>
+            </div>
+
+        
+
+        <div id="values" class="values members">
+              <h3>Value Members</h3>
+              <ol><li name="fun.opengl.ByteIBO" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
+      <a id="ByteIBO"></a>
+      <a id="ByteIBO:ByteIBO"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">object</span>
+      </span>
+      <span class="symbol">
+        <a href="ByteIBO$.html"><span class="name">ByteIBO</span></a>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../index.html#fun.opengl.package@ByteIBO" title="Permalink" target="_top">
+        <img src="../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      <p class="shortcomment cmt">Factory for ByteIBO.</p>
+    </li><li name="fun.opengl.ByteVBO" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
+      <a id="ByteVBO"></a>
+      <a id="ByteVBO:ByteVBO"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">object</span>
+      </span>
+      <span class="symbol">
+        <a href="ByteVBO$.html"><span class="name">ByteVBO</span></a>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../index.html#fun.opengl.package@ByteVBO" title="Permalink" target="_top">
+        <img src="../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      <p class="shortcomment cmt">Factory for ByteVBO.</p>
+    </li><li name="fun.opengl.ClampedMipmapSampler" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
+      <a id="ClampedMipmapSampler"></a>
+      <a id="ClampedMipmapSampler:ClampedMipmapSampler"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">object</span>
+      </span>
+      <span class="symbol">
+        <a href="ClampedMipmapSampler$.html"><span class="name">ClampedMipmapSampler</span></a>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../index.html#fun.opengl.package@ClampedMipmapSampler" title="Permalink" target="_top">
+        <img src="../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      
+    </li><li name="fun.opengl.Director2d" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
+      <a id="Director2d"></a>
+      <a id="Director2d:Director2d"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">object</span>
+      </span>
+      <span class="symbol">
+        <a href="Director2d$.html"><span class="name">Director2d</span></a><span class="result"> extends <span class="extype" name="scala.Serializable">Serializable</span></span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../index.html#fun.opengl.package@Director2d" title="Permalink" target="_top">
+        <img src="../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      
+    </li><li name="fun.opengl.DoubleVBO" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
+      <a id="DoubleVBO"></a>
+      <a id="DoubleVBO:DoubleVBO"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">object</span>
+      </span>
+      <span class="symbol">
+        <a href="DoubleVBO$.html"><span class="name">DoubleVBO</span></a>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../index.html#fun.opengl.package@DoubleVBO" title="Permalink" target="_top">
+        <img src="../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      <p class="shortcomment cmt">Factory for DoubleVBO.</p>
+    </li><li name="fun.opengl.FloatVBO" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
+      <a id="FloatVBO"></a>
+      <a id="FloatVBO:FloatVBO"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">object</span>
+      </span>
+      <span class="symbol">
+        <a href="FloatVBO$.html"><span class="name">FloatVBO</span></a>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../index.html#fun.opengl.package@FloatVBO" title="Permalink" target="_top">
+        <img src="../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      <p class="shortcomment cmt">Factory for FloatVBO.</p>
+    </li><li name="fun.opengl.FontGlyph" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
+      <a id="FontGlyph"></a>
+      <a id="FontGlyph:FontGlyph"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">object</span>
+      </span>
+      <span class="symbol">
+        <a href="FontGlyph$.html"><span class="name">FontGlyph</span></a><span class="result"> extends <span class="extype" name="scala.Serializable">Serializable</span></span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../index.html#fun.opengl.package@FontGlyph" title="Permalink" target="_top">
+        <img src="../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      
+    </li><li name="fun.opengl.Fragment" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
+      <a id="Fragment"></a>
+      <a id="Fragment:Fragment"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">object</span>
+      </span>
+      <span class="symbol">
+        <a href="Fragment$.html"><span class="name">Fragment</span></a><span class="result"> extends <a href="ShaderType.html" class="extype" name="fun.opengl.ShaderType">ShaderType</a> with <span class="extype" name="scala.Product">Product</span> with <span class="extype" name="scala.Serializable">Serializable</span></span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../index.html#fun.opengl.package@Fragment" title="Permalink" target="_top">
+        <img src="../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      
+    </li><li name="fun.opengl.GLUtil" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
+      <a id="GLUtil"></a>
+      <a id="GLUtil:GLUtil"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">object</span>
+      </span>
+      <span class="symbol">
+        <a href="GLUtil$.html"><span class="name">GLUtil</span></a><span class="result"> extends <a href="../util/Logging.html" class="extype" name="fun.util.Logging">Logging</a></span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../index.html#fun.opengl.package@GLUtil" title="Permalink" target="_top">
+        <img src="../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      
+    </li><li name="fun.opengl.Geometry" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
+      <a id="Geometry"></a>
+      <a id="Geometry:Geometry"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">object</span>
+      </span>
+      <span class="symbol">
+        <a href="Geometry$.html"><span class="name">Geometry</span></a><span class="result"> extends <a href="ShaderType.html" class="extype" name="fun.opengl.ShaderType">ShaderType</a> with <span class="extype" name="scala.Product">Product</span> with <span class="extype" name="scala.Serializable">Serializable</span></span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../index.html#fun.opengl.package@Geometry" title="Permalink" target="_top">
+        <img src="../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      
+    </li><li name="fun.opengl.Input" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
+      <a id="Input"></a>
+      <a id="Input:Input"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">object</span>
+      </span>
+      <span class="symbol">
+        <a href="Input$.html"><span class="name">Input</span></a><span class="result"> extends <span class="extype" name="scala.Serializable">Serializable</span></span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../index.html#fun.opengl.package@Input" title="Permalink" target="_top">
+        <img src="../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      
+    </li><li name="fun.opengl.IntIBO" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
+      <a id="IntIBO"></a>
+      <a id="IntIBO:IntIBO"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">object</span>
+      </span>
+      <span class="symbol">
+        <a href="IntIBO$.html"><span class="name">IntIBO</span></a>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../index.html#fun.opengl.package@IntIBO" title="Permalink" target="_top">
+        <img src="../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      <p class="shortcomment cmt">Factory for IntIBO.</p>
+    </li><li name="fun.opengl.IntVBO" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
+      <a id="IntVBO"></a>
+      <a id="IntVBO:IntVBO"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">object</span>
+      </span>
+      <span class="symbol">
+        <a href="IntVBO$.html"><span class="name">IntVBO</span></a>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../index.html#fun.opengl.package@IntVBO" title="Permalink" target="_top">
+        <img src="../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      <p class="shortcomment cmt">Factory for IntVBO.</p>
+    </li><li name="fun.opengl.KeyboardEvent" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
+      <a id="KeyboardEvent"></a>
+      <a id="KeyboardEvent:KeyboardEvent"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">object</span>
+      </span>
+      <span class="symbol">
+        <a href="KeyboardEvent$.html"><span class="name">KeyboardEvent</span></a><span class="result"> extends <span class="extype" name="scala.Serializable">Serializable</span></span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../index.html#fun.opengl.package@KeyboardEvent" title="Permalink" target="_top">
+        <img src="../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      
+    </li><li name="fun.opengl.Material" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
+      <a id="Material"></a>
+      <a id="Material:Material"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">object</span>
+      </span>
+      <span class="symbol">
+        <a href="Material$.html"><span class="name">Material</span></a>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../index.html#fun.opengl.package@Material" title="Permalink" target="_top">
+        <img src="../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      
+    </li><li name="fun.opengl.MipmapSampler" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
+      <a id="MipmapSampler"></a>
+      <a id="MipmapSampler:MipmapSampler"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">object</span>
+      </span>
+      <span class="symbol">
+        <a href="MipmapSampler$.html"><span class="name">MipmapSampler</span></a>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../index.html#fun.opengl.package@MipmapSampler" title="Permalink" target="_top">
+        <img src="../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      
+    </li><li name="fun.opengl.MouseBindings" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
+      <a id="MouseBindings"></a>
+      <a id="MouseBindings:MouseBindings"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">object</span>
+      </span>
+      <span class="symbol">
+        <a href="MouseBindings$.html"><span class="name">MouseBindings</span></a>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../index.html#fun.opengl.package@MouseBindings" title="Permalink" target="_top">
+        <img src="../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      <p class="shortcomment cmt">Which physical buttons are bound to logical ones.</p>
+    </li><li name="fun.opengl.OrthoCamera" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
+      <a id="OrthoCamera"></a>
+      <a id="OrthoCamera:OrthoCamera"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">object</span>
+      </span>
+      <span class="symbol">
+        <a href="OrthoCamera$.html"><span class="name">OrthoCamera</span></a>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../index.html#fun.opengl.package@OrthoCamera" title="Permalink" target="_top">
+        <img src="../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      <p class="shortcomment cmt">Factory for OrthoCamera</p>
+    </li><li name="fun.opengl.PaletteTexture" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
+      <a id="PaletteTexture"></a>
+      <a id="PaletteTexture:PaletteTexture"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">object</span>
+      </span>
+      <span class="symbol">
+        <a href="PaletteTexture$.html"><span class="name">PaletteTexture</span></a>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../index.html#fun.opengl.package@PaletteTexture" title="Permalink" target="_top">
+        <img src="../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      
+    </li><li name="fun.opengl.PerspCamera" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
+      <a id="PerspCamera"></a>
+      <a id="PerspCamera:PerspCamera"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">object</span>
+      </span>
+      <span class="symbol">
+        <a href="PerspCamera$.html"><span class="name">PerspCamera</span></a>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../index.html#fun.opengl.package@PerspCamera" title="Permalink" target="_top">
+        <img src="../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      <p class="shortcomment cmt">Factory for PerspCamera</p>
+    </li><li name="fun.opengl.Shader" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
+      <a id="Shader"></a>
+      <a id="Shader:Shader"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">object</span>
+      </span>
+      <span class="symbol">
+        <a href="Shader$.html"><span class="name">Shader</span></a>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../index.html#fun.opengl.package@Shader" title="Permalink" target="_top">
+        <img src="../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      <p class="shortcomment cmt">Factory for Shader.</p>
+    </li><li name="fun.opengl.ShaderProgram" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
+      <a id="ShaderProgram"></a>
+      <a id="ShaderProgram:ShaderProgram"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">object</span>
+      </span>
+      <span class="symbol">
+        <a href="ShaderProgram$.html"><span class="name">ShaderProgram</span></a>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../index.html#fun.opengl.package@ShaderProgram" title="Permalink" target="_top">
+        <img src="../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      <p class="shortcomment cmt">Factory for ShaderProgram.</p>
+    </li><li name="fun.opengl.ShortIBO" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
+      <a id="ShortIBO"></a>
+      <a id="ShortIBO:ShortIBO"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">object</span>
+      </span>
+      <span class="symbol">
+        <a href="ShortIBO$.html"><span class="name">ShortIBO</span></a>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../index.html#fun.opengl.package@ShortIBO" title="Permalink" target="_top">
+        <img src="../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      <p class="shortcomment cmt">Factory for ShortIBO.</p>
+    </li><li name="fun.opengl.ShortVBO" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
+      <a id="ShortVBO"></a>
+      <a id="ShortVBO:ShortVBO"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">object</span>
+      </span>
+      <span class="symbol">
+        <a href="ShortVBO$.html"><span class="name">ShortVBO</span></a>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../index.html#fun.opengl.package@ShortVBO" title="Permalink" target="_top">
+        <img src="../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      <p class="shortcomment cmt">Factory for ShortVBO.</p>
+    </li><li name="fun.opengl.TestTexture2D" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
+      <a id="TestTexture2D"></a>
+      <a id="TestTexture2D:TestTexture2D"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">object</span>
+      </span>
+      <span class="symbol">
+        <a href="TestTexture2D$.html"><span class="name">TestTexture2D</span></a>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../index.html#fun.opengl.package@TestTexture2D" title="Permalink" target="_top">
+        <img src="../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      
+    </li><li name="fun.opengl.Texture1D" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
+      <a id="Texture1D"></a>
+      <a id="Texture1D:Texture1D"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">object</span>
+      </span>
+      <span class="symbol">
+        <a href="Texture1D$.html"><span class="name">Texture1D</span></a>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../index.html#fun.opengl.package@Texture1D" title="Permalink" target="_top">
+        <img src="../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      
+    </li><li name="fun.opengl.Texture2D" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
+      <a id="Texture2D"></a>
+      <a id="Texture2D:Texture2D"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">object</span>
+      </span>
+      <span class="symbol">
+        <a href="Texture2D$.html"><span class="name">Texture2D</span></a>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../index.html#fun.opengl.package@Texture2D" title="Permalink" target="_top">
+        <img src="../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      
+    </li><li name="fun.opengl.TextureMgr" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
+      <a id="TextureMgr"></a>
+      <a id="TextureMgr:TextureMgr"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">object</span>
+      </span>
+      <span class="symbol">
+        <a href="TextureMgr$.html"><span class="name">TextureMgr</span></a>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../index.html#fun.opengl.package@TextureMgr" title="Permalink" target="_top">
+        <img src="../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      <p class="shortcomment cmt">A central manager of textures, samplers and their bindings to texture units.</p>
+    </li><li name="fun.opengl.TextureObject" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
+      <a id="TextureObject"></a>
+      <a id="TextureObject:TextureObject"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">object</span>
+      </span>
+      <span class="symbol">
+        <a href="TextureObject$.html"><span class="name">TextureObject</span></a>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../index.html#fun.opengl.package@TextureObject" title="Permalink" target="_top">
+        <img src="../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      <p class="shortcomment cmt">General helper methods for textures.</p>
+    </li><li name="fun.opengl.TimingStats" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
+      <a id="TimingStats"></a>
+      <a id="TimingStats:TimingStats"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">object</span>
+      </span>
+      <span class="symbol">
+        <a href="TimingStats$.html"><span class="name">TimingStats</span></a>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../index.html#fun.opengl.package@TimingStats" title="Permalink" target="_top">
+        <img src="../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      <p class="shortcomment cmt">Factory for TimingStats.</p>
+    </li><li name="fun.opengl.VectorFontTextures" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
+      <a id="VectorFontTextures"></a>
+      <a id="VectorFontTextures:VectorFontTextures"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">object</span>
+      </span>
+      <span class="symbol">
+        <a href="VectorFontTextures$.html"><span class="name">VectorFontTextures</span></a><span class="result"> extends <a href="../util/Logging.html" class="extype" name="fun.util.Logging">Logging</a></span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../index.html#fun.opengl.package@VectorFontTextures" title="Permalink" target="_top">
+        <img src="../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      <p class="shortcomment cmt">A factory for TexFont.</p>
+    </li><li name="fun.opengl.VectorSampler" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
+      <a id="VectorSampler"></a>
+      <a id="VectorSampler:VectorSampler"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">object</span>
+      </span>
+      <span class="symbol">
+        <a href="VectorSampler$.html"><span class="name">VectorSampler</span></a>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../index.html#fun.opengl.package@VectorSampler" title="Permalink" target="_top">
+        <img src="../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      
+    </li><li name="fun.opengl.VectorTexture" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
+      <a id="VectorTexture"></a>
+      <a id="VectorTexture:VectorTexture"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">object</span>
+      </span>
+      <span class="symbol">
+        <a href="VectorTexture$.html"><span class="name">VectorTexture</span></a>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../index.html#fun.opengl.package@VectorTexture" title="Permalink" target="_top">
+        <img src="../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      
+    </li><li name="fun.opengl.VectorTexture2D" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
+      <a id="VectorTexture2D"></a>
+      <a id="VectorTexture2D:VectorTexture2D"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">object</span>
+      </span>
+      <span class="symbol">
+        <a href="VectorTexture2D$.html"><span class="name">VectorTexture2D</span></a>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../index.html#fun.opengl.package@VectorTexture2D" title="Permalink" target="_top">
+        <img src="../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      
+    </li><li name="fun.opengl.VectorTexture2DArray" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
+      <a id="VectorTexture2DArray"></a>
+      <a id="VectorTexture2DArray:VectorTexture2DArray"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">object</span>
+      </span>
+      <span class="symbol">
+        <a href="VectorTexture2DArray$.html"><span class="name">VectorTexture2DArray</span></a>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../index.html#fun.opengl.package@VectorTexture2DArray" title="Permalink" target="_top">
+        <img src="../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      
+    </li><li name="fun.opengl.Vertex" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
+      <a id="Vertex"></a>
+      <a id="Vertex:Vertex"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">object</span>
+      </span>
+      <span class="symbol">
+        <a href="Vertex$.html"><span class="name">Vertex</span></a><span class="result"> extends <a href="ShaderType.html" class="extype" name="fun.opengl.ShaderType">ShaderType</a> with <span class="extype" name="scala.Product">Product</span> with <span class="extype" name="scala.Serializable">Serializable</span></span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../index.html#fun.opengl.package@Vertex" title="Permalink" target="_top">
+        <img src="../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      
+    </li><li name="fun.opengl.VertexArrayObject" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
+      <a id="VertexArrayObject"></a>
+      <a id="VertexArrayObject:VertexArrayObject"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">object</span>
+      </span>
+      <span class="symbol">
+        <a href="VertexArrayObject$.html"><span class="name">VertexArrayObject</span></a>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../index.html#fun.opengl.package@VertexArrayObject" title="Permalink" target="_top">
+        <img src="../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      <p class="shortcomment cmt">Factory for VertexArrayObject</p>
+    </li><li name="fun.opengl.VideoSampler" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
+      <a id="VideoSampler"></a>
+      <a id="VideoSampler:VideoSampler"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">object</span>
+      </span>
+      <span class="symbol">
+        <a href="VideoSampler$.html"><span class="name">VideoSampler</span></a>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../index.html#fun.opengl.package@VideoSampler" title="Permalink" target="_top">
+        <img src="../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      
+    </li><li name="fun.opengl.VideoTexture" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
+      <a id="VideoTexture"></a>
+      <a id="VideoTexture:VideoTexture"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">object</span>
+      </span>
+      <span class="symbol">
+        <a href="VideoTexture$.html"><span class="name">VideoTexture</span></a>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../index.html#fun.opengl.package@VideoTexture" title="Permalink" target="_top">
+        <img src="../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      
+    </li><li name="fun.opengl.ZoomCamera" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
+      <a id="ZoomCamera"></a>
+      <a id="ZoomCamera:ZoomCamera"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">object</span>
+      </span>
+      <span class="symbol">
+        <a href="ZoomCamera$.html"><span class="name">ZoomCamera</span></a><span class="result"> extends <span class="extype" name="scala.Serializable">Serializable</span></span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../index.html#fun.opengl.package@ZoomCamera" title="Permalink" target="_top">
+        <img src="../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      <p class="shortcomment cmt">Companion object for ZoomCamera.</p>
+    </li></ol>
+            </div>
+
+        
+
+        
+        </div>
+
+        <div id="inheritedMembers">
+        
+        
+        </div>
+
+        <div id="groupedMembers">
+        <div class="group" name="Ungrouped">
+              <h3>Ungrouped</h3>
+              
+            </div>
+        </div>
+
+      </div>
+
+      <div id="tooltip"></div>
+
+      <div id="footer">  </div>
+
+
+    </body>
+      </html>

@@ -1,0 +1,891 @@
+<!DOCTYPE html >
+<html>
+        <head>
+          <title>Ball3d - fun.math.Ball3d</title>
+          <meta name="description" content="Ball3d - fun.math.Ball3d" />
+          <meta name="keywords" content="Ball3d fun.math.Ball3d" />
+          <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+          
+      <link href="../../lib/template.css" media="screen" type="text/css" rel="stylesheet" />
+      <link href="../../lib/diagrams.css" media="screen" type="text/css" rel="stylesheet" id="diagrams-css" />
+      <script type="text/javascript" src="../../lib/jquery.js" id="jquery-js"></script>
+      <script type="text/javascript" src="../../lib/jquery-ui.js"></script>
+      <script type="text/javascript" src="../../lib/template.js"></script>
+      <script type="text/javascript" src="../../lib/tools.tooltip.js"></script>
+      
+      <script type="text/javascript">
+         if(top === self) {
+            var url = '../../index.html';
+            var hash = 'fun.math.Ball3d';
+            var anchor = window.location.hash;
+            var anchor_opt = '';
+            if (anchor.length >= 1)
+              anchor_opt = '@' + anchor.substring(1);
+            window.location.href = url + '#' + hash + anchor_opt;
+         }
+   	  </script>
+    
+        </head>
+        <body class="type">
+      <div id="definition">
+        <a href="Ball3d$.html" title="See companion object"><img alt="Class/Object" src="../../lib/class_to_object_big.png" /></a>
+        <p id="owner"><a href="../package.html" class="extype" name="fun">fun</a>.<a href="package.html" class="extype" name="fun.math">math</a></p>
+        <h1><a href="Ball3d$.html" title="See companion object">Ball3d</a></h1><h3><span class="morelinks"><div>
+            Related Docs:
+            <a href="Ball3d$.html" title="See companion object">object Ball3d</a>
+            | <a href="package.html" class="extype" name="fun.math">package math</a>
+          </div></span></h3><span class="permalink">
+      <a href="../../index.html#fun.math.Ball3d" title="Permalink" target="_top">
+        <img src="../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      </div>
+
+      <h4 id="signature" class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">class</span>
+      </span>
+      <span class="symbol">
+        <span class="name">Ball3d</span><span class="result"> extends <a href="BallAccess.html" class="extype" name="fun.math.BallAccess">BallAccess</a>[<span class="extype" name="scala.Double">Double</span>, <a href="Pos3d.html" class="extype" name="fun.math.Pos3d">Pos3d</a>, <a href="" class="extype" name="fun.math.Ball3d">Ball3d</a>] with <a href="BallOps.html" class="extype" name="fun.math.BallOps">BallOps</a>[<span class="extype" name="scala.Double">Double</span>, <a href="Pos3d.html" class="extype" name="fun.math.Pos3d">Pos3d</a>, <a href="BBox3d.html" class="extype" name="fun.math.BBox3d">BBox3d</a>, <a href="" class="extype" name="fun.math.Ball3d">Ball3d</a>]</span>
+      </span>
+      </h4>
+      
+          <div id="comment" class="fullcommenttop"><div class="toggleContainer block">
+          <span class="toggle">Linear Supertypes</span>
+          <div class="superTypes hiddenContent"><a href="BallOps.html" class="extype" name="fun.math.BallOps">BallOps</a>[<span class="extype" name="scala.Double">Double</span>, <a href="Pos3d.html" class="extype" name="fun.math.Pos3d">Pos3d</a>, <a href="BBox3d.html" class="extype" name="fun.math.BBox3d">BBox3d</a>, <a href="" class="extype" name="fun.math.Ball3d">Ball3d</a>], <a href="Numeric.html" class="extype" name="fun.math.Numeric">Numeric</a>, <a href="BallAccess.html" class="extype" name="fun.math.BallAccess">BallAccess</a>[<span class="extype" name="scala.Double">Double</span>, <a href="Pos3d.html" class="extype" name="fun.math.Pos3d">Pos3d</a>, <a href="" class="extype" name="fun.math.Ball3d">Ball3d</a>], <a href="Ball.html" class="extype" name="fun.math.Ball">Ball</a>, <span class="extype" name="scala.AnyRef">AnyRef</span>, <span class="extype" name="scala.Any">Any</span></div>
+        </div></div>
+        
+
+      <div id="mbrsel">
+        <div id="textfilter"><span class="pre"></span><span class="input"><input id="mbrsel-input" type="text" accesskey="/" /></span><span class="post"></span></div>
+        <div id="order">
+              <span class="filtertype">Ordering</span>
+              <ol>
+                
+                <li class="alpha in"><span>Alphabetic</span></li>
+                <li class="inherit out"><span>By inheritance</span></li>
+              </ol>
+            </div>
+        <div id="ancestors">
+                <span class="filtertype">Inherited<br />
+                </span>
+                <ol id="linearization">
+                  <li class="in" name="fun.math.Ball3d"><span>Ball3d</span></li><li class="in" name="fun.math.BallOps"><span>BallOps</span></li><li class="in" name="fun.math.Numeric"><span>Numeric</span></li><li class="in" name="fun.math.BallAccess"><span>BallAccess</span></li><li class="in" name="fun.math.Ball"><span>Ball</span></li><li class="in" name="scala.AnyRef"><span>AnyRef</span></li><li class="in" name="scala.Any"><span>Any</span></li>
+                </ol>
+              </div><div id="ancestors">
+            <span class="filtertype"></span>
+            <ol>
+              <li class="hideall out"><span>Hide All</span></li>
+              <li class="showall in"><span>Show all</span></li>
+            </ol>
+          </div>
+        <div id="visbl">
+            <span class="filtertype">Visibility</span>
+            <ol><li class="public in"><span>Public</span></li><li class="all out"><span>All</span></li></ol>
+          </div>
+      </div>
+
+      <div id="template">
+        <div id="allMembers">
+        <div id="constructors" class="members">
+              <h3>Instance Constructors</h3>
+              <ol><li name="fun.math.Ball3d#&lt;init&gt;" visbl="prt" data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="&lt;init&gt;(center:fun.math.Pos3d,radius:Double):fun.math.Ball3d"></a>
+      <a id="&lt;init&gt;:Ball3d"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">new</span>
+      </span>
+      <span class="symbol">
+        <span class="name">Ball3d</span><span class="params">(<span name="center">center: <a href="Pos3d.html" class="extype" name="fun.math.Pos3d">Pos3d</a></span>, <span name="radius">radius: <span class="extype" name="scala.Double">Double</span></span>)</span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../index.html#fun.math.Ball3d@&lt;init&gt;(center:fun.math.Pos3d,radius:Double):fun.math.Ball3d" title="Permalink" target="_top">
+        <img src="../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      <div class="fullcomment"><dl class="attributes block"> <dt>Attributes</dt><dd>protected </dd></dl></div>
+    </li></ol>
+            </div>
+
+        
+
+        
+
+        <div id="values" class="values members">
+              <h3>Value Members</h3>
+              <ol><li name="scala.AnyRef#!=" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="!=(x$1:Any):Boolean"></a>
+      <a id="!=(Any):Boolean"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier">final </span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span title="gt4s: $bang$eq" class="name">!=</span><span class="params">(<span name="arg0">arg0: <span class="extype" name="scala.Any">Any</span></span>)</span><span class="result">: <span class="extype" name="scala.Boolean">Boolean</span></span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../index.html#fun.math.Ball3d@!=(x$1:Any):Boolean" title="Permalink" target="_top">
+        <img src="../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>AnyRef → Any</dd></dl></div>
+    </li><li name="scala.AnyRef###" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="##():Int"></a>
+      <a id="##():Int"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier">final </span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span title="gt4s: $hash$hash" class="name">##</span><span class="params">()</span><span class="result">: <span class="extype" name="scala.Int">Int</span></span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../index.html#fun.math.Ball3d@##():Int" title="Permalink" target="_top">
+        <img src="../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>AnyRef → Any</dd></dl></div>
+    </li><li name="scala.AnyRef#==" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="==(x$1:Any):Boolean"></a>
+      <a id="==(Any):Boolean"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier">final </span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span title="gt4s: $eq$eq" class="name">==</span><span class="params">(<span name="arg0">arg0: <span class="extype" name="scala.Any">Any</span></span>)</span><span class="result">: <span class="extype" name="scala.Boolean">Boolean</span></span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../index.html#fun.math.Ball3d@==(x$1:Any):Boolean" title="Permalink" target="_top">
+        <img src="../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>AnyRef → Any</dd></dl></div>
+    </li><li name="fun.math.Ball3d#area" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="area:Double"></a>
+      <a id="area:Double"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">area</span><span class="result">: <span class="extype" name="scala.Double">Double</span></span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../index.html#fun.math.Ball3d@area:Double" title="Permalink" target="_top">
+        <img src="../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      <p class="shortcomment cmt">The area (or volume) enclosed.</p><div class="fullcomment"><div class="comment cmt"><p>The area (or volume) enclosed.</p></div><dl class="attributes block"> <dt>Definition Classes</dt><dd><a href="" class="extype" name="fun.math.Ball3d">Ball3d</a> → <a href="BallOps.html" class="extype" name="fun.math.BallOps">BallOps</a></dd></dl></div>
+    </li><li name="scala.Any#asInstanceOf" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="asInstanceOf[T0]:T0"></a>
+      <a id="asInstanceOf[T0]:T0"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier">final </span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">asInstanceOf</span><span class="tparams">[<span name="T0">T0</span>]</span><span class="result">: <span class="extype" name="scala.Any.asInstanceOf.T0">T0</span></span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../index.html#fun.math.Ball3d@asInstanceOf[T0]:T0" title="Permalink" target="_top">
+        <img src="../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>Any</dd></dl></div>
+    </li><li name="fun.math.Ball3d#bounds" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="bounds:fun.math.BBox3d"></a>
+      <a id="bounds:BBox3d"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">bounds</span><span class="result">: <a href="BBox3d.html" class="extype" name="fun.math.BBox3d">BBox3d</a></span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../index.html#fun.math.Ball3d@bounds:fun.math.BBox3d" title="Permalink" target="_top">
+        <img src="../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      <p class="shortcomment cmt">The bounding box containing the Ball.</p><div class="fullcomment"><div class="comment cmt"><p>The bounding box containing the Ball.</p></div><dl class="attributes block"> <dt>Definition Classes</dt><dd><a href="" class="extype" name="fun.math.Ball3d">Ball3d</a> → <a href="BallOps.html" class="extype" name="fun.math.BallOps">BallOps</a></dd></dl></div>
+    </li><li name="fun.math.Ball3d#canEqual" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="canEqual(that:Any):Boolean"></a>
+      <a id="canEqual(Any):Boolean"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">canEqual</span><span class="params">(<span name="that">that: <span class="extype" name="scala.Any">Any</span></span>)</span><span class="result">: <span class="extype" name="scala.Boolean">Boolean</span></span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../index.html#fun.math.Ball3d@canEqual(that:Any):Boolean" title="Permalink" target="_top">
+        <img src="../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      <p class="shortcomment cmt">A method that should be called from every well-designed equals method that is open
+to be overridden in a subclass.</p><div class="fullcomment"><div class="comment cmt"><p>A method that should be called from every well-designed equals method that is open
+to be overridden in a subclass.</p></div><dl class="attributes block"> <dt>Definition Classes</dt><dd><a href="" class="extype" name="fun.math.Ball3d">Ball3d</a> → <a href="BallOps.html" class="extype" name="fun.math.BallOps">BallOps</a></dd></dl></div>
+    </li><li name="fun.math.Ball3d#center" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="center:fun.math.Pos3d"></a>
+      <a id="center:Pos3d"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">val</span>
+      </span>
+      <span class="symbol">
+        <span class="name">center</span><span class="result">: <a href="Pos3d.html" class="extype" name="fun.math.Pos3d">Pos3d</a></span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../index.html#fun.math.Ball3d@center:fun.math.Pos3d" title="Permalink" target="_top">
+        <img src="../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      <p class="shortcomment cmt">The center of this Ball.</p><div class="fullcomment"><div class="comment cmt"><p>The center of this Ball.</p></div><dl class="attributes block"> <dt>Definition Classes</dt><dd><a href="" class="extype" name="fun.math.Ball3d">Ball3d</a> → <a href="BallAccess.html" class="extype" name="fun.math.BallAccess">BallAccess</a></dd></dl></div>
+    </li><li name="fun.math.Ball3d#clamp" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="clamp(p:fun.math.Pos3d):fun.math.Pos3d"></a>
+      <a id="clamp(Pos3d):Pos3d"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">clamp</span><span class="params">(<span name="p">p: <a href="Pos3d.html" class="extype" name="fun.math.Pos3d">Pos3d</a></span>)</span><span class="result">: <a href="Pos3d.html" class="extype" name="fun.math.Pos3d">Pos3d</a></span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../index.html#fun.math.Ball3d@clamp(p:fun.math.Pos3d):fun.math.Pos3d" title="Permalink" target="_top">
+        <img src="../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      <p class="shortcomment cmt">Clamp the given point to the bounds of the Ball by projecting it along the vector from the center
+until it meets the radius.</p><div class="fullcomment"><div class="comment cmt"><p>Clamp the given point to the bounds of the Ball by projecting it along the vector from the center
+until it meets the radius.
+</p></div><dl class="attributes block"> <dt>Definition Classes</dt><dd><a href="" class="extype" name="fun.math.Ball3d">Ball3d</a> → <a href="BallOps.html" class="extype" name="fun.math.BallOps">BallOps</a></dd></dl></div>
+    </li><li name="scala.AnyRef#clone" visbl="prt" data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="clone():Object"></a>
+      <a id="clone():AnyRef"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">clone</span><span class="params">()</span><span class="result">: <span class="extype" name="scala.AnyRef">AnyRef</span></span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../index.html#fun.math.Ball3d@clone():Object" title="Permalink" target="_top">
+        <img src="../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      <div class="fullcomment"><dl class="attributes block"> <dt>Attributes</dt><dd>protected[<a href="../../java$lang.html" class="extype" name="java.lang">java.lang</a>] </dd><dt>Definition Classes</dt><dd>AnyRef</dd><dt>Annotations</dt><dd>
+                <span class="name">@throws</span><span class="args">(<span>
+      
+      <span class="defval" name="classOf[java.lang.CloneNotSupportedException]">...</span>
+    </span>)</span>
+              
+        </dd></dl></div>
+    </li><li name="fun.math.Ball3d#coord" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="coord(pos:fun.math.Pos3d):fun.math.Pos3d"></a>
+      <a id="coord(Pos3d):Pos3d"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">coord</span><span class="params">(<span name="pos">pos: <a href="Pos3d.html" class="extype" name="fun.math.Pos3d">Pos3d</a></span>)</span><span class="result">: <a href="Pos3d.html" class="extype" name="fun.math.Pos3d">Pos3d</a></span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../index.html#fun.math.Ball3d@coord(pos:fun.math.Pos3d):fun.math.Pos3d" title="Permalink" target="_top">
+        <img src="../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      <p class="shortcomment cmt">The local polar coordinates of a world position.</p><div class="fullcomment"><div class="comment cmt"><p>The local polar coordinates of a world position.</p></div><dl class="attributes block"> <dt>Definition Classes</dt><dd><a href="" class="extype" name="fun.math.Ball3d">Ball3d</a> → <a href="BallOps.html" class="extype" name="fun.math.BallOps">BallOps</a></dd></dl></div>
+    </li><li name="fun.math.Ball3d#dimens" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="dimens:Int"></a>
+      <a id="dimens:Int"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">dimens</span><span class="result">: <span class="extype" name="scala.Int">Int</span></span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../index.html#fun.math.Ball3d@dimens:Int" title="Permalink" target="_top">
+        <img src="../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      <p class="shortcomment cmt">The number of dimensions.</p><div class="fullcomment"><div class="comment cmt"><p>The number of dimensions.</p></div><dl class="attributes block"> <dt>Definition Classes</dt><dd><a href="" class="extype" name="fun.math.Ball3d">Ball3d</a> → <a href="BallAccess.html" class="extype" name="fun.math.BallAccess">BallAccess</a></dd></dl></div>
+    </li><li name="scala.AnyRef#eq" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="eq(x$1:AnyRef):Boolean"></a>
+      <a id="eq(AnyRef):Boolean"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier">final </span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">eq</span><span class="params">(<span name="arg0">arg0: <span class="extype" name="scala.AnyRef">AnyRef</span></span>)</span><span class="result">: <span class="extype" name="scala.Boolean">Boolean</span></span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../index.html#fun.math.Ball3d@eq(x$1:AnyRef):Boolean" title="Permalink" target="_top">
+        <img src="../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>AnyRef</dd></dl></div>
+    </li><li name="fun.math.Ball3d#equals" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="equals(that:Any):Boolean"></a>
+      <a id="equals(Any):Boolean"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">equals</span><span class="params">(<span name="that">that: <span class="extype" name="scala.Any">Any</span></span>)</span><span class="result">: <span class="extype" name="scala.Boolean">Boolean</span></span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../index.html#fun.math.Ball3d@equals(that:Any):Boolean" title="Permalink" target="_top">
+        <img src="../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      <p class="shortcomment cmt">Compares this vector to the specified value for equality.</p><div class="fullcomment"><div class="comment cmt"><p>Compares this vector to the specified value for equality.</p></div><dl class="attributes block"> <dt>Definition Classes</dt><dd><a href="" class="extype" name="fun.math.Ball3d">Ball3d</a> → AnyRef → Any</dd></dl></div>
+    </li><li name="fun.math.Ball3d#equiv" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="equiv(that:fun.math.Ball3d):Boolean"></a>
+      <a id="equiv(Ball3d):Boolean"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">equiv</span><span class="params">(<span name="that">that: <a href="" class="extype" name="fun.math.Ball3d">Ball3d</a></span>)</span><span class="result">: <span class="extype" name="scala.Boolean">Boolean</span></span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../index.html#fun.math.Ball3d@equiv(that:fun.math.Ball3d):Boolean" title="Permalink" target="_top">
+        <img src="../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      <p class="shortcomment cmt">Whether another Ball's components are all within a the standard epsilon of this Ball.</p><div class="fullcomment"><div class="comment cmt"><p>Whether another Ball's components are all within a the standard epsilon of this Ball.</p></div><dl class="attributes block"> <dt>Definition Classes</dt><dd><a href="" class="extype" name="fun.math.Ball3d">Ball3d</a> → <a href="BallOps.html" class="extype" name="fun.math.BallOps">BallOps</a></dd></dl></div>
+    </li><li name="fun.math.Ball3d#equiv" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="equiv(that:fun.math.Ball3d,epsilon:Double):Boolean"></a>
+      <a id="equiv(Ball3d,Double):Boolean"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">equiv</span><span class="params">(<span name="that">that: <a href="" class="extype" name="fun.math.Ball3d">Ball3d</a></span>, <span name="epsilon">epsilon: <span class="extype" name="scala.Double">Double</span></span>)</span><span class="result">: <span class="extype" name="scala.Boolean">Boolean</span></span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../index.html#fun.math.Ball3d@equiv(that:fun.math.Ball3d,epsilon:Double):Boolean" title="Permalink" target="_top">
+        <img src="../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      <p class="shortcomment cmt">Whether another Ball's components are all within a given epsilon of this Ball.</p><div class="fullcomment"><div class="comment cmt"><p>Whether another Ball's components are all within a given epsilon of this Ball.</p></div><dl class="attributes block"> <dt>Definition Classes</dt><dd><a href="" class="extype" name="fun.math.Ball3d">Ball3d</a> → <a href="BallOps.html" class="extype" name="fun.math.BallOps">BallOps</a></dd></dl></div>
+    </li><li name="scala.AnyRef#finalize" visbl="prt" data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="finalize():Unit"></a>
+      <a id="finalize():Unit"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">finalize</span><span class="params">()</span><span class="result">: <span class="extype" name="scala.Unit">Unit</span></span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../index.html#fun.math.Ball3d@finalize():Unit" title="Permalink" target="_top">
+        <img src="../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      <div class="fullcomment"><dl class="attributes block"> <dt>Attributes</dt><dd>protected[<a href="../../java$lang.html" class="extype" name="java.lang">java.lang</a>] </dd><dt>Definition Classes</dt><dd>AnyRef</dd><dt>Annotations</dt><dd>
+                <span class="name">@throws</span><span class="args">(<span>
+      
+      <span class="symbol">classOf[java.lang.Throwable]</span>
+    </span>)</span>
+              
+        </dd></dl></div>
+    </li><li name="scala.AnyRef#getClass" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="getClass():Class[_]"></a>
+      <a id="getClass():Class[_]"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier">final </span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">getClass</span><span class="params">()</span><span class="result">: <span class="extype" name="java.lang.Class">Class</span>[_]</span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../index.html#fun.math.Ball3d@getClass():Class[_]" title="Permalink" target="_top">
+        <img src="../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>AnyRef → Any</dd></dl></div>
+    </li><li name="fun.math.Ball3d#grow" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="grow(v:Double):fun.math.Ball3d"></a>
+      <a id="grow(Double):Ball3d"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">grow</span><span class="params">(<span name="v">v: <span class="extype" name="scala.Double">Double</span></span>)</span><span class="result">: <a href="" class="extype" name="fun.math.Ball3d">Ball3d</a></span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../index.html#fun.math.Ball3d@grow(v:Double):fun.math.Ball3d" title="Permalink" target="_top">
+        <img src="../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      <p class="shortcomment cmt">Create a Ball which grows the current radius by the given amounts.</p><div class="fullcomment"><div class="comment cmt"><p>Create a Ball which grows the current radius by the given amounts.</p></div><dl class="attributes block"> <dt>Definition Classes</dt><dd><a href="" class="extype" name="fun.math.Ball3d">Ball3d</a> → <a href="BallOps.html" class="extype" name="fun.math.BallOps">BallOps</a></dd></dl></div>
+    </li><li name="fun.math.Ball3d#grow" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="grow(p:fun.math.Pos3d):fun.math.Ball3d"></a>
+      <a id="grow(Pos3d):Ball3d"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">grow</span><span class="params">(<span name="p">p: <a href="Pos3d.html" class="extype" name="fun.math.Pos3d">Pos3d</a></span>)</span><span class="result">: <a href="" class="extype" name="fun.math.Ball3d">Ball3d</a></span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../index.html#fun.math.Ball3d@grow(p:fun.math.Pos3d):fun.math.Ball3d" title="Permalink" target="_top">
+        <img src="../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      <p class="shortcomment cmt">Create a Ball which grows the current radius to contain the given position.</p><div class="fullcomment"><div class="comment cmt"><p>Create a Ball which grows the current radius to contain the given position.</p></div><dl class="attributes block"> <dt>Definition Classes</dt><dd><a href="" class="extype" name="fun.math.Ball3d">Ball3d</a> → <a href="BallOps.html" class="extype" name="fun.math.BallOps">BallOps</a></dd></dl></div>
+    </li><li name="fun.math.Ball3d#hashCode" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="hashCode():Int"></a>
+      <a id="hashCode():Int"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">hashCode</span><span class="params">()</span><span class="result">: <span class="extype" name="scala.Int">Int</span></span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../index.html#fun.math.Ball3d@hashCode():Int" title="Permalink" target="_top">
+        <img src="../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      <p class="shortcomment cmt">Returns a hash code value for the object.</p><div class="fullcomment"><div class="comment cmt"><p>Returns a hash code value for the object.</p></div><dl class="attributes block"> <dt>Definition Classes</dt><dd><a href="" class="extype" name="fun.math.Ball3d">Ball3d</a> → AnyRef → Any</dd></dl></div>
+    </li><li name="fun.math.Ball3d#intersects" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="intersects(b:fun.math.BBox3d):Boolean"></a>
+      <a id="intersects(BBox3d):Boolean"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">intersects</span><span class="params">(<span name="b">b: <a href="BBox3d.html" class="extype" name="fun.math.BBox3d">BBox3d</a></span>)</span><span class="result">: <span class="extype" name="scala.Boolean">Boolean</span></span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../index.html#fun.math.Ball3d@intersects(b:fun.math.BBox3d):Boolean" title="Permalink" target="_top">
+        <img src="../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      <p class="shortcomment cmt">Whether the given bounding box shares any volume with this Ball.</p><div class="fullcomment"><div class="comment cmt"><p>Whether the given bounding box shares any volume with this Ball.</p></div><dl class="attributes block"> <dt>Definition Classes</dt><dd><a href="" class="extype" name="fun.math.Ball3d">Ball3d</a> → <a href="BallOps.html" class="extype" name="fun.math.BallOps">BallOps</a></dd></dl></div>
+    </li><li name="fun.math.Ball3d#isInside" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="isInside(p:fun.math.Pos3d):Boolean"></a>
+      <a id="isInside(Pos3d):Boolean"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">isInside</span><span class="params">(<span name="p">p: <a href="Pos3d.html" class="extype" name="fun.math.Pos3d">Pos3d</a></span>)</span><span class="result">: <span class="extype" name="scala.Boolean">Boolean</span></span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../index.html#fun.math.Ball3d@isInside(p:fun.math.Pos3d):Boolean" title="Permalink" target="_top">
+        <img src="../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      <p class="shortcomment cmt">Whether the given point in inside of the Ball.</p><div class="fullcomment"><div class="comment cmt"><p>Whether the given point in inside of the Ball.</p></div><dl class="attributes block"> <dt>Definition Classes</dt><dd><a href="" class="extype" name="fun.math.Ball3d">Ball3d</a> → <a href="BallOps.html" class="extype" name="fun.math.BallOps">BallOps</a></dd></dl></div>
+    </li><li name="scala.Any#isInstanceOf" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="isInstanceOf[T0]:Boolean"></a>
+      <a id="isInstanceOf[T0]:Boolean"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier">final </span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">isInstanceOf</span><span class="tparams">[<span name="T0">T0</span>]</span><span class="result">: <span class="extype" name="scala.Boolean">Boolean</span></span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../index.html#fun.math.Ball3d@isInstanceOf[T0]:Boolean" title="Permalink" target="_top">
+        <img src="../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>Any</dd></dl></div>
+    </li><li name="fun.math.Ball3d#isNaN" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="isNaN:Boolean"></a>
+      <a id="isNaN:Boolean"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">isNaN</span><span class="result">: <span class="extype" name="scala.Boolean">Boolean</span></span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../index.html#fun.math.Ball3d@isNaN:Boolean" title="Permalink" target="_top">
+        <img src="../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      <p class="shortcomment cmt">Whether any components are Not-a-Number (NaN).</p><div class="fullcomment"><div class="comment cmt"><p>Whether any components are Not-a-Number (NaN).</p></div><dl class="attributes block"> <dt>Definition Classes</dt><dd><a href="" class="extype" name="fun.math.Ball3d">Ball3d</a> → <a href="Numeric.html" class="extype" name="fun.math.Numeric">Numeric</a></dd></dl></div>
+    </li><li name="scala.AnyRef#ne" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="ne(x$1:AnyRef):Boolean"></a>
+      <a id="ne(AnyRef):Boolean"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier">final </span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">ne</span><span class="params">(<span name="arg0">arg0: <span class="extype" name="scala.AnyRef">AnyRef</span></span>)</span><span class="result">: <span class="extype" name="scala.Boolean">Boolean</span></span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../index.html#fun.math.Ball3d@ne(x$1:AnyRef):Boolean" title="Permalink" target="_top">
+        <img src="../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>AnyRef</dd></dl></div>
+    </li><li name="scala.AnyRef#notify" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="notify():Unit"></a>
+      <a id="notify():Unit"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier">final </span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">notify</span><span class="params">()</span><span class="result">: <span class="extype" name="scala.Unit">Unit</span></span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../index.html#fun.math.Ball3d@notify():Unit" title="Permalink" target="_top">
+        <img src="../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>AnyRef</dd></dl></div>
+    </li><li name="scala.AnyRef#notifyAll" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="notifyAll():Unit"></a>
+      <a id="notifyAll():Unit"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier">final </span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">notifyAll</span><span class="params">()</span><span class="result">: <span class="extype" name="scala.Unit">Unit</span></span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../index.html#fun.math.Ball3d@notifyAll():Unit" title="Permalink" target="_top">
+        <img src="../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>AnyRef</dd></dl></div>
+    </li><li name="fun.math.Ball3d#position" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="position(coord:fun.math.Pos3d):fun.math.Pos3d"></a>
+      <a id="position(Pos3d):Pos3d"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">position</span><span class="params">(<span name="coord">coord: <a href="Pos3d.html" class="extype" name="fun.math.Pos3d">Pos3d</a></span>)</span><span class="result">: <a href="Pos3d.html" class="extype" name="fun.math.Pos3d">Pos3d</a></span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../index.html#fun.math.Ball3d@position(coord:fun.math.Pos3d):fun.math.Pos3d" title="Permalink" target="_top">
+        <img src="../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      <p class="shortcomment cmt">The world position of a local polar coordinate.</p><div class="fullcomment"><div class="comment cmt"><p>The world position of a local polar coordinate.</p></div><dl class="attributes block"> <dt>Definition Classes</dt><dd><a href="" class="extype" name="fun.math.Ball3d">Ball3d</a> → <a href="BallOps.html" class="extype" name="fun.math.BallOps">BallOps</a></dd></dl></div>
+    </li><li name="fun.math.Ball3d#radius" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="radius:Double"></a>
+      <a id="radius:Double"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">val</span>
+      </span>
+      <span class="symbol">
+        <span class="name">radius</span><span class="result">: <span class="extype" name="scala.Double">Double</span></span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../index.html#fun.math.Ball3d@radius:Double" title="Permalink" target="_top">
+        <img src="../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      <p class="shortcomment cmt">The radius of this Ball.</p><div class="fullcomment"><div class="comment cmt"><p>The radius of this Ball.</p></div><dl class="attributes block"> <dt>Definition Classes</dt><dd><a href="" class="extype" name="fun.math.Ball3d">Ball3d</a> → <a href="BallAccess.html" class="extype" name="fun.math.BallAccess">BallAccess</a></dd></dl></div>
+    </li><li name="fun.math.Ball3d#randomPos" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="randomPos(gen:scala.util.Random):fun.math.Pos3d"></a>
+      <a id="randomPos(Random):Pos3d"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">randomPos</span><span class="params">(<span name="gen">gen: <span class="extype" name="scala.util.Random">Random</span></span>)</span><span class="result">: <a href="Pos3d.html" class="extype" name="fun.math.Pos3d">Pos3d</a></span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../index.html#fun.math.Ball3d@randomPos(gen:scala.util.Random):fun.math.Pos3d" title="Permalink" target="_top">
+        <img src="../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      <p class="shortcomment cmt">Generate a random position inside the Ball.</p><div class="fullcomment"><div class="comment cmt"><p>Generate a random position inside the Ball.</p></div><dl class="paramcmts block"><dt class="param">gen</dt><dd class="cmt"><p>The random number generator to use.</p></dd></dl><dl class="attributes block"> <dt>Definition Classes</dt><dd><a href="" class="extype" name="fun.math.Ball3d">Ball3d</a> → <a href="BallOps.html" class="extype" name="fun.math.BallOps">BallOps</a></dd></dl></div>
+    </li><li name="fun.math.Ball3d#randomPos" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="randomPos():fun.math.Pos3d"></a>
+      <a id="randomPos():Pos3d"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">randomPos</span><span class="params">()</span><span class="result">: <a href="Pos3d.html" class="extype" name="fun.math.Pos3d">Pos3d</a></span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../index.html#fun.math.Ball3d@randomPos():fun.math.Pos3d" title="Permalink" target="_top">
+        <img src="../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      <p class="shortcomment cmt">Generate a random position inside the Ball.</p><div class="fullcomment"><div class="comment cmt"><p>Generate a random position inside the Ball.</p></div><dl class="attributes block"> <dt>Definition Classes</dt><dd><a href="" class="extype" name="fun.math.Ball3d">Ball3d</a> → <a href="BallOps.html" class="extype" name="fun.math.BallOps">BallOps</a></dd></dl></div>
+    </li><li name="scala.AnyRef#synchronized" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="synchronized[T0](x$1:=&gt;T0):T0"></a>
+      <a id="synchronized[T0](⇒T0):T0"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier">final </span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">synchronized</span><span class="tparams">[<span name="T0">T0</span>]</span><span class="params">(<span name="arg0">arg0: ⇒ <span class="extype" name="java.lang.AnyRef.synchronized.T0">T0</span></span>)</span><span class="result">: <span class="extype" name="java.lang.AnyRef.synchronized.T0">T0</span></span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../index.html#fun.math.Ball3d@synchronized[T0](x$1:=&gt;T0):T0" title="Permalink" target="_top">
+        <img src="../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>AnyRef</dd></dl></div>
+    </li><li name="fun.math.Ball3d#toBall2d" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="toBall2d:fun.math.Ball2d"></a>
+      <a id="toBall2d:Ball2d"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">toBall2d</span><span class="result">: <a href="Ball2d.html" class="extype" name="fun.math.Ball2d">Ball2d</a></span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../index.html#fun.math.Ball3d@toBall2d:fun.math.Ball2d" title="Permalink" target="_top">
+        <img src="../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      <p class="shortcomment cmt">Convert to a 2-dimensional Ball (ring).</p><div class="fullcomment"><div class="comment cmt"><p>Convert to a 2-dimensional Ball (ring).</p></div><dl class="attributes block"> <dt>Definition Classes</dt><dd><a href="" class="extype" name="fun.math.Ball3d">Ball3d</a> → <a href="BallOps.html" class="extype" name="fun.math.BallOps">BallOps</a></dd></dl></div>
+    </li><li name="fun.math.Ball3d#toBall3d" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="toBall3d:fun.math.Ball3d"></a>
+      <a id="toBall3d:Ball3d"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">toBall3d</span><span class="result">: <a href="" class="extype" name="fun.math.Ball3d">Ball3d</a></span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../index.html#fun.math.Ball3d@toBall3d:fun.math.Ball3d" title="Permalink" target="_top">
+        <img src="../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      <p class="shortcomment cmt">Convert to a 3-dimensional Ball (spherical shell).</p><div class="fullcomment"><div class="comment cmt"><p>Convert to a 3-dimensional Ball (spherical shell).</p></div><dl class="attributes block"> <dt>Definition Classes</dt><dd><a href="" class="extype" name="fun.math.Ball3d">Ball3d</a> → <a href="BallOps.html" class="extype" name="fun.math.BallOps">BallOps</a></dd></dl></div>
+    </li><li name="scala.AnyRef#toString" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="toString():String"></a>
+      <a id="toString():String"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">toString</span><span class="params">()</span><span class="result">: <span class="extype" name="java.lang.String">String</span></span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../index.html#fun.math.Ball3d@toString():String" title="Permalink" target="_top">
+        <img src="../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>AnyRef → Any</dd></dl></div>
+    </li><li name="fun.math.Ball3d#updateCenter" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="updateCenter(p:fun.math.Pos3d):fun.math.Ball3d"></a>
+      <a id="updateCenter(Pos3d):Ball3d"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">updateCenter</span><span class="params">(<span name="p">p: <a href="Pos3d.html" class="extype" name="fun.math.Pos3d">Pos3d</a></span>)</span><span class="result">: <a href="" class="extype" name="fun.math.Ball3d">Ball3d</a></span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../index.html#fun.math.Ball3d@updateCenter(p:fun.math.Pos3d):fun.math.Ball3d" title="Permalink" target="_top">
+        <img src="../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      <p class="shortcomment cmt">A copy of this Ball in which center has been replaced with the given position.</p><div class="fullcomment"><div class="comment cmt"><p>A copy of this Ball in which center has been replaced with the given position.</p></div><dl class="attributes block"> <dt>Definition Classes</dt><dd><a href="" class="extype" name="fun.math.Ball3d">Ball3d</a> → <a href="BallAccess.html" class="extype" name="fun.math.BallAccess">BallAccess</a></dd></dl></div>
+    </li><li name="fun.math.Ball3d#updateRadius" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="updateRadius(r:Double):fun.math.Ball3d"></a>
+      <a id="updateRadius(Double):Ball3d"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">updateRadius</span><span class="params">(<span name="r">r: <span class="extype" name="scala.Double">Double</span></span>)</span><span class="result">: <a href="" class="extype" name="fun.math.Ball3d">Ball3d</a></span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../index.html#fun.math.Ball3d@updateRadius(r:Double):fun.math.Ball3d" title="Permalink" target="_top">
+        <img src="../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      <p class="shortcomment cmt">A copy of this Ball in which the radius has been replaced with the given radius.</p><div class="fullcomment"><div class="comment cmt"><p>A copy of this Ball in which the radius has been replaced with the given radius.</p></div><dl class="attributes block"> <dt>Definition Classes</dt><dd><a href="" class="extype" name="fun.math.Ball3d">Ball3d</a> → <a href="BallAccess.html" class="extype" name="fun.math.BallAccess">BallAccess</a></dd></dl></div>
+    </li><li name="scala.AnyRef#wait" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="wait():Unit"></a>
+      <a id="wait():Unit"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier">final </span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">wait</span><span class="params">()</span><span class="result">: <span class="extype" name="scala.Unit">Unit</span></span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../index.html#fun.math.Ball3d@wait():Unit" title="Permalink" target="_top">
+        <img src="../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>AnyRef</dd><dt>Annotations</dt><dd>
+                <span class="name">@throws</span><span class="args">(<span>
+      
+      <span class="defval" name="classOf[java.lang.InterruptedException]">...</span>
+    </span>)</span>
+              
+        </dd></dl></div>
+    </li><li name="scala.AnyRef#wait" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="wait(x$1:Long,x$2:Int):Unit"></a>
+      <a id="wait(Long,Int):Unit"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier">final </span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">wait</span><span class="params">(<span name="arg0">arg0: <span class="extype" name="scala.Long">Long</span></span>, <span name="arg1">arg1: <span class="extype" name="scala.Int">Int</span></span>)</span><span class="result">: <span class="extype" name="scala.Unit">Unit</span></span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../index.html#fun.math.Ball3d@wait(x$1:Long,x$2:Int):Unit" title="Permalink" target="_top">
+        <img src="../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>AnyRef</dd><dt>Annotations</dt><dd>
+                <span class="name">@throws</span><span class="args">(<span>
+      
+      <span class="defval" name="classOf[java.lang.InterruptedException]">...</span>
+    </span>)</span>
+              
+        </dd></dl></div>
+    </li><li name="scala.AnyRef#wait" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="wait(x$1:Long):Unit"></a>
+      <a id="wait(Long):Unit"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier">final </span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">wait</span><span class="params">(<span name="arg0">arg0: <span class="extype" name="scala.Long">Long</span></span>)</span><span class="result">: <span class="extype" name="scala.Unit">Unit</span></span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../index.html#fun.math.Ball3d@wait(x$1:Long):Unit" title="Permalink" target="_top">
+        <img src="../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>AnyRef</dd><dt>Annotations</dt><dd>
+                <span class="name">@throws</span><span class="args">(<span>
+      
+      <span class="defval" name="classOf[java.lang.InterruptedException]">...</span>
+    </span>)</span>
+              
+        </dd></dl></div>
+    </li></ol>
+            </div>
+
+        
+
+        
+        </div>
+
+        <div id="inheritedMembers">
+        <div class="parent" name="fun.math.BallOps">
+              <h3>Inherited from <a href="BallOps.html" class="extype" name="fun.math.BallOps">BallOps</a>[<span class="extype" name="scala.Double">Double</span>, <a href="Pos3d.html" class="extype" name="fun.math.Pos3d">Pos3d</a>, <a href="BBox3d.html" class="extype" name="fun.math.BBox3d">BBox3d</a>, <a href="" class="extype" name="fun.math.Ball3d">Ball3d</a>]</h3>
+            </div><div class="parent" name="fun.math.Numeric">
+              <h3>Inherited from <a href="Numeric.html" class="extype" name="fun.math.Numeric">Numeric</a></h3>
+            </div><div class="parent" name="fun.math.BallAccess">
+              <h3>Inherited from <a href="BallAccess.html" class="extype" name="fun.math.BallAccess">BallAccess</a>[<span class="extype" name="scala.Double">Double</span>, <a href="Pos3d.html" class="extype" name="fun.math.Pos3d">Pos3d</a>, <a href="" class="extype" name="fun.math.Ball3d">Ball3d</a>]</h3>
+            </div><div class="parent" name="fun.math.Ball">
+              <h3>Inherited from <a href="Ball.html" class="extype" name="fun.math.Ball">Ball</a></h3>
+            </div><div class="parent" name="scala.AnyRef">
+              <h3>Inherited from <span class="extype" name="scala.AnyRef">AnyRef</span></h3>
+            </div><div class="parent" name="scala.Any">
+              <h3>Inherited from <span class="extype" name="scala.Any">Any</span></h3>
+            </div>
+        
+        </div>
+
+        <div id="groupedMembers">
+        <div class="group" name="Ungrouped">
+              <h3>Ungrouped</h3>
+              
+            </div>
+        </div>
+
+      </div>
+
+      <div id="tooltip"></div>
+
+      <div id="footer">  </div>
+
+
+    </body>
+      </html>

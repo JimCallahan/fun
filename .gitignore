@@ -1,0 +1,12 @@
+.cache
+.cache-main
+.cache-test
+.classpath
+.project
+.settings/
+.tmpBin/
+.worksheet/
+project/project/
+project/target/
+target/
+/bin/

@@ -1,0 +1,1458 @@
+<!DOCTYPE html >
+<html>
+        <head>
+          <title>Space1d - fun.math.Space1d</title>
+          <meta name="description" content="Space1d - fun.math.Space1d" />
+          <meta name="keywords" content="Space1d fun.math.Space1d" />
+          <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+          
+      <link href="../../lib/template.css" media="screen" type="text/css" rel="stylesheet" />
+      <link href="../../lib/diagrams.css" media="screen" type="text/css" rel="stylesheet" id="diagrams-css" />
+      <script type="text/javascript" src="../../lib/jquery.js" id="jquery-js"></script>
+      <script type="text/javascript" src="../../lib/jquery-ui.js"></script>
+      <script type="text/javascript" src="../../lib/template.js"></script>
+      <script type="text/javascript" src="../../lib/tools.tooltip.js"></script>
+      
+      <script type="text/javascript">
+         if(top === self) {
+            var url = '../../index.html';
+            var hash = 'fun.math.Space1d';
+            var anchor = window.location.hash;
+            var anchor_opt = '';
+            if (anchor.length >= 1)
+              anchor_opt = '@' + anchor.substring(1);
+            window.location.href = url + '#' + hash + anchor_opt;
+         }
+   	  </script>
+    
+        </head>
+        <body class="type">
+      <div id="definition">
+        <a href="Space1d$.html" title="See companion object"><img alt="Class/Object" src="../../lib/class_to_object_big.png" /></a>
+        <p id="owner"><a href="../package.html" class="extype" name="fun">fun</a>.<a href="package.html" class="extype" name="fun.math">math</a></p>
+        <h1><a href="Space1d$.html" title="See companion object">Space1d</a></h1><h3><span class="morelinks"><div>
+            Related Docs:
+            <a href="Space1d$.html" title="See companion object">object Space1d</a>
+            | <a href="package.html" class="extype" name="fun.math">package math</a>
+          </div></span></h3><span class="permalink">
+      <a href="../../index.html#fun.math.Space1d" title="Permalink" target="_top">
+        <img src="../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      </div>
+
+      <h4 id="signature" class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">class</span>
+      </span>
+      <span class="symbol">
+        <span class="name">Space1d</span><span class="result"> extends <a href="BBox1d.html" class="extype" name="fun.math.BBox1d">BBox1d</a> with <a href="SpaceAccess.html" class="extype" name="fun.math.SpaceAccess">SpaceAccess</a>[<a href="Pos1d.html" class="extype" name="fun.math.Pos1d">Pos1d</a>, <a href="Index1i.html" class="extype" name="fun.math.Index1i">Index1i</a>, <a href="BBox1d.html" class="extype" name="fun.math.BBox1d">BBox1d</a>] with <a href="SpaceOps.html" class="extype" name="fun.math.SpaceOps">SpaceOps</a>[<a href="Pos1d.html" class="extype" name="fun.math.Pos1d">Pos1d</a>, <a href="Vec1d.html" class="extype" name="fun.math.Vec1d">Vec1d</a>, <a href="Index1i.html" class="extype" name="fun.math.Index1i">Index1i</a>, <a href="BBox1d.html" class="extype" name="fun.math.BBox1d">BBox1d</a>, <a href="" class="extype" name="fun.math.Space1d">Space1d</a>]</span>
+      </span>
+      </h4>
+      
+          <div id="comment" class="fullcommenttop"><div class="toggleContainer block">
+          <span class="toggle">Linear Supertypes</span>
+          <div class="superTypes hiddenContent"><a href="SpaceOps.html" class="extype" name="fun.math.SpaceOps">SpaceOps</a>[<a href="Pos1d.html" class="extype" name="fun.math.Pos1d">Pos1d</a>, <a href="Vec1d.html" class="extype" name="fun.math.Vec1d">Vec1d</a>, <a href="Index1i.html" class="extype" name="fun.math.Index1i">Index1i</a>, <a href="BBox1d.html" class="extype" name="fun.math.BBox1d">BBox1d</a>, <a href="" class="extype" name="fun.math.Space1d">Space1d</a>], <a href="SpaceAccess.html" class="extype" name="fun.math.SpaceAccess">SpaceAccess</a>[<a href="Pos1d.html" class="extype" name="fun.math.Pos1d">Pos1d</a>, <a href="Index1i.html" class="extype" name="fun.math.Index1i">Index1i</a>, <a href="BBox1d.html" class="extype" name="fun.math.BBox1d">BBox1d</a>], <a href="Space.html" class="extype" name="fun.math.Space">Space</a>, <a href="BBox1d.html" class="extype" name="fun.math.BBox1d">BBox1d</a>, <a href="BBoxOps.html" class="extype" name="fun.math.BBoxOps">BBoxOps</a>[<span class="extype" name="scala.Double">Double</span>, <a href="Pos1d.html" class="extype" name="fun.math.Pos1d">Pos1d</a>, <a href="Vec1d.html" class="extype" name="fun.math.Vec1d">Vec1d</a>, <a href="BBox1d.html" class="extype" name="fun.math.BBox1d">BBox1d</a>], <a href="Numeric.html" class="extype" name="fun.math.Numeric">Numeric</a>, <a href="BBoxAccess.html" class="extype" name="fun.math.BBoxAccess">BBoxAccess</a>[<a href="Pos1d.html" class="extype" name="fun.math.Pos1d">Pos1d</a>, <a href="BBox1d.html" class="extype" name="fun.math.BBox1d">BBox1d</a>], <a href="BBox.html" class="extype" name="fun.math.BBox">BBox</a>, <span class="extype" name="scala.AnyRef">AnyRef</span>, <span class="extype" name="scala.Any">Any</span></div>
+        </div></div>
+        
+
+      <div id="mbrsel">
+        <div id="textfilter"><span class="pre"></span><span class="input"><input id="mbrsel-input" type="text" accesskey="/" /></span><span class="post"></span></div>
+        <div id="order">
+              <span class="filtertype">Ordering</span>
+              <ol>
+                
+                <li class="alpha in"><span>Alphabetic</span></li>
+                <li class="inherit out"><span>By inheritance</span></li>
+              </ol>
+            </div>
+        <div id="ancestors">
+                <span class="filtertype">Inherited<br />
+                </span>
+                <ol id="linearization">
+                  <li class="in" name="fun.math.Space1d"><span>Space1d</span></li><li class="in" name="fun.math.SpaceOps"><span>SpaceOps</span></li><li class="in" name="fun.math.SpaceAccess"><span>SpaceAccess</span></li><li class="in" name="fun.math.Space"><span>Space</span></li><li class="in" name="fun.math.BBox1d"><span>BBox1d</span></li><li class="in" name="fun.math.BBoxOps"><span>BBoxOps</span></li><li class="in" name="fun.math.Numeric"><span>Numeric</span></li><li class="in" name="fun.math.BBoxAccess"><span>BBoxAccess</span></li><li class="in" name="fun.math.BBox"><span>BBox</span></li><li class="in" name="scala.AnyRef"><span>AnyRef</span></li><li class="in" name="scala.Any"><span>Any</span></li>
+                </ol>
+              </div><div id="ancestors">
+            <span class="filtertype"></span>
+            <ol>
+              <li class="hideall out"><span>Hide All</span></li>
+              <li class="showall in"><span>Show all</span></li>
+            </ol>
+          </div>
+        <div id="visbl">
+            <span class="filtertype">Visibility</span>
+            <ol><li class="public in"><span>Public</span></li><li class="all out"><span>All</span></li></ol>
+          </div>
+      </div>
+
+      <div id="template">
+        <div id="allMembers">
+        
+
+        
+
+        
+
+        <div id="values" class="values members">
+              <h3>Value Members</h3>
+              <ol><li name="scala.AnyRef#!=" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="!=(x$1:Any):Boolean"></a>
+      <a id="!=(Any):Boolean"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier">final </span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span title="gt4s: $bang$eq" class="name">!=</span><span class="params">(<span name="arg0">arg0: <span class="extype" name="scala.Any">Any</span></span>)</span><span class="result">: <span class="extype" name="scala.Boolean">Boolean</span></span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../index.html#fun.math.Space1d@!=(x$1:Any):Boolean" title="Permalink" target="_top">
+        <img src="../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>AnyRef → Any</dd></dl></div>
+    </li><li name="scala.AnyRef###" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="##():Int"></a>
+      <a id="##():Int"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier">final </span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span title="gt4s: $hash$hash" class="name">##</span><span class="params">()</span><span class="result">: <span class="extype" name="scala.Int">Int</span></span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../index.html#fun.math.Space1d@##():Int" title="Permalink" target="_top">
+        <img src="../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>AnyRef → Any</dd></dl></div>
+    </li><li name="scala.AnyRef#==" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="==(x$1:Any):Boolean"></a>
+      <a id="==(Any):Boolean"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier">final </span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span title="gt4s: $eq$eq" class="name">==</span><span class="params">(<span name="arg0">arg0: <span class="extype" name="scala.Any">Any</span></span>)</span><span class="result">: <span class="extype" name="scala.Boolean">Boolean</span></span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../index.html#fun.math.Space1d@==(x$1:Any):Boolean" title="Permalink" target="_top">
+        <img src="../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>AnyRef → Any</dd></dl></div>
+    </li><li name="fun.math.BBox1d#apply" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="apply(i:Int):fun.math.Pos1d"></a>
+      <a id="apply(Int):Pos1d"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">apply</span><span class="params">(<span name="i">i: <span class="extype" name="scala.Int">Int</span></span>)</span><span class="result">: <a href="Pos1d.html" class="extype" name="fun.math.Pos1d">Pos1d</a></span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../index.html#fun.math.Space1d@apply(i:Int):fun.math.Pos1d" title="Permalink" target="_top">
+        <img src="../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      <p class="shortcomment cmt">The component identified by the given index.</p><div class="fullcomment"><div class="comment cmt"><p>The component identified by the given index.</p></div><dl class="attributes block"> <dt>Definition Classes</dt><dd><a href="BBox1d.html" class="extype" name="fun.math.BBox1d">BBox1d</a> → <a href="BBoxAccess.html" class="extype" name="fun.math.BBoxAccess">BBoxAccess</a></dd></dl></div>
+    </li><li name="fun.math.BBox1d#area" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="area:Double"></a>
+      <a id="area:Double"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">area</span><span class="result">: <span class="extype" name="scala.Double">Double</span></span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../index.html#fun.math.Space1d@area:Double" title="Permalink" target="_top">
+        <img src="../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      <p class="shortcomment cmt">The area enclosed by the bounding box.</p><div class="fullcomment"><div class="comment cmt"><p>The area enclosed by the bounding box.</p></div><dl class="attributes block"> <dt>Definition Classes</dt><dd><a href="BBox1d.html" class="extype" name="fun.math.BBox1d">BBox1d</a> → <a href="BBoxOps.html" class="extype" name="fun.math.BBoxOps">BBoxOps</a></dd></dl></div>
+    </li><li name="scala.Any#asInstanceOf" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="asInstanceOf[T0]:T0"></a>
+      <a id="asInstanceOf[T0]:T0"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier">final </span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">asInstanceOf</span><span class="tparams">[<span name="T0">T0</span>]</span><span class="result">: <span class="extype" name="scala.Any.asInstanceOf.T0">T0</span></span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../index.html#fun.math.Space1d@asInstanceOf[T0]:T0" title="Permalink" target="_top">
+        <img src="../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>Any</dd></dl></div>
+    </li><li name="fun.math.BBox1d#bmax" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="bmax:fun.math.Pos1d"></a>
+      <a id="bmax:Pos1d"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">val</span>
+      </span>
+      <span class="symbol">
+        <span class="name">bmax</span><span class="result">: <a href="Pos1d.html" class="extype" name="fun.math.Pos1d">Pos1d</a></span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../index.html#fun.math.Space1d@bmax:fun.math.Pos1d" title="Permalink" target="_top">
+        <img src="../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      <p class="shortcomment cmt">The maximum valued corner of this bounding box.</p><div class="fullcomment"><div class="comment cmt"><p>The maximum valued corner of this bounding box.</p></div><dl class="attributes block"> <dt>Definition Classes</dt><dd><a href="BBox1d.html" class="extype" name="fun.math.BBox1d">BBox1d</a> → <a href="BBoxAccess.html" class="extype" name="fun.math.BBoxAccess">BBoxAccess</a></dd></dl></div>
+    </li><li name="fun.math.BBox1d#bmin" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="bmin:fun.math.Pos1d"></a>
+      <a id="bmin:Pos1d"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">val</span>
+      </span>
+      <span class="symbol">
+        <span class="name">bmin</span><span class="result">: <a href="Pos1d.html" class="extype" name="fun.math.Pos1d">Pos1d</a></span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../index.html#fun.math.Space1d@bmin:fun.math.Pos1d" title="Permalink" target="_top">
+        <img src="../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      <p class="shortcomment cmt">The minimum valued corner of this bounding box.</p><div class="fullcomment"><div class="comment cmt"><p>The minimum valued corner of this bounding box.</p></div><dl class="attributes block"> <dt>Definition Classes</dt><dd><a href="BBox1d.html" class="extype" name="fun.math.BBox1d">BBox1d</a> → <a href="BBoxAccess.html" class="extype" name="fun.math.BBoxAccess">BBoxAccess</a></dd></dl></div>
+    </li><li name="fun.math.Space1d#canEqual" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="canEqual(that:Any):Boolean"></a>
+      <a id="canEqual(Any):Boolean"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">canEqual</span><span class="params">(<span name="that">that: <span class="extype" name="scala.Any">Any</span></span>)</span><span class="result">: <span class="extype" name="scala.Boolean">Boolean</span></span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../index.html#fun.math.Space1d@canEqual(that:Any):Boolean" title="Permalink" target="_top">
+        <img src="../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      <p class="shortcomment cmt">A method that should be called from every well-designed equals method that is open
+to be overridden in a subclass.</p><div class="fullcomment"><div class="comment cmt"><p>A method that should be called from every well-designed equals method that is open
+to be overridden in a subclass.
+</p></div><dl class="attributes block"> <dt>Definition Classes</dt><dd><a href="" class="extype" name="fun.math.Space1d">Space1d</a> → <a href="BBox1d.html" class="extype" name="fun.math.BBox1d">BBox1d</a> → <a href="BBoxOps.html" class="extype" name="fun.math.BBoxOps">BBoxOps</a></dd></dl></div>
+    </li><li name="fun.math.Space1d#cellBounds" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="cellBounds(idx:fun.math.Index1i):fun.math.BBox1d"></a>
+      <a id="cellBounds(Index1i):BBox1d"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">cellBounds</span><span class="params">(<span name="idx">idx: <a href="Index1i.html" class="extype" name="fun.math.Index1i">Index1i</a></span>)</span><span class="result">: <a href="BBox1d.html" class="extype" name="fun.math.BBox1d">BBox1d</a></span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../index.html#fun.math.Space1d@cellBounds(idx:fun.math.Index1i):fun.math.BBox1d" title="Permalink" target="_top">
+        <img src="../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      <p class="shortcomment cmt">The world space bounding box of the cell with the given index.</p><div class="fullcomment"><div class="comment cmt"><p>The world space bounding box of the cell with the given index.</p></div><dl class="attributes block"> <dt>Definition Classes</dt><dd><a href="" class="extype" name="fun.math.Space1d">Space1d</a> → <a href="SpaceOps.html" class="extype" name="fun.math.SpaceOps">SpaceOps</a></dd></dl></div>
+    </li><li name="fun.math.Space1d#cellCoords" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="cellCoords(idx:fun.math.Index1i):fun.math.BBox1d"></a>
+      <a id="cellCoords(Index1i):BBox1d"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">cellCoords</span><span class="params">(<span name="idx">idx: <a href="Index1i.html" class="extype" name="fun.math.Index1i">Index1i</a></span>)</span><span class="result">: <a href="BBox1d.html" class="extype" name="fun.math.BBox1d">BBox1d</a></span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../index.html#fun.math.Space1d@cellCoords(idx:fun.math.Index1i):fun.math.BBox1d" title="Permalink" target="_top">
+        <img src="../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      <p class="shortcomment cmt">The local coordinate bounding box of the cell with the given index.</p><div class="fullcomment"><div class="comment cmt"><p>The local coordinate bounding box of the cell with the given index.</p></div><dl class="attributes block"> <dt>Definition Classes</dt><dd><a href="" class="extype" name="fun.math.Space1d">Space1d</a> → <a href="SpaceOps.html" class="extype" name="fun.math.SpaceOps">SpaceOps</a></dd></dl></div>
+    </li><li name="fun.math.Space1d#cellSize" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="cellSize:fun.math.Vec1d"></a>
+      <a id="cellSize:Vec1d"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">cellSize</span><span class="result">: <a href="Vec1d.html" class="extype" name="fun.math.Vec1d">Vec1d</a></span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../index.html#fun.math.Space1d@cellSize:fun.math.Vec1d" title="Permalink" target="_top">
+        <img src="../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      <p class="shortcomment cmt">The size of a individual cell.</p><div class="fullcomment"><div class="comment cmt"><p>The size of a individual cell.</p></div><dl class="attributes block"> <dt>Definition Classes</dt><dd><a href="" class="extype" name="fun.math.Space1d">Space1d</a> → <a href="SpaceOps.html" class="extype" name="fun.math.SpaceOps">SpaceOps</a></dd></dl></div>
+    </li><li name="fun.math.BBox1d#center" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="center:fun.math.Pos1d"></a>
+      <a id="center:Pos1d"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">center</span><span class="result">: <a href="Pos1d.html" class="extype" name="fun.math.Pos1d">Pos1d</a></span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../index.html#fun.math.Space1d@center:fun.math.Pos1d" title="Permalink" target="_top">
+        <img src="../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      <p class="shortcomment cmt">The center of the bounding box.</p><div class="fullcomment"><div class="comment cmt"><p>The center of the bounding box.</p></div><dl class="attributes block"> <dt>Definition Classes</dt><dd><a href="BBox1d.html" class="extype" name="fun.math.BBox1d">BBox1d</a> → <a href="BBoxOps.html" class="extype" name="fun.math.BBoxOps">BBoxOps</a></dd></dl></div>
+    </li><li name="fun.math.BBox1d#clamp" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="clamp(p:fun.math.Pos1d):fun.math.Pos1d"></a>
+      <a id="clamp(Pos1d):Pos1d"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">clamp</span><span class="params">(<span name="p">p: <a href="Pos1d.html" class="extype" name="fun.math.Pos1d">Pos1d</a></span>)</span><span class="result">: <a href="Pos1d.html" class="extype" name="fun.math.Pos1d">Pos1d</a></span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../index.html#fun.math.Space1d@clamp(p:fun.math.Pos1d):fun.math.Pos1d" title="Permalink" target="_top">
+        <img src="../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      <p class="shortcomment cmt">Clamp the given point to the bounds of the box.</p><div class="fullcomment"><div class="comment cmt"><p>Clamp the given point to the bounds of the box.</p></div><dl class="attributes block"> <dt>Definition Classes</dt><dd><a href="BBox1d.html" class="extype" name="fun.math.BBox1d">BBox1d</a> → <a href="BBoxOps.html" class="extype" name="fun.math.BBoxOps">BBoxOps</a></dd></dl></div>
+    </li><li name="scala.AnyRef#clone" visbl="prt" data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="clone():Object"></a>
+      <a id="clone():AnyRef"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">clone</span><span class="params">()</span><span class="result">: <span class="extype" name="scala.AnyRef">AnyRef</span></span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../index.html#fun.math.Space1d@clone():Object" title="Permalink" target="_top">
+        <img src="../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      <div class="fullcomment"><dl class="attributes block"> <dt>Attributes</dt><dd>protected[<a href="../../java$lang.html" class="extype" name="java.lang">java.lang</a>] </dd><dt>Definition Classes</dt><dd>AnyRef</dd><dt>Annotations</dt><dd>
+                <span class="name">@throws</span><span class="args">(<span>
+      
+      <span class="defval" name="classOf[java.lang.CloneNotSupportedException]">...</span>
+    </span>)</span>
+              
+        </dd></dl></div>
+    </li><li name="fun.math.BBox1d#compwise" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="compwise(that:fun.math.BBox1d)(p:(fun.math.Pos1d,fun.math.Pos1d)=&gt;fun.math.Pos1d):fun.math.BBox1d"></a>
+      <a id="compwise(BBox1d)((Pos1d,Pos1d)⇒Pos1d):BBox1d"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">compwise</span><span class="params">(<span name="that">that: <a href="BBox1d.html" class="extype" name="fun.math.BBox1d">BBox1d</a></span>)</span><span class="params">(<span name="p">p: (<a href="Pos1d.html" class="extype" name="fun.math.Pos1d">Pos1d</a>, <a href="Pos1d.html" class="extype" name="fun.math.Pos1d">Pos1d</a>) ⇒ <a href="Pos1d.html" class="extype" name="fun.math.Pos1d">Pos1d</a></span>)</span><span class="result">: <a href="BBox1d.html" class="extype" name="fun.math.BBox1d">BBox1d</a></span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../index.html#fun.math.Space1d@compwise(that:fun.math.BBox1d)(p:(fun.math.Pos1d,fun.math.Pos1d)=&gt;fun.math.Pos1d):fun.math.BBox1d" title="Permalink" target="_top">
+        <img src="../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      <p class="shortcomment cmt">Builds a new bounding box by apply a function to the corresponding corners of this and another
+bounding box.</p><div class="fullcomment"><div class="comment cmt"><p>Builds a new bounding box by apply a function to the corresponding corners of this and another
+bounding box.</p></div><dl class="attributes block"> <dt>Definition Classes</dt><dd><a href="BBox1d.html" class="extype" name="fun.math.BBox1d">BBox1d</a> → <a href="BBoxOps.html" class="extype" name="fun.math.BBoxOps">BBoxOps</a></dd></dl></div>
+    </li><li name="fun.math.BBox1d#coord" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="coord(pos:fun.math.Pos1d):fun.math.Pos1d"></a>
+      <a id="coord(Pos1d):Pos1d"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">coord</span><span class="params">(<span name="pos">pos: <a href="Pos1d.html" class="extype" name="fun.math.Pos1d">Pos1d</a></span>)</span><span class="result">: <a href="Pos1d.html" class="extype" name="fun.math.Pos1d">Pos1d</a></span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../index.html#fun.math.Space1d@coord(pos:fun.math.Pos1d):fun.math.Pos1d" title="Permalink" target="_top">
+        <img src="../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      <p class="shortcomment cmt">The local coordinate of a world position.</p><div class="fullcomment"><div class="comment cmt"><p>The local coordinate of a world position.</p></div><dl class="attributes block"> <dt>Definition Classes</dt><dd><a href="BBox1d.html" class="extype" name="fun.math.BBox1d">BBox1d</a> → <a href="BBoxOps.html" class="extype" name="fun.math.BBoxOps">BBoxOps</a></dd></dl></div>
+    </li><li name="fun.math.BBox1d#corners" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="corners:List[fun.math.Pos1d]"></a>
+      <a id="corners:List[Pos1d]"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">corners</span><span class="result">: <span class="extype" name="scala.List">List</span>[<a href="Pos1d.html" class="extype" name="fun.math.Pos1d">Pos1d</a>]</span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../index.html#fun.math.Space1d@corners:List[fun.math.Pos1d]" title="Permalink" target="_top">
+        <img src="../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      <p class="shortcomment cmt">All corners of the bounding box (unordered).</p><div class="fullcomment"><div class="comment cmt"><p>All corners of the bounding box (unordered).</p></div><dl class="attributes block"> <dt>Definition Classes</dt><dd><a href="BBox1d.html" class="extype" name="fun.math.BBox1d">BBox1d</a> → <a href="BBoxAccess.html" class="extype" name="fun.math.BBoxAccess">BBoxAccess</a></dd></dl></div>
+    </li><li name="fun.math.BBox1d#dimens" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="dimens:Int"></a>
+      <a id="dimens:Int"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">dimens</span><span class="result">: <span class="extype" name="scala.Int">Int</span></span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../index.html#fun.math.Space1d@dimens:Int" title="Permalink" target="_top">
+        <img src="../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      <p class="shortcomment cmt">The number of dimensions.</p><div class="fullcomment"><div class="comment cmt"><p>The number of dimensions.</p></div><dl class="attributes block"> <dt>Definition Classes</dt><dd><a href="BBox1d.html" class="extype" name="fun.math.BBox1d">BBox1d</a> → <a href="BBoxAccess.html" class="extype" name="fun.math.BBoxAccess">BBoxAccess</a></dd></dl></div>
+    </li><li name="scala.AnyRef#eq" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="eq(x$1:AnyRef):Boolean"></a>
+      <a id="eq(AnyRef):Boolean"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier">final </span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">eq</span><span class="params">(<span name="arg0">arg0: <span class="extype" name="scala.AnyRef">AnyRef</span></span>)</span><span class="result">: <span class="extype" name="scala.Boolean">Boolean</span></span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../index.html#fun.math.Space1d@eq(x$1:AnyRef):Boolean" title="Permalink" target="_top">
+        <img src="../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>AnyRef</dd></dl></div>
+    </li><li name="fun.math.Space1d#equals" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="equals(that:Any):Boolean"></a>
+      <a id="equals(Any):Boolean"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">equals</span><span class="params">(<span name="that">that: <span class="extype" name="scala.Any">Any</span></span>)</span><span class="result">: <span class="extype" name="scala.Boolean">Boolean</span></span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../index.html#fun.math.Space1d@equals(that:Any):Boolean" title="Permalink" target="_top">
+        <img src="../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      <p class="shortcomment cmt">Compares this vector to the specified value for equality.</p><div class="fullcomment"><div class="comment cmt"><p>Compares this vector to the specified value for equality.</p></div><dl class="attributes block"> <dt>Definition Classes</dt><dd><a href="" class="extype" name="fun.math.Space1d">Space1d</a> → <a href="BBox1d.html" class="extype" name="fun.math.BBox1d">BBox1d</a> → AnyRef → Any</dd></dl></div>
+    </li><li name="fun.math.Space1d#equiv" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="equiv(that:fun.math.Space1d):Boolean"></a>
+      <a id="equiv(Space1d):Boolean"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">equiv</span><span class="params">(<span name="that">that: <a href="" class="extype" name="fun.math.Space1d">Space1d</a></span>)</span><span class="result">: <span class="extype" name="scala.Boolean">Boolean</span></span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../index.html#fun.math.Space1d@equiv(that:fun.math.Space1d):Boolean" title="Permalink" target="_top">
+        <img src="../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      <p class="shortcomment cmt">Whether another space is within a the standard epsilon of this space.</p><div class="fullcomment"><div class="comment cmt"><p>Whether another space is within a the standard epsilon of this space.</p></div><dl class="attributes block"> <dt>Definition Classes</dt><dd><a href="" class="extype" name="fun.math.Space1d">Space1d</a> → <a href="SpaceOps.html" class="extype" name="fun.math.SpaceOps">SpaceOps</a></dd></dl></div>
+    </li><li name="fun.math.Space1d#equiv" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="equiv(that:fun.math.Space1d,epsilon:Double):Boolean"></a>
+      <a id="equiv(Space1d,Double):Boolean"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">equiv</span><span class="params">(<span name="that">that: <a href="" class="extype" name="fun.math.Space1d">Space1d</a></span>, <span name="epsilon">epsilon: <span class="extype" name="scala.Double">Double</span></span>)</span><span class="result">: <span class="extype" name="scala.Boolean">Boolean</span></span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../index.html#fun.math.Space1d@equiv(that:fun.math.Space1d,epsilon:Double):Boolean" title="Permalink" target="_top">
+        <img src="../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      <p class="shortcomment cmt">Whether another space is within a given epsilon of this space.</p><div class="fullcomment"><div class="comment cmt"><p>Whether another space is within a given epsilon of this space.</p></div><dl class="attributes block"> <dt>Definition Classes</dt><dd><a href="" class="extype" name="fun.math.Space1d">Space1d</a> → <a href="SpaceOps.html" class="extype" name="fun.math.SpaceOps">SpaceOps</a></dd></dl></div>
+    </li><li name="fun.math.BBox1d#equiv" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="equiv(that:fun.math.BBox1d):Boolean"></a>
+      <a id="equiv(BBox1d):Boolean"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">equiv</span><span class="params">(<span name="that">that: <a href="BBox1d.html" class="extype" name="fun.math.BBox1d">BBox1d</a></span>)</span><span class="result">: <span class="extype" name="scala.Boolean">Boolean</span></span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../index.html#fun.math.Space1d@equiv(that:fun.math.BBox1d):Boolean" title="Permalink" target="_top">
+        <img src="../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      <p class="shortcomment cmt">Whether another bounding box is within a the standard epsilon of this bounding box.</p><div class="fullcomment"><div class="comment cmt"><p>Whether another bounding box is within a the standard epsilon of this bounding box.</p></div><dl class="attributes block"> <dt>Definition Classes</dt><dd><a href="BBox1d.html" class="extype" name="fun.math.BBox1d">BBox1d</a> → <a href="BBoxOps.html" class="extype" name="fun.math.BBoxOps">BBoxOps</a></dd></dl></div>
+    </li><li name="fun.math.BBox1d#equiv" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="equiv(that:fun.math.BBox1d,epsilon:Double):Boolean"></a>
+      <a id="equiv(BBox1d,Double):Boolean"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">equiv</span><span class="params">(<span name="that">that: <a href="BBox1d.html" class="extype" name="fun.math.BBox1d">BBox1d</a></span>, <span name="epsilon">epsilon: <span class="extype" name="scala.Double">Double</span></span>)</span><span class="result">: <span class="extype" name="scala.Boolean">Boolean</span></span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../index.html#fun.math.Space1d@equiv(that:fun.math.BBox1d,epsilon:Double):Boolean" title="Permalink" target="_top">
+        <img src="../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      <p class="shortcomment cmt">Whether another bounding box is within a given epsilon of this bounding box.</p><div class="fullcomment"><div class="comment cmt"><p>Whether another bounding box is within a given epsilon of this bounding box.</p></div><dl class="attributes block"> <dt>Definition Classes</dt><dd><a href="BBox1d.html" class="extype" name="fun.math.BBox1d">BBox1d</a> → <a href="BBoxOps.html" class="extype" name="fun.math.BBoxOps">BBoxOps</a></dd></dl></div>
+    </li><li name="scala.AnyRef#finalize" visbl="prt" data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="finalize():Unit"></a>
+      <a id="finalize():Unit"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">finalize</span><span class="params">()</span><span class="result">: <span class="extype" name="scala.Unit">Unit</span></span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../index.html#fun.math.Space1d@finalize():Unit" title="Permalink" target="_top">
+        <img src="../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      <div class="fullcomment"><dl class="attributes block"> <dt>Attributes</dt><dd>protected[<a href="../../java$lang.html" class="extype" name="java.lang">java.lang</a>] </dd><dt>Definition Classes</dt><dd>AnyRef</dd><dt>Annotations</dt><dd>
+                <span class="name">@throws</span><span class="args">(<span>
+      
+      <span class="symbol">classOf[java.lang.Throwable]</span>
+    </span>)</span>
+              
+        </dd></dl></div>
+    </li><li name="fun.math.BBox1d#forall" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="forall(that:fun.math.BBox1d)(p:(fun.math.Pos1d,fun.math.Pos1d)=&gt;Boolean):Boolean"></a>
+      <a id="forall(BBox1d)((Pos1d,Pos1d)⇒Boolean):Boolean"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">forall</span><span class="params">(<span name="that">that: <a href="BBox1d.html" class="extype" name="fun.math.BBox1d">BBox1d</a></span>)</span><span class="params">(<span name="p">p: (<a href="Pos1d.html" class="extype" name="fun.math.Pos1d">Pos1d</a>, <a href="Pos1d.html" class="extype" name="fun.math.Pos1d">Pos1d</a>) ⇒ <span class="extype" name="scala.Boolean">Boolean</span></span>)</span><span class="result">: <span class="extype" name="scala.Boolean">Boolean</span></span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../index.html#fun.math.Space1d@forall(that:fun.math.BBox1d)(p:(fun.math.Pos1d,fun.math.Pos1d)=&gt;Boolean):Boolean" title="Permalink" target="_top">
+        <img src="../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      <p class="shortcomment cmt">Tests whether a predicate holds true for the corresponding corners
+of this and another bounding box.</p><div class="fullcomment"><div class="comment cmt"><p>Tests whether a predicate holds true for the corresponding corners
+of this and another bounding box.</p></div><dl class="attributes block"> <dt>Definition Classes</dt><dd><a href="BBox1d.html" class="extype" name="fun.math.BBox1d">BBox1d</a> → <a href="BBoxOps.html" class="extype" name="fun.math.BBoxOps">BBoxOps</a></dd></dl></div>
+    </li><li name="fun.math.BBox1d#forall" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="forall(p:fun.math.Pos1d=&gt;Boolean):Boolean"></a>
+      <a id="forall((Pos1d)⇒Boolean):Boolean"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">forall</span><span class="params">(<span name="p">p: (<a href="Pos1d.html" class="extype" name="fun.math.Pos1d">Pos1d</a>) ⇒ <span class="extype" name="scala.Boolean">Boolean</span></span>)</span><span class="result">: <span class="extype" name="scala.Boolean">Boolean</span></span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../index.html#fun.math.Space1d@forall(p:fun.math.Pos1d=&gt;Boolean):Boolean" title="Permalink" target="_top">
+        <img src="../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      <p class="shortcomment cmt">Tests whether a predicate holds true for both corners this bounding box.</p><div class="fullcomment"><div class="comment cmt"><p>Tests whether a predicate holds true for both corners this bounding box.</p></div><dl class="attributes block"> <dt>Definition Classes</dt><dd><a href="BBox1d.html" class="extype" name="fun.math.BBox1d">BBox1d</a> → <a href="BBoxOps.html" class="extype" name="fun.math.BBoxOps">BBoxOps</a></dd></dl></div>
+    </li><li name="fun.math.BBox1d#forany" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="forany(that:fun.math.BBox1d)(p:(fun.math.Pos1d,fun.math.Pos1d)=&gt;Boolean):Boolean"></a>
+      <a id="forany(BBox1d)((Pos1d,Pos1d)⇒Boolean):Boolean"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">forany</span><span class="params">(<span name="that">that: <a href="BBox1d.html" class="extype" name="fun.math.BBox1d">BBox1d</a></span>)</span><span class="params">(<span name="p">p: (<a href="Pos1d.html" class="extype" name="fun.math.Pos1d">Pos1d</a>, <a href="Pos1d.html" class="extype" name="fun.math.Pos1d">Pos1d</a>) ⇒ <span class="extype" name="scala.Boolean">Boolean</span></span>)</span><span class="result">: <span class="extype" name="scala.Boolean">Boolean</span></span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../index.html#fun.math.Space1d@forany(that:fun.math.BBox1d)(p:(fun.math.Pos1d,fun.math.Pos1d)=&gt;Boolean):Boolean" title="Permalink" target="_top">
+        <img src="../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      <p class="shortcomment cmt">Tests whether a predicate holds true for either of the corresponding corners
+of this and another bounding box.</p><div class="fullcomment"><div class="comment cmt"><p>Tests whether a predicate holds true for either of the corresponding corners
+of this and another bounding box.</p></div><dl class="attributes block"> <dt>Definition Classes</dt><dd><a href="BBox1d.html" class="extype" name="fun.math.BBox1d">BBox1d</a> → <a href="BBoxOps.html" class="extype" name="fun.math.BBoxOps">BBoxOps</a></dd></dl></div>
+    </li><li name="fun.math.BBox1d#forany" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="forany(p:fun.math.Pos1d=&gt;Boolean):Boolean"></a>
+      <a id="forany((Pos1d)⇒Boolean):Boolean"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">forany</span><span class="params">(<span name="p">p: (<a href="Pos1d.html" class="extype" name="fun.math.Pos1d">Pos1d</a>) ⇒ <span class="extype" name="scala.Boolean">Boolean</span></span>)</span><span class="result">: <span class="extype" name="scala.Boolean">Boolean</span></span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../index.html#fun.math.Space1d@forany(p:fun.math.Pos1d=&gt;Boolean):Boolean" title="Permalink" target="_top">
+        <img src="../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      <p class="shortcomment cmt">Tests whether a predicate holds true for either corner of this bounding box.</p><div class="fullcomment"><div class="comment cmt"><p>Tests whether a predicate holds true for either corner of this bounding box.</p></div><dl class="attributes block"> <dt>Definition Classes</dt><dd><a href="BBox1d.html" class="extype" name="fun.math.BBox1d">BBox1d</a> → <a href="BBoxOps.html" class="extype" name="fun.math.BBoxOps">BBoxOps</a></dd></dl></div>
+    </li><li name="fun.math.BBox1d#foreach" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="foreach(p:fun.math.Pos1d=&gt;Unit):Unit"></a>
+      <a id="foreach((Pos1d)⇒Unit):Unit"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">foreach</span><span class="params">(<span name="p">p: (<a href="Pos1d.html" class="extype" name="fun.math.Pos1d">Pos1d</a>) ⇒ <span class="extype" name="scala.Unit">Unit</span></span>)</span><span class="result">: <span class="extype" name="scala.Unit">Unit</span></span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../index.html#fun.math.Space1d@foreach(p:fun.math.Pos1d=&gt;Unit):Unit" title="Permalink" target="_top">
+        <img src="../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      <p class="shortcomment cmt">Applies a function to both corners of this bounding box.</p><div class="fullcomment"><div class="comment cmt"><p>Applies a function to both corners of this bounding box.</p></div><dl class="paramcmts block"><dt class="param">p</dt><dd class="cmt"><p>The function that is applied for its side-effect only each corner.</p></dd></dl><dl class="attributes block"> <dt>Definition Classes</dt><dd><a href="BBox1d.html" class="extype" name="fun.math.BBox1d">BBox1d</a> → <a href="BBoxOps.html" class="extype" name="fun.math.BBoxOps">BBoxOps</a></dd></dl></div>
+    </li><li name="scala.AnyRef#getClass" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="getClass():Class[_]"></a>
+      <a id="getClass():Class[_]"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier">final </span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">getClass</span><span class="params">()</span><span class="result">: <span class="extype" name="java.lang.Class">Class</span>[_]</span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../index.html#fun.math.Space1d@getClass():Class[_]" title="Permalink" target="_top">
+        <img src="../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>AnyRef → Any</dd></dl></div>
+    </li><li name="fun.math.BBox1d#grow" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="grow(v:fun.math.Vec1d):fun.math.BBox1d"></a>
+      <a id="grow(Vec1d):BBox1d"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">grow</span><span class="params">(<span name="v">v: <a href="Vec1d.html" class="extype" name="fun.math.Vec1d">Vec1d</a></span>)</span><span class="result">: <a href="BBox1d.html" class="extype" name="fun.math.BBox1d">BBox1d</a></span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../index.html#fun.math.Space1d@grow(v:fun.math.Vec1d):fun.math.BBox1d" title="Permalink" target="_top">
+        <img src="../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      <p class="shortcomment cmt">Create a bounding box which grows (or shrinks) the current bounding box by the given amount.</p><div class="fullcomment"><div class="comment cmt"><p>Create a bounding box which grows (or shrinks) the current bounding box by the given amount.</p></div><dl class="attributes block"> <dt>Definition Classes</dt><dd><a href="BBox1d.html" class="extype" name="fun.math.BBox1d">BBox1d</a> → <a href="BBoxOps.html" class="extype" name="fun.math.BBoxOps">BBoxOps</a></dd></dl></div>
+    </li><li name="fun.math.BBox1d#grow" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="grow(p:fun.math.Pos1d):fun.math.BBox1d"></a>
+      <a id="grow(Pos1d):BBox1d"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">grow</span><span class="params">(<span name="p">p: <a href="Pos1d.html" class="extype" name="fun.math.Pos1d">Pos1d</a></span>)</span><span class="result">: <a href="BBox1d.html" class="extype" name="fun.math.BBox1d">BBox1d</a></span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../index.html#fun.math.Space1d@grow(p:fun.math.Pos1d):fun.math.BBox1d" title="Permalink" target="_top">
+        <img src="../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      <p class="shortcomment cmt">Create a bounding box which grows the current bounding box to contain the given position.</p><div class="fullcomment"><div class="comment cmt"><p>Create a bounding box which grows the current bounding box to contain the given position.</p></div><dl class="attributes block"> <dt>Definition Classes</dt><dd><a href="BBox1d.html" class="extype" name="fun.math.BBox1d">BBox1d</a> → <a href="BBoxOps.html" class="extype" name="fun.math.BBoxOps">BBoxOps</a></dd></dl></div>
+    </li><li name="fun.math.Space1d#hashCode" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="hashCode():Int"></a>
+      <a id="hashCode():Int"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">hashCode</span><span class="params">()</span><span class="result">: <span class="extype" name="scala.Int">Int</span></span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../index.html#fun.math.Space1d@hashCode():Int" title="Permalink" target="_top">
+        <img src="../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      <p class="shortcomment cmt">Returns a hash code value for the object.</p><div class="fullcomment"><div class="comment cmt"><p>Returns a hash code value for the object.</p></div><dl class="attributes block"> <dt>Definition Classes</dt><dd><a href="" class="extype" name="fun.math.Space1d">Space1d</a> → <a href="BBox1d.html" class="extype" name="fun.math.BBox1d">BBox1d</a> → AnyRef → Any</dd></dl></div>
+    </li><li name="fun.math.Space1d#indexOf" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="indexOf(pos:fun.math.Pos1d):fun.math.Index1i"></a>
+      <a id="indexOf(Pos1d):Index1i"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">indexOf</span><span class="params">(<span name="pos">pos: <a href="Pos1d.html" class="extype" name="fun.math.Pos1d">Pos1d</a></span>)</span><span class="result">: <a href="Index1i.html" class="extype" name="fun.math.Index1i">Index1i</a></span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../index.html#fun.math.Space1d@indexOf(pos:fun.math.Pos1d):fun.math.Index1i" title="Permalink" target="_top">
+        <img src="../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      <p class="shortcomment cmt">The index of the voxel cell containing the given world space position.</p><div class="fullcomment"><div class="comment cmt"><p>The index of the voxel cell containing the given world space position.</p></div><dl class="attributes block"> <dt>Definition Classes</dt><dd><a href="" class="extype" name="fun.math.Space1d">Space1d</a> → <a href="SpaceOps.html" class="extype" name="fun.math.SpaceOps">SpaceOps</a></dd></dl></div>
+    </li><li name="fun.math.Space1d#interpOf" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="interpOf(pos:fun.math.Pos1d):(fun.math.Index1i,fun.math.Index1i,fun.math.Vec1d)"></a>
+      <a id="interpOf(Pos1d):(Index1i,Index1i,Vec1d)"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">interpOf</span><span class="params">(<span name="pos">pos: <a href="Pos1d.html" class="extype" name="fun.math.Pos1d">Pos1d</a></span>)</span><span class="result">: (<a href="Index1i.html" class="extype" name="fun.math.Index1i">Index1i</a>, <a href="Index1i.html" class="extype" name="fun.math.Index1i">Index1i</a>, <a href="Vec1d.html" class="extype" name="fun.math.Vec1d">Vec1d</a>)</span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../index.html#fun.math.Space1d@interpOf(pos:fun.math.Pos1d):(fun.math.Index1i,fun.math.Index1i,fun.math.Vec1d)" title="Permalink" target="_top">
+        <img src="../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      <p class="shortcomment cmt">The index of the voxel cell containing the given world space position, index offsets to the
+nearest neighboring cells and interpolation vector with these cells.</p><div class="fullcomment"><div class="comment cmt"><p>The index of the voxel cell containing the given world space position, index offsets to the
+nearest neighboring cells and interpolation vector with these cells.</p><p>The index offset is an integer vector containing either 1 or -1 for each dimension indicating
+the direction in index space of the nearest neighboring cell.</p><p>The interpolation vector is a floating point vector with values in the range [0.0, 1.0) which
+provides the weighting to use when interpolating values of neighboring cells indiced by the
+index and index offsets.</p></div><dl class="paramcmts block"><dt>returns</dt><dd class="cmt"><p>The index, index offset and interpolation vector as a tuple.</p></dd></dl><dl class="attributes block"> <dt>Definition Classes</dt><dd><a href="" class="extype" name="fun.math.Space1d">Space1d</a> → <a href="SpaceOps.html" class="extype" name="fun.math.SpaceOps">SpaceOps</a></dd></dl></div>
+    </li><li name="fun.math.BBox1d#intersection" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="intersection(that:fun.math.BBox1d):Option[fun.math.BBox1d]"></a>
+      <a id="intersection(BBox1d):Option[BBox1d]"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">intersection</span><span class="params">(<span name="that">that: <a href="BBox1d.html" class="extype" name="fun.math.BBox1d">BBox1d</a></span>)</span><span class="result">: <span class="extype" name="scala.Option">Option</span>[<a href="BBox1d.html" class="extype" name="fun.math.BBox1d">BBox1d</a>]</span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../index.html#fun.math.Space1d@intersection(that:fun.math.BBox1d):Option[fun.math.BBox1d]" title="Permalink" target="_top">
+        <img src="../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      <p class="shortcomment cmt">The bounding box of the region shared with the given bounding box, if any.</p><div class="fullcomment"><div class="comment cmt"><p>The bounding box of the region shared with the given bounding box, if any.</p></div><dl class="attributes block"> <dt>Definition Classes</dt><dd><a href="BBox1d.html" class="extype" name="fun.math.BBox1d">BBox1d</a> → <a href="BBoxOps.html" class="extype" name="fun.math.BBoxOps">BBoxOps</a></dd></dl></div>
+    </li><li name="fun.math.BBox1d#intersects" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="intersects(that:fun.math.BBox1d):Boolean"></a>
+      <a id="intersects(BBox1d):Boolean"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">intersects</span><span class="params">(<span name="that">that: <a href="BBox1d.html" class="extype" name="fun.math.BBox1d">BBox1d</a></span>)</span><span class="result">: <span class="extype" name="scala.Boolean">Boolean</span></span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../index.html#fun.math.Space1d@intersects(that:fun.math.BBox1d):Boolean" title="Permalink" target="_top">
+        <img src="../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      <p class="shortcomment cmt">Whether the given bounding box shares any volume with this bounding box.</p><div class="fullcomment"><div class="comment cmt"><p>Whether the given bounding box shares any volume with this bounding box.</p></div><dl class="attributes block"> <dt>Definition Classes</dt><dd><a href="BBox1d.html" class="extype" name="fun.math.BBox1d">BBox1d</a> → <a href="BBoxOps.html" class="extype" name="fun.math.BBoxOps">BBoxOps</a></dd></dl></div>
+    </li><li name="fun.math.BBox1d#isInside" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="isInside(p:fun.math.Pos1d):Boolean"></a>
+      <a id="isInside(Pos1d):Boolean"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">isInside</span><span class="params">(<span name="p">p: <a href="Pos1d.html" class="extype" name="fun.math.Pos1d">Pos1d</a></span>)</span><span class="result">: <span class="extype" name="scala.Boolean">Boolean</span></span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../index.html#fun.math.Space1d@isInside(p:fun.math.Pos1d):Boolean" title="Permalink" target="_top">
+        <img src="../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      <p class="shortcomment cmt">Whether the given point in inside of the bounding box.</p><div class="fullcomment"><div class="comment cmt"><p>Whether the given point in inside of the bounding box.</p></div><dl class="attributes block"> <dt>Definition Classes</dt><dd><a href="BBox1d.html" class="extype" name="fun.math.BBox1d">BBox1d</a> → <a href="BBoxOps.html" class="extype" name="fun.math.BBoxOps">BBoxOps</a></dd></dl></div>
+    </li><li name="scala.Any#isInstanceOf" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="isInstanceOf[T0]:Boolean"></a>
+      <a id="isInstanceOf[T0]:Boolean"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier">final </span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">isInstanceOf</span><span class="tparams">[<span name="T0">T0</span>]</span><span class="result">: <span class="extype" name="scala.Boolean">Boolean</span></span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../index.html#fun.math.Space1d@isInstanceOf[T0]:Boolean" title="Permalink" target="_top">
+        <img src="../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>Any</dd></dl></div>
+    </li><li name="fun.math.BBox1d#isNaN" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="isNaN:Boolean"></a>
+      <a id="isNaN:Boolean"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">isNaN</span><span class="result">: <span class="extype" name="scala.Boolean">Boolean</span></span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../index.html#fun.math.Space1d@isNaN:Boolean" title="Permalink" target="_top">
+        <img src="../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      <p class="shortcomment cmt">Whether any components are Not-a-Number (NaN).</p><div class="fullcomment"><div class="comment cmt"><p>Whether any components are Not-a-Number (NaN).</p></div><dl class="attributes block"> <dt>Definition Classes</dt><dd><a href="BBox1d.html" class="extype" name="fun.math.BBox1d">BBox1d</a> → <a href="Numeric.html" class="extype" name="fun.math.Numeric">Numeric</a></dd></dl></div>
+    </li><li name="fun.math.BBox1d#map" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="map(p:fun.math.Pos1d=&gt;fun.math.Pos1d):fun.math.BBox1d"></a>
+      <a id="map((Pos1d)⇒Pos1d):BBox1d"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">map</span><span class="params">(<span name="p">p: (<a href="Pos1d.html" class="extype" name="fun.math.Pos1d">Pos1d</a>) ⇒ <a href="Pos1d.html" class="extype" name="fun.math.Pos1d">Pos1d</a></span>)</span><span class="result">: <a href="BBox1d.html" class="extype" name="fun.math.BBox1d">BBox1d</a></span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../index.html#fun.math.Space1d@map(p:fun.math.Pos1d=&gt;fun.math.Pos1d):fun.math.BBox1d" title="Permalink" target="_top">
+        <img src="../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      <p class="shortcomment cmt">Builds a new bounding box by applying a function to each corner of this bounding box.</p><div class="fullcomment"><div class="comment cmt"><p>Builds a new bounding box by applying a function to each corner of this bounding box.</p></div><dl class="attributes block"> <dt>Definition Classes</dt><dd><a href="BBox1d.html" class="extype" name="fun.math.BBox1d">BBox1d</a> → <a href="BBoxOps.html" class="extype" name="fun.math.BBoxOps">BBoxOps</a></dd></dl></div>
+    </li><li name="fun.math.BBox1d#max" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="max(that:fun.math.BBox1d):fun.math.BBox1d"></a>
+      <a id="max(BBox1d):BBox1d"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">max</span><span class="params">(<span name="that">that: <a href="BBox1d.html" class="extype" name="fun.math.BBox1d">BBox1d</a></span>)</span><span class="result">: <a href="BBox1d.html" class="extype" name="fun.math.BBox1d">BBox1d</a></span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../index.html#fun.math.Space1d@max(that:fun.math.BBox1d):fun.math.BBox1d" title="Permalink" target="_top">
+        <img src="../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      <p class="shortcomment cmt">Builds a new bounding box who's corners are the maximum of the corresponding corners of this
+and another bounding box.</p><div class="fullcomment"><div class="comment cmt"><p>Builds a new bounding box who's corners are the maximum of the corresponding corners of this
+and another bounding box.</p></div><dl class="attributes block"> <dt>Definition Classes</dt><dd><a href="BBox1d.html" class="extype" name="fun.math.BBox1d">BBox1d</a> → <a href="BBoxOps.html" class="extype" name="fun.math.BBoxOps">BBoxOps</a></dd></dl></div>
+    </li><li name="fun.math.BBox1d#min" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="min(that:fun.math.BBox1d):fun.math.BBox1d"></a>
+      <a id="min(BBox1d):BBox1d"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">min</span><span class="params">(<span name="that">that: <a href="BBox1d.html" class="extype" name="fun.math.BBox1d">BBox1d</a></span>)</span><span class="result">: <a href="BBox1d.html" class="extype" name="fun.math.BBox1d">BBox1d</a></span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../index.html#fun.math.Space1d@min(that:fun.math.BBox1d):fun.math.BBox1d" title="Permalink" target="_top">
+        <img src="../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      <p class="shortcomment cmt">Builds a new bounding box who's corners are the minimum of the corresponding corners of this
+and another bounding box.</p><div class="fullcomment"><div class="comment cmt"><p>Builds a new bounding box who's corners are the minimum of the corresponding corners of this
+and another bounding box.</p></div><dl class="attributes block"> <dt>Definition Classes</dt><dd><a href="BBox1d.html" class="extype" name="fun.math.BBox1d">BBox1d</a> → <a href="BBoxOps.html" class="extype" name="fun.math.BBoxOps">BBoxOps</a></dd></dl></div>
+    </li><li name="scala.AnyRef#ne" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="ne(x$1:AnyRef):Boolean"></a>
+      <a id="ne(AnyRef):Boolean"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier">final </span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">ne</span><span class="params">(<span name="arg0">arg0: <span class="extype" name="scala.AnyRef">AnyRef</span></span>)</span><span class="result">: <span class="extype" name="scala.Boolean">Boolean</span></span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../index.html#fun.math.Space1d@ne(x$1:AnyRef):Boolean" title="Permalink" target="_top">
+        <img src="../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>AnyRef</dd></dl></div>
+    </li><li name="scala.AnyRef#notify" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="notify():Unit"></a>
+      <a id="notify():Unit"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier">final </span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">notify</span><span class="params">()</span><span class="result">: <span class="extype" name="scala.Unit">Unit</span></span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../index.html#fun.math.Space1d@notify():Unit" title="Permalink" target="_top">
+        <img src="../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>AnyRef</dd></dl></div>
+    </li><li name="scala.AnyRef#notifyAll" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="notifyAll():Unit"></a>
+      <a id="notifyAll():Unit"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier">final </span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">notifyAll</span><span class="params">()</span><span class="result">: <span class="extype" name="scala.Unit">Unit</span></span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../index.html#fun.math.Space1d@notifyAll():Unit" title="Permalink" target="_top">
+        <img src="../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>AnyRef</dd></dl></div>
+    </li><li name="fun.math.Space1d#offsetsOf" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="offsetsOf(pos:fun.math.Pos1d):(fun.math.Index1i,fun.math.Index1i)"></a>
+      <a id="offsetsOf(Pos1d):(Index1i,Index1i)"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">offsetsOf</span><span class="params">(<span name="pos">pos: <a href="Pos1d.html" class="extype" name="fun.math.Pos1d">Pos1d</a></span>)</span><span class="result">: (<a href="Index1i.html" class="extype" name="fun.math.Index1i">Index1i</a>, <a href="Index1i.html" class="extype" name="fun.math.Index1i">Index1i</a>)</span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../index.html#fun.math.Space1d@offsetsOf(pos:fun.math.Pos1d):(fun.math.Index1i,fun.math.Index1i)" title="Permalink" target="_top">
+        <img src="../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      <p class="shortcomment cmt">The index of the voxel cell containing the given world space position and the index offsets
+to the nearest neighboring cells.</p><div class="fullcomment"><div class="comment cmt"><p>The index of the voxel cell containing the given world space position and the index offsets
+to the nearest neighboring cells.</p><p>The index offset is an integer vector containing either 1 or -1 for each dimension indicating
+the direction in index space of the nearest neighboring cell.</p></div><dl class="paramcmts block"><dt>returns</dt><dd class="cmt"><p>The index and index offset as a tuple.</p></dd></dl><dl class="attributes block"> <dt>Definition Classes</dt><dd><a href="" class="extype" name="fun.math.Space1d">Space1d</a> → <a href="SpaceOps.html" class="extype" name="fun.math.SpaceOps">SpaceOps</a></dd></dl></div>
+    </li><li name="fun.math.BBox1d#position" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="position(coord:fun.math.Pos1d):fun.math.Pos1d"></a>
+      <a id="position(Pos1d):Pos1d"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">position</span><span class="params">(<span name="coord">coord: <a href="Pos1d.html" class="extype" name="fun.math.Pos1d">Pos1d</a></span>)</span><span class="result">: <a href="Pos1d.html" class="extype" name="fun.math.Pos1d">Pos1d</a></span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../index.html#fun.math.Space1d@position(coord:fun.math.Pos1d):fun.math.Pos1d" title="Permalink" target="_top">
+        <img src="../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      <p class="shortcomment cmt">The world position of a local coordinate.</p><div class="fullcomment"><div class="comment cmt"><p>The world position of a local coordinate.</p></div><dl class="attributes block"> <dt>Definition Classes</dt><dd><a href="BBox1d.html" class="extype" name="fun.math.BBox1d">BBox1d</a> → <a href="BBoxOps.html" class="extype" name="fun.math.BBoxOps">BBoxOps</a></dd></dl></div>
+    </li><li name="fun.math.BBox1d#randomPos" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="randomPos(gen:scala.util.Random):fun.math.Pos1d"></a>
+      <a id="randomPos(Random):Pos1d"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">randomPos</span><span class="params">(<span name="gen">gen: <span class="extype" name="scala.util.Random">Random</span></span>)</span><span class="result">: <a href="Pos1d.html" class="extype" name="fun.math.Pos1d">Pos1d</a></span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../index.html#fun.math.Space1d@randomPos(gen:scala.util.Random):fun.math.Pos1d" title="Permalink" target="_top">
+        <img src="../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      <p class="shortcomment cmt">Generate a random position inside the bounding box.</p><div class="fullcomment"><div class="comment cmt"><p>Generate a random position inside the bounding box.</p></div><dl class="paramcmts block"><dt class="param">gen</dt><dd class="cmt"><p>The random number generator to use.</p></dd></dl><dl class="attributes block"> <dt>Definition Classes</dt><dd><a href="BBox1d.html" class="extype" name="fun.math.BBox1d">BBox1d</a> → <a href="BBoxOps.html" class="extype" name="fun.math.BBoxOps">BBoxOps</a></dd></dl></div>
+    </li><li name="fun.math.BBox1d#randomPos" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="randomPos():fun.math.Pos1d"></a>
+      <a id="randomPos():Pos1d"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">randomPos</span><span class="params">()</span><span class="result">: <a href="Pos1d.html" class="extype" name="fun.math.Pos1d">Pos1d</a></span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../index.html#fun.math.Space1d@randomPos():fun.math.Pos1d" title="Permalink" target="_top">
+        <img src="../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      <p class="shortcomment cmt">Generate a random position inside the bounding box.</p><div class="fullcomment"><div class="comment cmt"><p>Generate a random position inside the bounding box.</p></div><dl class="attributes block"> <dt>Definition Classes</dt><dd><a href="BBox1d.html" class="extype" name="fun.math.BBox1d">BBox1d</a> → <a href="BBoxOps.html" class="extype" name="fun.math.BBoxOps">BBoxOps</a></dd></dl></div>
+    </li><li name="fun.math.BBox1d#range" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="range:fun.math.Vec1d"></a>
+      <a id="range:Vec1d"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">range</span><span class="result">: <a href="Vec1d.html" class="extype" name="fun.math.Vec1d">Vec1d</a></span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../index.html#fun.math.Space1d@range:fun.math.Vec1d" title="Permalink" target="_top">
+        <img src="../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      <p class="shortcomment cmt">The range of the bounding box.</p><div class="fullcomment"><div class="comment cmt"><p>The range of the bounding box.</p></div><dl class="attributes block"> <dt>Definition Classes</dt><dd><a href="BBox1d.html" class="extype" name="fun.math.BBox1d">BBox1d</a> → <a href="BBoxOps.html" class="extype" name="fun.math.BBoxOps">BBoxOps</a></dd></dl></div>
+    </li><li name="fun.math.BBox1d#reduce" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="reduce(p:(fun.math.Pos1d,fun.math.Pos1d)=&gt;fun.math.Pos1d):fun.math.Pos1d"></a>
+      <a id="reduce((Pos1d,Pos1d)⇒Pos1d):Pos1d"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">reduce</span><span class="params">(<span name="p">p: (<a href="Pos1d.html" class="extype" name="fun.math.Pos1d">Pos1d</a>, <a href="Pos1d.html" class="extype" name="fun.math.Pos1d">Pos1d</a>) ⇒ <a href="Pos1d.html" class="extype" name="fun.math.Pos1d">Pos1d</a></span>)</span><span class="result">: <a href="Pos1d.html" class="extype" name="fun.math.Pos1d">Pos1d</a></span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../index.html#fun.math.Space1d@reduce(p:(fun.math.Pos1d,fun.math.Pos1d)=&gt;fun.math.Pos1d):fun.math.Pos1d" title="Permalink" target="_top">
+        <img src="../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      <p class="shortcomment cmt">Reduces the corners of this bounding box using the specified associative binary operator.</p><div class="fullcomment"><div class="comment cmt"><p>Reduces the corners of this bounding box using the specified associative binary operator.</p></div><dl class="attributes block"> <dt>Definition Classes</dt><dd><a href="BBox1d.html" class="extype" name="fun.math.BBox1d">BBox1d</a> → <a href="BBoxOps.html" class="extype" name="fun.math.BBoxOps">BBoxOps</a></dd></dl></div>
+    </li><li name="fun.math.Space1d#size" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="size:fun.math.Index1i"></a>
+      <a id="size:Index1i"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">val</span>
+      </span>
+      <span class="symbol">
+        <span class="name">size</span><span class="result">: <a href="Index1i.html" class="extype" name="fun.math.Index1i">Index1i</a></span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../index.html#fun.math.Space1d@size:fun.math.Index1i" title="Permalink" target="_top">
+        <img src="../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      <p class="shortcomment cmt">The number of cells in each dimension.</p><div class="fullcomment"><div class="comment cmt"><p>The number of cells in each dimension.</p></div><dl class="attributes block"> <dt>Definition Classes</dt><dd><a href="" class="extype" name="fun.math.Space1d">Space1d</a> → <a href="SpaceAccess.html" class="extype" name="fun.math.SpaceAccess">SpaceAccess</a></dd></dl></div>
+    </li><li name="fun.math.BBox1d#split" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="split(dimen:Int,coord:Double):(fun.math.BBox1d,fun.math.BBox1d)"></a>
+      <a id="split(Int,Double):(BBox1d,BBox1d)"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">split</span><span class="params">(<span name="dimen">dimen: <span class="extype" name="scala.Int">Int</span></span>, <span name="coord">coord: <span class="extype" name="scala.Double">Double</span></span>)</span><span class="result">: (<a href="BBox1d.html" class="extype" name="fun.math.BBox1d">BBox1d</a>, <a href="BBox1d.html" class="extype" name="fun.math.BBox1d">BBox1d</a>)</span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../index.html#fun.math.Space1d@split(dimen:Int,coord:Double):(fun.math.BBox1d,fun.math.BBox1d)" title="Permalink" target="_top">
+        <img src="../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      <p class="shortcomment cmt">Split a bounding box along the coordinate [0, 1) of the given dimension.</p><div class="fullcomment"><div class="comment cmt"><p>Split a bounding box along the coordinate [0, 1) of the given dimension.</p></div><dl class="attributes block"> <dt>Definition Classes</dt><dd><a href="BBox1d.html" class="extype" name="fun.math.BBox1d">BBox1d</a> → <a href="BBoxOps.html" class="extype" name="fun.math.BBoxOps">BBoxOps</a></dd></dl></div>
+    </li><li name="fun.math.BBox1d#split" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="split(dimen:Int):(fun.math.BBox1d,fun.math.BBox1d)"></a>
+      <a id="split(Int):(BBox1d,BBox1d)"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">split</span><span class="params">(<span name="dimen">dimen: <span class="extype" name="scala.Int">Int</span></span>)</span><span class="result">: (<a href="BBox1d.html" class="extype" name="fun.math.BBox1d">BBox1d</a>, <a href="BBox1d.html" class="extype" name="fun.math.BBox1d">BBox1d</a>)</span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../index.html#fun.math.Space1d@split(dimen:Int):(fun.math.BBox1d,fun.math.BBox1d)" title="Permalink" target="_top">
+        <img src="../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      <p class="shortcomment cmt">Split a bounding box along the midpoint of the given dimension.</p><div class="fullcomment"><div class="comment cmt"><p>Split a bounding box along the midpoint of the given dimension.</p></div><dl class="attributes block"> <dt>Definition Classes</dt><dd><a href="BBox1d.html" class="extype" name="fun.math.BBox1d">BBox1d</a> → <a href="BBoxOps.html" class="extype" name="fun.math.BBoxOps">BBoxOps</a></dd></dl></div>
+    </li><li name="fun.math.BBox1d#splitX" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="splitX(coord:Double):(fun.math.BBox1d,fun.math.BBox1d)"></a>
+      <a id="splitX(Double):(BBox1d,BBox1d)"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">splitX</span><span class="params">(<span name="coord">coord: <span class="extype" name="scala.Double">Double</span></span>)</span><span class="result">: (<a href="BBox1d.html" class="extype" name="fun.math.BBox1d">BBox1d</a>, <a href="BBox1d.html" class="extype" name="fun.math.BBox1d">BBox1d</a>)</span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../index.html#fun.math.Space1d@splitX(coord:Double):(fun.math.BBox1d,fun.math.BBox1d)" title="Permalink" target="_top">
+        <img src="../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd><a href="BBox1d.html" class="extype" name="fun.math.BBox1d">BBox1d</a></dd></dl></div>
+    </li><li name="fun.math.BBox1d#splitX" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="splitX:(fun.math.BBox1d,fun.math.BBox1d)"></a>
+      <a id="splitX:(BBox1d,BBox1d)"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">splitX</span><span class="result">: (<a href="BBox1d.html" class="extype" name="fun.math.BBox1d">BBox1d</a>, <a href="BBox1d.html" class="extype" name="fun.math.BBox1d">BBox1d</a>)</span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../index.html#fun.math.Space1d@splitX:(fun.math.BBox1d,fun.math.BBox1d)" title="Permalink" target="_top">
+        <img src="../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd><a href="BBox1d.html" class="extype" name="fun.math.BBox1d">BBox1d</a></dd></dl></div>
+    </li><li name="scala.AnyRef#synchronized" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="synchronized[T0](x$1:=&gt;T0):T0"></a>
+      <a id="synchronized[T0](⇒T0):T0"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier">final </span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">synchronized</span><span class="tparams">[<span name="T0">T0</span>]</span><span class="params">(<span name="arg0">arg0: ⇒ <span class="extype" name="java.lang.AnyRef.synchronized.T0">T0</span></span>)</span><span class="result">: <span class="extype" name="java.lang.AnyRef.synchronized.T0">T0</span></span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../index.html#fun.math.Space1d@synchronized[T0](x$1:=&gt;T0):T0" title="Permalink" target="_top">
+        <img src="../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>AnyRef</dd></dl></div>
+    </li><li name="fun.math.Space1d#toBBox" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="toBBox:fun.math.BBox1d"></a>
+      <a id="toBBox:BBox1d"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">toBBox</span><span class="result">: <a href="BBox1d.html" class="extype" name="fun.math.BBox1d">BBox1d</a></span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../index.html#fun.math.Space1d@toBBox:fun.math.BBox1d" title="Permalink" target="_top">
+        <img src="../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      <p class="shortcomment cmt">Convert to a bounding box.</p><div class="fullcomment"><div class="comment cmt"><p>Convert to a bounding box.</p></div><dl class="attributes block"> <dt>Definition Classes</dt><dd><a href="" class="extype" name="fun.math.Space1d">Space1d</a> → <a href="SpaceOps.html" class="extype" name="fun.math.SpaceOps">SpaceOps</a></dd></dl></div>
+    </li><li name="fun.math.BBox1d#toBBox1d" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="toBBox1d:fun.math.BBox1d"></a>
+      <a id="toBBox1d:BBox1d"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">toBBox1d</span><span class="result">: <a href="BBox1d.html" class="extype" name="fun.math.BBox1d">BBox1d</a></span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../index.html#fun.math.Space1d@toBBox1d:fun.math.BBox1d" title="Permalink" target="_top">
+        <img src="../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      <p class="shortcomment cmt">Convert to a 1-dimensional bounding box.</p><div class="fullcomment"><div class="comment cmt"><p>Convert to a 1-dimensional bounding box.</p></div><dl class="attributes block"> <dt>Definition Classes</dt><dd><a href="BBox1d.html" class="extype" name="fun.math.BBox1d">BBox1d</a> → <a href="BBoxOps.html" class="extype" name="fun.math.BBoxOps">BBoxOps</a></dd></dl></div>
+    </li><li name="fun.math.BBox1d#toBBox2d" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="toBBox2d:fun.math.BBox2d"></a>
+      <a id="toBBox2d:BBox2d"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">toBBox2d</span><span class="result">: <a href="BBox2d.html" class="extype" name="fun.math.BBox2d">BBox2d</a></span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../index.html#fun.math.Space1d@toBBox2d:fun.math.BBox2d" title="Permalink" target="_top">
+        <img src="../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      <p class="shortcomment cmt">Convert to a 2-dimensional bounding box.</p><div class="fullcomment"><div class="comment cmt"><p>Convert to a 2-dimensional bounding box.</p></div><dl class="attributes block"> <dt>Definition Classes</dt><dd><a href="BBox1d.html" class="extype" name="fun.math.BBox1d">BBox1d</a> → <a href="BBoxOps.html" class="extype" name="fun.math.BBoxOps">BBoxOps</a></dd></dl></div>
+    </li><li name="fun.math.BBox1d#toBBox3d" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="toBBox3d:fun.math.BBox3d"></a>
+      <a id="toBBox3d:BBox3d"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">toBBox3d</span><span class="result">: <a href="BBox3d.html" class="extype" name="fun.math.BBox3d">BBox3d</a></span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../index.html#fun.math.Space1d@toBBox3d:fun.math.BBox3d" title="Permalink" target="_top">
+        <img src="../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      <p class="shortcomment cmt">Convert to a 3-dimensional bounding box.</p><div class="fullcomment"><div class="comment cmt"><p>Convert to a 3-dimensional bounding box.</p></div><dl class="attributes block"> <dt>Definition Classes</dt><dd><a href="BBox1d.html" class="extype" name="fun.math.BBox1d">BBox1d</a> → <a href="BBoxOps.html" class="extype" name="fun.math.BBoxOps">BBoxOps</a></dd></dl></div>
+    </li><li name="fun.math.BBox1d#toInterval" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="toInterval:fun.math.Interval[Double]"></a>
+      <a id="toInterval:Interval[Double]"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">toInterval</span><span class="result">: <a href="Interval.html" class="extype" name="fun.math.Interval">Interval</a>[<span class="extype" name="scala.Double">Double</span>]</span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../index.html#fun.math.Space1d@toInterval:fun.math.Interval[Double]" title="Permalink" target="_top">
+        <img src="../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      <p class="shortcomment cmt">Convert to an Interval.</p><div class="fullcomment"><div class="comment cmt"><p>Convert to an Interval.</p></div><dl class="attributes block"> <dt>Definition Classes</dt><dd><a href="BBox1d.html" class="extype" name="fun.math.BBox1d">BBox1d</a></dd></dl></div>
+    </li><li name="fun.math.BBox1d#toPretty" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="toPretty:String"></a>
+      <a id="toPretty:String"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">toPretty</span><span class="result">: <span class="extype" name="scala.Predef.String">String</span></span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../index.html#fun.math.Space1d@toPretty:String" title="Permalink" target="_top">
+        <img src="../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      <p class="shortcomment cmt">Convert to a more compact String representation.</p><div class="fullcomment"><div class="comment cmt"><p>Convert to a more compact String representation.</p></div><dl class="attributes block"> <dt>Definition Classes</dt><dd><a href="BBox1d.html" class="extype" name="fun.math.BBox1d">BBox1d</a> → <a href="BBoxOps.html" class="extype" name="fun.math.BBoxOps">BBoxOps</a></dd></dl></div>
+    </li><li name="fun.math.Space1d#toString" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="toString():String"></a>
+      <a id="toString():String"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">toString</span><span class="params">()</span><span class="result">: <span class="extype" name="java.lang.String">String</span></span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../index.html#fun.math.Space1d@toString():String" title="Permalink" target="_top">
+        <img src="../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      <p class="shortcomment cmt">Convert to a string representation.</p><div class="fullcomment"><div class="comment cmt"><p>Convert to a string representation.</p></div><dl class="attributes block"> <dt>Definition Classes</dt><dd><a href="" class="extype" name="fun.math.Space1d">Space1d</a> → <a href="BBox1d.html" class="extype" name="fun.math.BBox1d">BBox1d</a> → AnyRef → Any</dd></dl></div>
+    </li><li name="fun.math.BBox1d#union" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="union(that:fun.math.BBox1d):fun.math.BBox1d"></a>
+      <a id="union(BBox1d):BBox1d"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">union</span><span class="params">(<span name="that">that: <a href="BBox1d.html" class="extype" name="fun.math.BBox1d">BBox1d</a></span>)</span><span class="result">: <a href="BBox1d.html" class="extype" name="fun.math.BBox1d">BBox1d</a></span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../index.html#fun.math.Space1d@union(that:fun.math.BBox1d):fun.math.BBox1d" title="Permalink" target="_top">
+        <img src="../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      <p class="shortcomment cmt">Create a bounding box which contains the volume of both this and the given bounding box.</p><div class="fullcomment"><div class="comment cmt"><p>Create a bounding box which contains the volume of both this and the given bounding box.</p></div><dl class="attributes block"> <dt>Definition Classes</dt><dd><a href="BBox1d.html" class="extype" name="fun.math.BBox1d">BBox1d</a> → <a href="BBoxOps.html" class="extype" name="fun.math.BBoxOps">BBoxOps</a></dd></dl></div>
+    </li><li name="fun.math.BBox1d#update" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="update(i:Int,p:fun.math.Pos1d):fun.math.BBox1d"></a>
+      <a id="update(Int,Pos1d):BBox1d"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">update</span><span class="params">(<span name="i">i: <span class="extype" name="scala.Int">Int</span></span>, <span name="p">p: <a href="Pos1d.html" class="extype" name="fun.math.Pos1d">Pos1d</a></span>)</span><span class="result">: <a href="BBox1d.html" class="extype" name="fun.math.BBox1d">BBox1d</a></span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../index.html#fun.math.Space1d@update(i:Int,p:fun.math.Pos1d):fun.math.BBox1d" title="Permalink" target="_top">
+        <img src="../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      <p class="shortcomment cmt">A copy of this bounding box in which the corner identified by index has been replaced with the
+given value.</p><div class="fullcomment"><div class="comment cmt"><p>A copy of this bounding box in which the corner identified by index has been replaced with the
+given value.</p></div><dl class="attributes block"> <dt>Definition Classes</dt><dd><a href="BBox1d.html" class="extype" name="fun.math.BBox1d">BBox1d</a> → <a href="BBoxAccess.html" class="extype" name="fun.math.BBoxAccess">BBoxAccess</a></dd></dl></div>
+    </li><li name="fun.math.BBox1d#updateMax" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="updateMax(p:fun.math.Pos1d):fun.math.BBox1d"></a>
+      <a id="updateMax(Pos1d):BBox1d"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">updateMax</span><span class="params">(<span name="p">p: <a href="Pos1d.html" class="extype" name="fun.math.Pos1d">Pos1d</a></span>)</span><span class="result">: <a href="BBox1d.html" class="extype" name="fun.math.BBox1d">BBox1d</a></span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../index.html#fun.math.Space1d@updateMax(p:fun.math.Pos1d):fun.math.BBox1d" title="Permalink" target="_top">
+        <img src="../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      <p class="shortcomment cmt">A copy of this bounding box in which the maximum corner has been replaced with the given position.</p><div class="fullcomment"><div class="comment cmt"><p>A copy of this bounding box in which the maximum corner has been replaced with the given position.</p></div><dl class="attributes block"> <dt>Definition Classes</dt><dd><a href="BBox1d.html" class="extype" name="fun.math.BBox1d">BBox1d</a> → <a href="BBoxAccess.html" class="extype" name="fun.math.BBoxAccess">BBoxAccess</a></dd></dl></div>
+    </li><li name="fun.math.BBox1d#updateMin" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="updateMin(p:fun.math.Pos1d):fun.math.BBox1d"></a>
+      <a id="updateMin(Pos1d):BBox1d"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">updateMin</span><span class="params">(<span name="p">p: <a href="Pos1d.html" class="extype" name="fun.math.Pos1d">Pos1d</a></span>)</span><span class="result">: <a href="BBox1d.html" class="extype" name="fun.math.BBox1d">BBox1d</a></span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../index.html#fun.math.Space1d@updateMin(p:fun.math.Pos1d):fun.math.BBox1d" title="Permalink" target="_top">
+        <img src="../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      <p class="shortcomment cmt">A copy of this bounding box in which the minimum corner has been replaced with the given position.</p><div class="fullcomment"><div class="comment cmt"><p>A copy of this bounding box in which the minimum corner has been replaced with the given position.</p></div><dl class="attributes block"> <dt>Definition Classes</dt><dd><a href="BBox1d.html" class="extype" name="fun.math.BBox1d">BBox1d</a> → <a href="BBoxAccess.html" class="extype" name="fun.math.BBoxAccess">BBoxAccess</a></dd></dl></div>
+    </li><li name="scala.AnyRef#wait" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="wait():Unit"></a>
+      <a id="wait():Unit"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier">final </span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">wait</span><span class="params">()</span><span class="result">: <span class="extype" name="scala.Unit">Unit</span></span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../index.html#fun.math.Space1d@wait():Unit" title="Permalink" target="_top">
+        <img src="../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>AnyRef</dd><dt>Annotations</dt><dd>
+                <span class="name">@throws</span><span class="args">(<span>
+      
+      <span class="defval" name="classOf[java.lang.InterruptedException]">...</span>
+    </span>)</span>
+              
+        </dd></dl></div>
+    </li><li name="scala.AnyRef#wait" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="wait(x$1:Long,x$2:Int):Unit"></a>
+      <a id="wait(Long,Int):Unit"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier">final </span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">wait</span><span class="params">(<span name="arg0">arg0: <span class="extype" name="scala.Long">Long</span></span>, <span name="arg1">arg1: <span class="extype" name="scala.Int">Int</span></span>)</span><span class="result">: <span class="extype" name="scala.Unit">Unit</span></span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../index.html#fun.math.Space1d@wait(x$1:Long,x$2:Int):Unit" title="Permalink" target="_top">
+        <img src="../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>AnyRef</dd><dt>Annotations</dt><dd>
+                <span class="name">@throws</span><span class="args">(<span>
+      
+      <span class="defval" name="classOf[java.lang.InterruptedException]">...</span>
+    </span>)</span>
+              
+        </dd></dl></div>
+    </li><li name="scala.AnyRef#wait" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="wait(x$1:Long):Unit"></a>
+      <a id="wait(Long):Unit"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier">final </span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">wait</span><span class="params">(<span name="arg0">arg0: <span class="extype" name="scala.Long">Long</span></span>)</span><span class="result">: <span class="extype" name="scala.Unit">Unit</span></span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../index.html#fun.math.Space1d@wait(x$1:Long):Unit" title="Permalink" target="_top">
+        <img src="../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>AnyRef</dd><dt>Annotations</dt><dd>
+                <span class="name">@throws</span><span class="args">(<span>
+      
+      <span class="defval" name="classOf[java.lang.InterruptedException]">...</span>
+    </span>)</span>
+              
+        </dd></dl></div>
+    </li></ol>
+            </div>
+
+        
+
+        
+        </div>
+
+        <div id="inheritedMembers">
+        <div class="parent" name="fun.math.SpaceOps">
+              <h3>Inherited from <a href="SpaceOps.html" class="extype" name="fun.math.SpaceOps">SpaceOps</a>[<a href="Pos1d.html" class="extype" name="fun.math.Pos1d">Pos1d</a>, <a href="Vec1d.html" class="extype" name="fun.math.Vec1d">Vec1d</a>, <a href="Index1i.html" class="extype" name="fun.math.Index1i">Index1i</a>, <a href="BBox1d.html" class="extype" name="fun.math.BBox1d">BBox1d</a>, <a href="" class="extype" name="fun.math.Space1d">Space1d</a>]</h3>
+            </div><div class="parent" name="fun.math.SpaceAccess">
+              <h3>Inherited from <a href="SpaceAccess.html" class="extype" name="fun.math.SpaceAccess">SpaceAccess</a>[<a href="Pos1d.html" class="extype" name="fun.math.Pos1d">Pos1d</a>, <a href="Index1i.html" class="extype" name="fun.math.Index1i">Index1i</a>, <a href="BBox1d.html" class="extype" name="fun.math.BBox1d">BBox1d</a>]</h3>
+            </div><div class="parent" name="fun.math.Space">
+              <h3>Inherited from <a href="Space.html" class="extype" name="fun.math.Space">Space</a></h3>
+            </div><div class="parent" name="fun.math.BBox1d">
+              <h3>Inherited from <a href="BBox1d.html" class="extype" name="fun.math.BBox1d">BBox1d</a></h3>
+            </div><div class="parent" name="fun.math.BBoxOps">
+              <h3>Inherited from <a href="BBoxOps.html" class="extype" name="fun.math.BBoxOps">BBoxOps</a>[<span class="extype" name="scala.Double">Double</span>, <a href="Pos1d.html" class="extype" name="fun.math.Pos1d">Pos1d</a>, <a href="Vec1d.html" class="extype" name="fun.math.Vec1d">Vec1d</a>, <a href="BBox1d.html" class="extype" name="fun.math.BBox1d">BBox1d</a>]</h3>
+            </div><div class="parent" name="fun.math.Numeric">
+              <h3>Inherited from <a href="Numeric.html" class="extype" name="fun.math.Numeric">Numeric</a></h3>
+            </div><div class="parent" name="fun.math.BBoxAccess">
+              <h3>Inherited from <a href="BBoxAccess.html" class="extype" name="fun.math.BBoxAccess">BBoxAccess</a>[<a href="Pos1d.html" class="extype" name="fun.math.Pos1d">Pos1d</a>, <a href="BBox1d.html" class="extype" name="fun.math.BBox1d">BBox1d</a>]</h3>
+            </div><div class="parent" name="fun.math.BBox">
+              <h3>Inherited from <a href="BBox.html" class="extype" name="fun.math.BBox">BBox</a></h3>
+            </div><div class="parent" name="scala.AnyRef">
+              <h3>Inherited from <span class="extype" name="scala.AnyRef">AnyRef</span></h3>
+            </div><div class="parent" name="scala.Any">
+              <h3>Inherited from <span class="extype" name="scala.Any">Any</span></h3>
+            </div>
+        
+        </div>
+
+        <div id="groupedMembers">
+        <div class="group" name="Ungrouped">
+              <h3>Ungrouped</h3>
+              
+            </div>
+        </div>
+
+      </div>
+
+      <div id="tooltip"></div>
+
+      <div id="footer">  </div>
+
+
+    </body>
+      </html>

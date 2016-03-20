@@ -1,0 +1,15 @@
+<configuration>  
+  <appender name="NORMAL" class="ch.qos.logback.core.ConsoleAppender">
+    <encoder>
+      <pattern>%date %-5level %logger - %msg%n</pattern>
+    </encoder>
+  </appender>
+
+  <logger name="fun" level="INFO" additivity="false">
+    <appender-ref ref="NORMAL" />
+  </logger>
+  
+  <root level="TRACE">
+    <appender-ref ref="NORMAL" />
+  </root>
+</configuration>

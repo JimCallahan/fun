@@ -1,0 +1,44 @@
+/*
+ * Copyright 2011-2016 James Michael Callahan
+ *
+ * Licensed under the Apache License, Version 2.0 (the "License");
+ * you may not use this file except in compliance with the License.
+ * You may obtain a copy of the License at
+ *
+ *     http://www.apache.org/licenses/LICENSE-2.0
+ *
+ * Unless required by applicable law or agreed to in writing, software
+ * distributed under the License is distributed on an "AS IS" BASIS,
+ * WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+ * See the License for the specific language governing permissions and
+ * limitations under the License.
+ */
+package fun.math
+
+/** Base trait for all Annuli (ring shapes). */
+trait Annulus
+    extends Ball
+
+/** Annulus component access. */
+trait AnnulusAccess[@specialized(Double) Elem, P <: Pos, Repr]
+    extends BallAccess[Elem, P, Repr]
+    with Annulus {
+
+  /** The center of this Annulus. */
+  def center: P
+
+  /** The inner radius of this Annulus. */
+  def inner: Elem
+
+  /** The inner radius of this Annulus. */
+  def outer: Elem = radius
+
+  /** A copy of this Annulus in which center has been replaced with the given position. */
+  def updateCenter(p: P): Repr
+
+  /** A copy of this Annulus in which the inner radius has been replaced with the given radius. */
+  def updateInner(r: Elem): Repr
+
+  /** A copy of this Annulus in which the inner radius has been replaced with the given radius. */
+  def updateOuter(r: Elem): Repr = updateRadius(r)
+}

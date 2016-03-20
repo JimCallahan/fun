@@ -1,0 +1,1516 @@
+<!DOCTYPE html >
+<html>
+        <head>
+          <title>PosOps - fun.math.PosOps</title>
+          <meta name="description" content="PosOps - fun.math.PosOps" />
+          <meta name="keywords" content="PosOps fun.math.PosOps" />
+          <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+          
+      <link href="../../lib/template.css" media="screen" type="text/css" rel="stylesheet" />
+      <link href="../../lib/diagrams.css" media="screen" type="text/css" rel="stylesheet" id="diagrams-css" />
+      <script type="text/javascript" src="../../lib/jquery.js" id="jquery-js"></script>
+      <script type="text/javascript" src="../../lib/jquery-ui.js"></script>
+      <script type="text/javascript" src="../../lib/template.js"></script>
+      <script type="text/javascript" src="../../lib/tools.tooltip.js"></script>
+      
+      <script type="text/javascript">
+         if(top === self) {
+            var url = '../../index.html';
+            var hash = 'fun.math.PosOps';
+            var anchor = window.location.hash;
+            var anchor_opt = '';
+            if (anchor.length >= 1)
+              anchor_opt = '@' + anchor.substring(1);
+            window.location.href = url + '#' + hash + anchor_opt;
+         }
+   	  </script>
+    
+        </head>
+        <body class="type">
+      <div id="definition">
+        <img alt="Trait" src="../../lib/trait_big.png" />
+        <p id="owner"><a href="../package.html" class="extype" name="fun">fun</a>.<a href="package.html" class="extype" name="fun.math">math</a></p>
+        <h1>PosOps</h1><h3><span class="morelinks"><div>Related Doc:
+            <a href="package.html" class="extype" name="fun.math">package math</a>
+          </div></span></h3><span class="permalink">
+      <a href="../../index.html#fun.math.PosOps" title="Permalink" target="_top">
+        <img src="../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      </div>
+
+      <h4 id="signature" class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">trait</span>
+      </span>
+      <span class="symbol">
+        <span class="name">PosOps</span><span class="tparams">[<span name="Elem">Elem</span>, <span name="P">P &lt;: <a href="Pos.html" class="extype" name="fun.math.Pos">Pos</a></span>, <span name="V">V &lt;: <a href="Vec.html" class="extype" name="fun.math.Vec">Vec</a></span>]</span><span class="result"> extends <a href="TupleOps.html" class="extype" name="fun.math.TupleOps">TupleOps</a>[<span class="extype" name="fun.math.PosOps.Elem">Elem</span>, <span class="extype" name="fun.math.PosOps.P">P</span>, <span class="extype" name="fun.math.PosOps.V">V</span>]</span>
+      </span>
+      </h4>
+      
+          <div id="comment" class="fullcommenttop"><div class="toggleContainer block">
+          <span class="toggle">Linear Supertypes</span>
+          <div class="superTypes hiddenContent"><a href="TupleOps.html" class="extype" name="fun.math.TupleOps">TupleOps</a>[<span class="extype" name="fun.math.PosOps.Elem">Elem</span>, <span class="extype" name="fun.math.PosOps.P">P</span>, <span class="extype" name="fun.math.PosOps.V">V</span>], <a href="Numeric.html" class="extype" name="fun.math.Numeric">Numeric</a>, <span class="extype" name="scala.AnyRef">AnyRef</span>, <span class="extype" name="scala.Any">Any</span></div>
+        </div><div class="toggleContainer block">
+            <span class="toggle">Known Subclasses</span>
+            <div class="subClasses hiddenContent"><a href="Pos1d.html" class="extype" name="fun.math.Pos1d">Pos1d</a>, <a href="Pos2d.html" class="extype" name="fun.math.Pos2d">Pos2d</a>, <a href="Pos3d.html" class="extype" name="fun.math.Pos3d">Pos3d</a></div>
+          </div></div>
+        
+
+      <div id="mbrsel">
+        <div id="textfilter"><span class="pre"></span><span class="input"><input id="mbrsel-input" type="text" accesskey="/" /></span><span class="post"></span></div>
+        <div id="order">
+              <span class="filtertype">Ordering</span>
+              <ol>
+                
+                <li class="alpha in"><span>Alphabetic</span></li>
+                <li class="inherit out"><span>By inheritance</span></li>
+              </ol>
+            </div>
+        <div id="ancestors">
+                <span class="filtertype">Inherited<br />
+                </span>
+                <ol id="linearization">
+                  <li class="in" name="fun.math.PosOps"><span>PosOps</span></li><li class="in" name="fun.math.TupleOps"><span>TupleOps</span></li><li class="in" name="fun.math.Numeric"><span>Numeric</span></li><li class="in" name="scala.AnyRef"><span>AnyRef</span></li><li class="in" name="scala.Any"><span>Any</span></li>
+                </ol>
+              </div><div id="ancestors">
+            <span class="filtertype"></span>
+            <ol>
+              <li class="hideall out"><span>Hide All</span></li>
+              <li class="showall in"><span>Show all</span></li>
+            </ol>
+          </div>
+        <div id="visbl">
+            <span class="filtertype">Visibility</span>
+            <ol><li class="public in"><span>Public</span></li><li class="all out"><span>All</span></li></ol>
+          </div>
+      </div>
+
+      <div id="template">
+        <div id="allMembers">
+        
+
+        
+
+        <div id="values" class="values members">
+              <h3>Abstract Value Members</h3>
+              <ol><li name="fun.math.TupleOps#*" visbl="pub" data-isabs="true" fullComment="yes" group="Ungrouped">
+      <a id="*(s:Elem):Repr"></a>
+      <a id="*(Elem):P"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier">abstract </span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span title="gt4s: $times" class="name">*</span><span class="params">(<span name="s">s: <span class="extype" name="fun.math.PosOps.Elem">Elem</span></span>)</span><span class="result">: <span class="extype" name="fun.math.PosOps.P">P</span></span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../index.html#fun.math.PosOps@*(s:Elem):Repr" title="Permalink" target="_top">
+        <img src="../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      <p class="shortcomment cmt">The product of a scalar value with all components of this vector.</p><div class="fullcomment"><div class="comment cmt"><p>The product of a scalar value with all components of this vector.</p></div><dl class="attributes block"> <dt>Definition Classes</dt><dd><a href="TupleOps.html" class="extype" name="fun.math.TupleOps">TupleOps</a></dd></dl></div>
+    </li><li name="fun.math.TupleOps#*" visbl="pub" data-isabs="true" fullComment="yes" group="Ungrouped">
+      <a id="*(that:Alt):Repr"></a>
+      <a id="*(V):P"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier">abstract </span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span title="gt4s: $times" class="name">*</span><span class="params">(<span name="that">that: <span class="extype" name="fun.math.PosOps.V">V</span></span>)</span><span class="result">: <span class="extype" name="fun.math.PosOps.P">P</span></span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../index.html#fun.math.PosOps@*(that:Alt):Repr" title="Permalink" target="_top">
+        <img src="../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      <p class="shortcomment cmt">The component-wise multiplication of this vector with another vector.</p><div class="fullcomment"><div class="comment cmt"><p>The component-wise multiplication of this vector with another vector.</p></div><dl class="attributes block"> <dt>Definition Classes</dt><dd><a href="TupleOps.html" class="extype" name="fun.math.TupleOps">TupleOps</a></dd></dl></div>
+    </li><li name="fun.math.TupleOps#+" visbl="pub" data-isabs="true" fullComment="yes" group="Ungrouped">
+      <a id="+(s:Elem):Repr"></a>
+      <a id="+(Elem):P"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier">abstract </span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span title="gt4s: $plus" class="name">+</span><span class="params">(<span name="s">s: <span class="extype" name="fun.math.PosOps.Elem">Elem</span></span>)</span><span class="result">: <span class="extype" name="fun.math.PosOps.P">P</span></span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../index.html#fun.math.PosOps@+(s:Elem):Repr" title="Permalink" target="_top">
+        <img src="../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      <p class="shortcomment cmt">The addition of a scalar value to all components of this vector.</p><div class="fullcomment"><div class="comment cmt"><p>The addition of a scalar value to all components of this vector.</p></div><dl class="attributes block"> <dt>Definition Classes</dt><dd><a href="TupleOps.html" class="extype" name="fun.math.TupleOps">TupleOps</a></dd></dl></div>
+    </li><li name="fun.math.TupleOps#+" visbl="pub" data-isabs="true" fullComment="yes" group="Ungrouped">
+      <a id="+(that:Alt):Repr"></a>
+      <a id="+(V):P"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier">abstract </span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span title="gt4s: $plus" class="name">+</span><span class="params">(<span name="that">that: <span class="extype" name="fun.math.PosOps.V">V</span></span>)</span><span class="result">: <span class="extype" name="fun.math.PosOps.P">P</span></span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../index.html#fun.math.PosOps@+(that:Alt):Repr" title="Permalink" target="_top">
+        <img src="../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      <p class="shortcomment cmt">The component-wise addition of this vector with another vector.</p><div class="fullcomment"><div class="comment cmt"><p>The component-wise addition of this vector with another vector.</p></div><dl class="attributes block"> <dt>Definition Classes</dt><dd><a href="TupleOps.html" class="extype" name="fun.math.TupleOps">TupleOps</a></dd></dl></div>
+    </li><li name="fun.math.PosOps#-" visbl="pub" data-isabs="true" fullComment="no" group="Ungrouped">
+      <a id="-(that:P):V"></a>
+      <a id="-(P):V"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier">abstract </span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span title="gt4s: $minus" class="name">-</span><span class="params">(<span name="that">that: <span class="extype" name="fun.math.PosOps.P">P</span></span>)</span><span class="result">: <span class="extype" name="fun.math.PosOps.V">V</span></span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../index.html#fun.math.PosOps@-(that:P):V" title="Permalink" target="_top">
+        <img src="../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      
+    </li><li name="fun.math.TupleOps#-" visbl="pub" data-isabs="true" fullComment="yes" group="Ungrouped">
+      <a id="-(s:Elem):Repr"></a>
+      <a id="-(Elem):P"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier">abstract </span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span title="gt4s: $minus" class="name">-</span><span class="params">(<span name="s">s: <span class="extype" name="fun.math.PosOps.Elem">Elem</span></span>)</span><span class="result">: <span class="extype" name="fun.math.PosOps.P">P</span></span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../index.html#fun.math.PosOps@-(s:Elem):Repr" title="Permalink" target="_top">
+        <img src="../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      <p class="shortcomment cmt">The subtraction of a scalar value from all components of this vector.</p><div class="fullcomment"><div class="comment cmt"><p>The subtraction of a scalar value from all components of this vector.</p></div><dl class="attributes block"> <dt>Definition Classes</dt><dd><a href="TupleOps.html" class="extype" name="fun.math.TupleOps">TupleOps</a></dd></dl></div>
+    </li><li name="fun.math.TupleOps#-" visbl="pub" data-isabs="true" fullComment="yes" group="Ungrouped">
+      <a id="-(that:Alt):Repr"></a>
+      <a id="-(V):P"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier">abstract </span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span title="gt4s: $minus" class="name">-</span><span class="params">(<span name="that">that: <span class="extype" name="fun.math.PosOps.V">V</span></span>)</span><span class="result">: <span class="extype" name="fun.math.PosOps.P">P</span></span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../index.html#fun.math.PosOps@-(that:Alt):Repr" title="Permalink" target="_top">
+        <img src="../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      <p class="shortcomment cmt">The component-wise subtraction of another vector from this vector.</p><div class="fullcomment"><div class="comment cmt"><p>The component-wise subtraction of another vector from this vector.</p></div><dl class="attributes block"> <dt>Definition Classes</dt><dd><a href="TupleOps.html" class="extype" name="fun.math.TupleOps">TupleOps</a></dd></dl></div>
+    </li><li name="fun.math.TupleOps#/" visbl="pub" data-isabs="true" fullComment="yes" group="Ungrouped">
+      <a id="/(s:Elem):Repr"></a>
+      <a id="/(Elem):P"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier">abstract </span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span title="gt4s: $div" class="name">/</span><span class="params">(<span name="s">s: <span class="extype" name="fun.math.PosOps.Elem">Elem</span></span>)</span><span class="result">: <span class="extype" name="fun.math.PosOps.P">P</span></span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../index.html#fun.math.PosOps@/(s:Elem):Repr" title="Permalink" target="_top">
+        <img src="../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      <p class="shortcomment cmt">The quotient of dividing all components of this vector by a scalar value.</p><div class="fullcomment"><div class="comment cmt"><p>The quotient of dividing all components of this vector by a scalar value.</p></div><dl class="attributes block"> <dt>Definition Classes</dt><dd><a href="TupleOps.html" class="extype" name="fun.math.TupleOps">TupleOps</a></dd></dl></div>
+    </li><li name="fun.math.TupleOps#/" visbl="pub" data-isabs="true" fullComment="yes" group="Ungrouped">
+      <a id="/(that:Alt):Repr"></a>
+      <a id="/(V):P"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier">abstract </span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span title="gt4s: $div" class="name">/</span><span class="params">(<span name="that">that: <span class="extype" name="fun.math.PosOps.V">V</span></span>)</span><span class="result">: <span class="extype" name="fun.math.PosOps.P">P</span></span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../index.html#fun.math.PosOps@/(that:Alt):Repr" title="Permalink" target="_top">
+        <img src="../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      <p class="shortcomment cmt">The component-wise division of this vector by another vector.</p><div class="fullcomment"><div class="comment cmt"><p>The component-wise division of this vector by another vector.</p></div><dl class="attributes block"> <dt>Definition Classes</dt><dd><a href="TupleOps.html" class="extype" name="fun.math.TupleOps">TupleOps</a></dd></dl></div>
+    </li><li name="fun.math.TupleOps#/:" visbl="pub" data-isabs="true" fullComment="yes" group="Ungrouped">
+      <a id="/:[A](start:A)(f:(A,Elem)=&gt;A):A"></a>
+      <a id="/:[A](A)((A,Elem)⇒A):A"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier">abstract </span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span title="gt4s: $div$colon" class="name">/:</span><span class="tparams">[<span name="A">A</span>]</span><span class="params">(<span name="start">start: <span class="extype" name="fun.math.TupleOps./:.A">A</span></span>)</span><span class="params">(<span name="f">f: (<span class="extype" name="fun.math.TupleOps./:.A">A</span>, <span class="extype" name="fun.math.PosOps.Elem">Elem</span>) ⇒ <span class="extype" name="fun.math.TupleOps./:.A">A</span></span>)</span><span class="result">: <span class="extype" name="fun.math.TupleOps./:.A">A</span></span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../index.html#fun.math.PosOps@/:[A](start:A)(f:(A,Elem)=&gt;A):A" title="Permalink" target="_top">
+        <img src="../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      <p class="shortcomment cmt">Applies a binary operator to a start value and all components of this vector, going
+left to right.</p><div class="fullcomment"><div class="comment cmt"><p>Applies a binary operator to a start value and all components of this vector, going
+left to right.
+</p></div><dl class="attributes block"> <dt>Definition Classes</dt><dd><a href="TupleOps.html" class="extype" name="fun.math.TupleOps">TupleOps</a></dd></dl></div>
+    </li><li name="fun.math.TupleOps#:\" visbl="pub" data-isabs="true" fullComment="yes" group="Ungrouped">
+      <a id=":\[A](start:A)(f:(Elem,A)=&gt;A):A"></a>
+      <a id=":\[A](A)((Elem,A)⇒A):A"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier">abstract </span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span title="gt4s: $colon$bslash" class="name">:\</span><span class="tparams">[<span name="A">A</span>]</span><span class="params">(<span name="start">start: <span class="extype" name="fun.math.TupleOps.:\.A">A</span></span>)</span><span class="params">(<span name="f">f: (<span class="extype" name="fun.math.PosOps.Elem">Elem</span>, <span class="extype" name="fun.math.TupleOps.:\.A">A</span>) ⇒ <span class="extype" name="fun.math.TupleOps.:\.A">A</span></span>)</span><span class="result">: <span class="extype" name="fun.math.TupleOps.:\.A">A</span></span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../index.html#fun.math.PosOps@:\[A](start:A)(f:(Elem,A)=&gt;A):A" title="Permalink" target="_top">
+        <img src="../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      <p class="shortcomment cmt">Applies a binary operator to a start value and all components of this vector,
+going right to left.</p><div class="fullcomment"><div class="comment cmt"><p>Applies a binary operator to a start value and all components of this vector,
+going right to left.
+</p></div><dl class="attributes block"> <dt>Definition Classes</dt><dd><a href="TupleOps.html" class="extype" name="fun.math.TupleOps">TupleOps</a></dd></dl></div>
+    </li><li name="fun.math.TupleOps#&gt;&gt;&gt;" visbl="pub" data-isabs="true" fullComment="yes" group="Ungrouped">
+      <a id="&gt;&gt;&gt;(buf:java.nio.DoubleBuffer):Unit"></a>
+      <a id="&gt;&gt;&gt;(DoubleBuffer):Unit"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier">abstract </span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span title="gt4s: $greater$greater$greater" class="name">&gt;&gt;&gt;</span><span class="params">(<span name="buf">buf: <span class="extype" name="java.nio.DoubleBuffer">DoubleBuffer</span></span>)</span><span class="result">: <span class="extype" name="scala.Unit">Unit</span></span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../index.html#fun.math.PosOps@&gt;&gt;&gt;(buf:java.nio.DoubleBuffer):Unit" title="Permalink" target="_top">
+        <img src="../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      <p class="shortcomment cmt">Add the component values from this vector (as Doubles) starting at the current buffer position to a native array.</p><div class="fullcomment"><div class="comment cmt"><p>Add the component values from this vector (as Doubles) starting at the current buffer position to a native array.</p></div><dl class="attributes block"> <dt>Definition Classes</dt><dd><a href="TupleOps.html" class="extype" name="fun.math.TupleOps">TupleOps</a></dd></dl></div>
+    </li><li name="fun.math.TupleOps#&gt;&gt;&gt;" visbl="pub" data-isabs="true" fullComment="yes" group="Ungrouped">
+      <a id="&gt;&gt;&gt;(buf:java.nio.FloatBuffer):Unit"></a>
+      <a id="&gt;&gt;&gt;(FloatBuffer):Unit"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier">abstract </span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span title="gt4s: $greater$greater$greater" class="name">&gt;&gt;&gt;</span><span class="params">(<span name="buf">buf: <span class="extype" name="java.nio.FloatBuffer">FloatBuffer</span></span>)</span><span class="result">: <span class="extype" name="scala.Unit">Unit</span></span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../index.html#fun.math.PosOps@&gt;&gt;&gt;(buf:java.nio.FloatBuffer):Unit" title="Permalink" target="_top">
+        <img src="../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      <p class="shortcomment cmt">Add the component values from this vector (as Floats) starting at the current buffer position to a native array.</p><div class="fullcomment"><div class="comment cmt"><p>Add the component values from this vector (as Floats) starting at the current buffer position to a native array.</p></div><dl class="attributes block"> <dt>Definition Classes</dt><dd><a href="TupleOps.html" class="extype" name="fun.math.TupleOps">TupleOps</a></dd></dl></div>
+    </li><li name="fun.math.TupleOps#&gt;&gt;&gt;" visbl="pub" data-isabs="true" fullComment="yes" group="Ungrouped">
+      <a id="&gt;&gt;&gt;(buf:java.nio.LongBuffer):Unit"></a>
+      <a id="&gt;&gt;&gt;(LongBuffer):Unit"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier">abstract </span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span title="gt4s: $greater$greater$greater" class="name">&gt;&gt;&gt;</span><span class="params">(<span name="buf">buf: <span class="extype" name="java.nio.LongBuffer">LongBuffer</span></span>)</span><span class="result">: <span class="extype" name="scala.Unit">Unit</span></span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../index.html#fun.math.PosOps@&gt;&gt;&gt;(buf:java.nio.LongBuffer):Unit" title="Permalink" target="_top">
+        <img src="../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      <p class="shortcomment cmt">Add the component values from this vector (as Longs) starting at the current buffer position to a native array.</p><div class="fullcomment"><div class="comment cmt"><p>Add the component values from this vector (as Longs) starting at the current buffer position to a native array.</p></div><dl class="attributes block"> <dt>Definition Classes</dt><dd><a href="TupleOps.html" class="extype" name="fun.math.TupleOps">TupleOps</a></dd></dl></div>
+    </li><li name="fun.math.TupleOps#&gt;&gt;&gt;" visbl="pub" data-isabs="true" fullComment="yes" group="Ungrouped">
+      <a id="&gt;&gt;&gt;(buf:java.nio.IntBuffer):Unit"></a>
+      <a id="&gt;&gt;&gt;(IntBuffer):Unit"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier">abstract </span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span title="gt4s: $greater$greater$greater" class="name">&gt;&gt;&gt;</span><span class="params">(<span name="buf">buf: <span class="extype" name="java.nio.IntBuffer">IntBuffer</span></span>)</span><span class="result">: <span class="extype" name="scala.Unit">Unit</span></span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../index.html#fun.math.PosOps@&gt;&gt;&gt;(buf:java.nio.IntBuffer):Unit" title="Permalink" target="_top">
+        <img src="../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      <p class="shortcomment cmt">Add the component values from this vector (as Ints) starting at the current buffer position to a native array.</p><div class="fullcomment"><div class="comment cmt"><p>Add the component values from this vector (as Ints) starting at the current buffer position to a native array.</p></div><dl class="attributes block"> <dt>Definition Classes</dt><dd><a href="TupleOps.html" class="extype" name="fun.math.TupleOps">TupleOps</a></dd></dl></div>
+    </li><li name="fun.math.TupleOps#&gt;&gt;&gt;" visbl="pub" data-isabs="true" fullComment="yes" group="Ungrouped">
+      <a id="&gt;&gt;&gt;(buf:java.nio.ShortBuffer):Unit"></a>
+      <a id="&gt;&gt;&gt;(ShortBuffer):Unit"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier">abstract </span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span title="gt4s: $greater$greater$greater" class="name">&gt;&gt;&gt;</span><span class="params">(<span name="buf">buf: <span class="extype" name="java.nio.ShortBuffer">ShortBuffer</span></span>)</span><span class="result">: <span class="extype" name="scala.Unit">Unit</span></span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../index.html#fun.math.PosOps@&gt;&gt;&gt;(buf:java.nio.ShortBuffer):Unit" title="Permalink" target="_top">
+        <img src="../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      <p class="shortcomment cmt">Add the component values from this vector (as Shorts) starting at the current buffer position to a native array.</p><div class="fullcomment"><div class="comment cmt"><p>Add the component values from this vector (as Shorts) starting at the current buffer position to a native array.</p></div><dl class="attributes block"> <dt>Definition Classes</dt><dd><a href="TupleOps.html" class="extype" name="fun.math.TupleOps">TupleOps</a></dd></dl></div>
+    </li><li name="fun.math.TupleOps#&gt;&gt;&gt;" visbl="pub" data-isabs="true" fullComment="yes" group="Ungrouped">
+      <a id="&gt;&gt;&gt;(buf:java.nio.CharBuffer):Unit"></a>
+      <a id="&gt;&gt;&gt;(CharBuffer):Unit"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier">abstract </span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span title="gt4s: $greater$greater$greater" class="name">&gt;&gt;&gt;</span><span class="params">(<span name="buf">buf: <span class="extype" name="java.nio.CharBuffer">CharBuffer</span></span>)</span><span class="result">: <span class="extype" name="scala.Unit">Unit</span></span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../index.html#fun.math.PosOps@&gt;&gt;&gt;(buf:java.nio.CharBuffer):Unit" title="Permalink" target="_top">
+        <img src="../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      <p class="shortcomment cmt">Add the component values from this vector (as Chars) starting at the current buffer position to a native array.</p><div class="fullcomment"><div class="comment cmt"><p>Add the component values from this vector (as Chars) starting at the current buffer position to a native array.</p></div><dl class="attributes block"> <dt>Definition Classes</dt><dd><a href="TupleOps.html" class="extype" name="fun.math.TupleOps">TupleOps</a></dd></dl></div>
+    </li><li name="fun.math.TupleOps#canEqual" visbl="pub" data-isabs="true" fullComment="yes" group="Ungrouped">
+      <a id="canEqual(that:Any):Boolean"></a>
+      <a id="canEqual(Any):Boolean"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier">abstract </span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">canEqual</span><span class="params">(<span name="that">that: <span class="extype" name="scala.Any">Any</span></span>)</span><span class="result">: <span class="extype" name="scala.Boolean">Boolean</span></span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../index.html#fun.math.PosOps@canEqual(that:Any):Boolean" title="Permalink" target="_top">
+        <img src="../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      <p class="shortcomment cmt">A method that should be called from every well-designed equals method that is open
+to be overridden in a subclass.</p><div class="fullcomment"><div class="comment cmt"><p>A method that should be called from every well-designed equals method that is open
+to be overridden in a subclass.
+</p></div><dl class="attributes block"> <dt>Definition Classes</dt><dd><a href="TupleOps.html" class="extype" name="fun.math.TupleOps">TupleOps</a></dd></dl></div>
+    </li><li name="fun.math.TupleOps#clamp" visbl="pub" data-isabs="true" fullComment="yes" group="Ungrouped">
+      <a id="clamp(lower:Repr,upper:Repr):Repr"></a>
+      <a id="clamp(P,P):P"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier">abstract </span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">clamp</span><span class="params">(<span name="lower">lower: <span class="extype" name="fun.math.PosOps.P">P</span></span>, <span name="upper">upper: <span class="extype" name="fun.math.PosOps.P">P</span></span>)</span><span class="result">: <span class="extype" name="fun.math.PosOps.P">P</span></span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../index.html#fun.math.PosOps@clamp(lower:Repr,upper:Repr):Repr" title="Permalink" target="_top">
+        <img src="../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      <p class="shortcomment cmt">Builds a new vector who's components are clamped to be between the given upper and lower bounds.</p><div class="fullcomment"><div class="comment cmt"><p>Builds a new vector who's components are clamped to be between the given upper and lower bounds.</p></div><dl class="attributes block"> <dt>Definition Classes</dt><dd><a href="TupleOps.html" class="extype" name="fun.math.TupleOps">TupleOps</a></dd></dl></div>
+    </li><li name="fun.math.TupleOps#compwise" visbl="pub" data-isabs="true" fullComment="yes" group="Ungrouped">
+      <a id="compwise(a:Repr,b:Repr)(p:(Elem,Elem,Elem)=&gt;Elem):Repr"></a>
+      <a id="compwise(P,P)((Elem,Elem,Elem)⇒Elem):P"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier">abstract </span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">compwise</span><span class="params">(<span name="a">a: <span class="extype" name="fun.math.PosOps.P">P</span></span>, <span name="b">b: <span class="extype" name="fun.math.PosOps.P">P</span></span>)</span><span class="params">(<span name="p">p: (<span class="extype" name="fun.math.PosOps.Elem">Elem</span>, <span class="extype" name="fun.math.PosOps.Elem">Elem</span>, <span class="extype" name="fun.math.PosOps.Elem">Elem</span>) ⇒ <span class="extype" name="fun.math.PosOps.Elem">Elem</span></span>)</span><span class="result">: <span class="extype" name="fun.math.PosOps.P">P</span></span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../index.html#fun.math.PosOps@compwise(a:Repr,b:Repr)(p:(Elem,Elem,Elem)=&gt;Elem):Repr" title="Permalink" target="_top">
+        <img src="../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      <p class="shortcomment cmt">Builds a new vector by apply a function to the corresponding elements of this and two other vectors.</p><div class="fullcomment"><div class="comment cmt"><p>Builds a new vector by apply a function to the corresponding elements of this and two other vectors.</p></div><dl class="attributes block"> <dt>Definition Classes</dt><dd><a href="TupleOps.html" class="extype" name="fun.math.TupleOps">TupleOps</a></dd></dl></div>
+    </li><li name="fun.math.TupleOps#compwise" visbl="pub" data-isabs="true" fullComment="yes" group="Ungrouped">
+      <a id="compwise(that:Repr)(p:(Elem,Elem)=&gt;Elem):Repr"></a>
+      <a id="compwise(P)((Elem,Elem)⇒Elem):P"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier">abstract </span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">compwise</span><span class="params">(<span name="that">that: <span class="extype" name="fun.math.PosOps.P">P</span></span>)</span><span class="params">(<span name="p">p: (<span class="extype" name="fun.math.PosOps.Elem">Elem</span>, <span class="extype" name="fun.math.PosOps.Elem">Elem</span>) ⇒ <span class="extype" name="fun.math.PosOps.Elem">Elem</span></span>)</span><span class="result">: <span class="extype" name="fun.math.PosOps.P">P</span></span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../index.html#fun.math.PosOps@compwise(that:Repr)(p:(Elem,Elem)=&gt;Elem):Repr" title="Permalink" target="_top">
+        <img src="../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      <p class="shortcomment cmt">Builds a new vector by apply a function to the corresponding elements of this and another vector.</p><div class="fullcomment"><div class="comment cmt"><p>Builds a new vector by apply a function to the corresponding elements of this and another vector.</p></div><dl class="attributes block"> <dt>Definition Classes</dt><dd><a href="TupleOps.html" class="extype" name="fun.math.TupleOps">TupleOps</a></dd></dl></div>
+    </li><li name="fun.math.TupleOps#equiv" visbl="pub" data-isabs="true" fullComment="yes" group="Ungrouped">
+      <a id="equiv(that:Repr):Boolean"></a>
+      <a id="equiv(P):Boolean"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier">abstract </span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">equiv</span><span class="params">(<span name="that">that: <span class="extype" name="fun.math.PosOps.P">P</span></span>)</span><span class="result">: <span class="extype" name="scala.Boolean">Boolean</span></span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../index.html#fun.math.PosOps@equiv(that:Repr):Boolean" title="Permalink" target="_top">
+        <img src="../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      <p class="shortcomment cmt">Whether another vector is within a the standard epsilon of this vector.</p><div class="fullcomment"><div class="comment cmt"><p>Whether another vector is within a the standard epsilon of this vector.</p></div><dl class="attributes block"> <dt>Definition Classes</dt><dd><a href="TupleOps.html" class="extype" name="fun.math.TupleOps">TupleOps</a></dd></dl></div>
+    </li><li name="fun.math.TupleOps#equiv" visbl="pub" data-isabs="true" fullComment="yes" group="Ungrouped">
+      <a id="equiv(that:Repr,epsilon:Elem):Boolean"></a>
+      <a id="equiv(P,Elem):Boolean"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier">abstract </span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">equiv</span><span class="params">(<span name="that">that: <span class="extype" name="fun.math.PosOps.P">P</span></span>, <span name="epsilon">epsilon: <span class="extype" name="fun.math.PosOps.Elem">Elem</span></span>)</span><span class="result">: <span class="extype" name="scala.Boolean">Boolean</span></span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../index.html#fun.math.PosOps@equiv(that:Repr,epsilon:Elem):Boolean" title="Permalink" target="_top">
+        <img src="../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      <p class="shortcomment cmt">Whether another vector is within a given epsilon of this vector.</p><div class="fullcomment"><div class="comment cmt"><p>Whether another vector is within a given epsilon of this vector.</p></div><dl class="attributes block"> <dt>Definition Classes</dt><dd><a href="TupleOps.html" class="extype" name="fun.math.TupleOps">TupleOps</a></dd></dl></div>
+    </li><li name="fun.math.TupleOps#foldLeft" visbl="pub" data-isabs="true" fullComment="yes" group="Ungrouped">
+      <a id="foldLeft[A](start:A)(f:(A,Elem)=&gt;A):A"></a>
+      <a id="foldLeft[A](A)((A,Elem)⇒A):A"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier">abstract </span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">foldLeft</span><span class="tparams">[<span name="A">A</span>]</span><span class="params">(<span name="start">start: <span class="extype" name="fun.math.TupleOps.foldLeft.A">A</span></span>)</span><span class="params">(<span name="f">f: (<span class="extype" name="fun.math.TupleOps.foldLeft.A">A</span>, <span class="extype" name="fun.math.PosOps.Elem">Elem</span>) ⇒ <span class="extype" name="fun.math.TupleOps.foldLeft.A">A</span></span>)</span><span class="result">: <span class="extype" name="fun.math.TupleOps.foldLeft.A">A</span></span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../index.html#fun.math.PosOps@foldLeft[A](start:A)(f:(A,Elem)=&gt;A):A" title="Permalink" target="_top">
+        <img src="../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      <p class="shortcomment cmt">Applies a binary operator to a start value and all components of this vector, going
+left to right.</p><div class="fullcomment"><div class="comment cmt"><p>Applies a binary operator to a start value and all components of this vector, going
+left to right.
+</p></div><dl class="attributes block"> <dt>Definition Classes</dt><dd><a href="TupleOps.html" class="extype" name="fun.math.TupleOps">TupleOps</a></dd></dl></div>
+    </li><li name="fun.math.TupleOps#foldRight" visbl="pub" data-isabs="true" fullComment="yes" group="Ungrouped">
+      <a id="foldRight[A](start:A)(f:(Elem,A)=&gt;A):A"></a>
+      <a id="foldRight[A](A)((Elem,A)⇒A):A"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier">abstract </span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">foldRight</span><span class="tparams">[<span name="A">A</span>]</span><span class="params">(<span name="start">start: <span class="extype" name="fun.math.TupleOps.foldRight.A">A</span></span>)</span><span class="params">(<span name="f">f: (<span class="extype" name="fun.math.PosOps.Elem">Elem</span>, <span class="extype" name="fun.math.TupleOps.foldRight.A">A</span>) ⇒ <span class="extype" name="fun.math.TupleOps.foldRight.A">A</span></span>)</span><span class="result">: <span class="extype" name="fun.math.TupleOps.foldRight.A">A</span></span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../index.html#fun.math.PosOps@foldRight[A](start:A)(f:(Elem,A)=&gt;A):A" title="Permalink" target="_top">
+        <img src="../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      <p class="shortcomment cmt">Applies a binary operator to a start value and all components of this vector,
+going right to left.</p><div class="fullcomment"><div class="comment cmt"><p>Applies a binary operator to a start value and all components of this vector,
+going right to left.
+</p></div><dl class="attributes block"> <dt>Definition Classes</dt><dd><a href="TupleOps.html" class="extype" name="fun.math.TupleOps">TupleOps</a></dd></dl></div>
+    </li><li name="fun.math.TupleOps#forall" visbl="pub" data-isabs="true" fullComment="yes" group="Ungrouped">
+      <a id="forall(that:Repr)(p:(Elem,Elem)=&gt;Boolean):Boolean"></a>
+      <a id="forall(P)((Elem,Elem)⇒Boolean):Boolean"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier">abstract </span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">forall</span><span class="params">(<span name="that">that: <span class="extype" name="fun.math.PosOps.P">P</span></span>)</span><span class="params">(<span name="p">p: (<span class="extype" name="fun.math.PosOps.Elem">Elem</span>, <span class="extype" name="fun.math.PosOps.Elem">Elem</span>) ⇒ <span class="extype" name="scala.Boolean">Boolean</span></span>)</span><span class="result">: <span class="extype" name="scala.Boolean">Boolean</span></span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../index.html#fun.math.PosOps@forall(that:Repr)(p:(Elem,Elem)=&gt;Boolean):Boolean" title="Permalink" target="_top">
+        <img src="../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      <p class="shortcomment cmt">Tests whether a predicate holds true for all of the corresponding components
+of this and another vector.</p><div class="fullcomment"><div class="comment cmt"><p>Tests whether a predicate holds true for all of the corresponding components
+of this and another vector.
+</p></div><dl class="attributes block"> <dt>Definition Classes</dt><dd><a href="TupleOps.html" class="extype" name="fun.math.TupleOps">TupleOps</a></dd></dl></div>
+    </li><li name="fun.math.TupleOps#forall" visbl="pub" data-isabs="true" fullComment="yes" group="Ungrouped">
+      <a id="forall(p:Elem=&gt;Boolean):Boolean"></a>
+      <a id="forall((Elem)⇒Boolean):Boolean"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier">abstract </span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">forall</span><span class="params">(<span name="p">p: (<span class="extype" name="fun.math.PosOps.Elem">Elem</span>) ⇒ <span class="extype" name="scala.Boolean">Boolean</span></span>)</span><span class="result">: <span class="extype" name="scala.Boolean">Boolean</span></span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../index.html#fun.math.PosOps@forall(p:Elem=&gt;Boolean):Boolean" title="Permalink" target="_top">
+        <img src="../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      <p class="shortcomment cmt">Tests whether a predicate holds true for all components of this vector.</p><div class="fullcomment"><div class="comment cmt"><p>Tests whether a predicate holds true for all components of this vector.</p></div><dl class="attributes block"> <dt>Definition Classes</dt><dd><a href="TupleOps.html" class="extype" name="fun.math.TupleOps">TupleOps</a></dd></dl></div>
+    </li><li name="fun.math.TupleOps#forany" visbl="pub" data-isabs="true" fullComment="yes" group="Ungrouped">
+      <a id="forany(that:Repr)(p:(Elem,Elem)=&gt;Boolean):Boolean"></a>
+      <a id="forany(P)((Elem,Elem)⇒Boolean):Boolean"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier">abstract </span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">forany</span><span class="params">(<span name="that">that: <span class="extype" name="fun.math.PosOps.P">P</span></span>)</span><span class="params">(<span name="p">p: (<span class="extype" name="fun.math.PosOps.Elem">Elem</span>, <span class="extype" name="fun.math.PosOps.Elem">Elem</span>) ⇒ <span class="extype" name="scala.Boolean">Boolean</span></span>)</span><span class="result">: <span class="extype" name="scala.Boolean">Boolean</span></span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../index.html#fun.math.PosOps@forany(that:Repr)(p:(Elem,Elem)=&gt;Boolean):Boolean" title="Permalink" target="_top">
+        <img src="../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      <p class="shortcomment cmt">Tests whether a predicate holds true for any of the corresponding components
+of this and another vector.</p><div class="fullcomment"><div class="comment cmt"><p>Tests whether a predicate holds true for any of the corresponding components
+of this and another vector.
+</p></div><dl class="attributes block"> <dt>Definition Classes</dt><dd><a href="TupleOps.html" class="extype" name="fun.math.TupleOps">TupleOps</a></dd></dl></div>
+    </li><li name="fun.math.TupleOps#forany" visbl="pub" data-isabs="true" fullComment="yes" group="Ungrouped">
+      <a id="forany(p:Elem=&gt;Boolean):Boolean"></a>
+      <a id="forany((Elem)⇒Boolean):Boolean"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier">abstract </span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">forany</span><span class="params">(<span name="p">p: (<span class="extype" name="fun.math.PosOps.Elem">Elem</span>) ⇒ <span class="extype" name="scala.Boolean">Boolean</span></span>)</span><span class="result">: <span class="extype" name="scala.Boolean">Boolean</span></span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../index.html#fun.math.PosOps@forany(p:Elem=&gt;Boolean):Boolean" title="Permalink" target="_top">
+        <img src="../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      <p class="shortcomment cmt">Tests whether a predicate holds true for any component of this vector.</p><div class="fullcomment"><div class="comment cmt"><p>Tests whether a predicate holds true for any component of this vector.</p></div><dl class="attributes block"> <dt>Definition Classes</dt><dd><a href="TupleOps.html" class="extype" name="fun.math.TupleOps">TupleOps</a></dd></dl></div>
+    </li><li name="fun.math.TupleOps#foreach" visbl="pub" data-isabs="true" fullComment="yes" group="Ungrouped">
+      <a id="foreach(p:Elem=&gt;Unit):Unit"></a>
+      <a id="foreach((Elem)⇒Unit):Unit"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier">abstract </span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">foreach</span><span class="params">(<span name="p">p: (<span class="extype" name="fun.math.PosOps.Elem">Elem</span>) ⇒ <span class="extype" name="scala.Unit">Unit</span></span>)</span><span class="result">: <span class="extype" name="scala.Unit">Unit</span></span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../index.html#fun.math.PosOps@foreach(p:Elem=&gt;Unit):Unit" title="Permalink" target="_top">
+        <img src="../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      <p class="shortcomment cmt">Applies a function to all components of this vector.</p><div class="fullcomment"><div class="comment cmt"><p>Applies a function to all components of this vector.</p></div><dl class="paramcmts block"><dt class="param">p</dt><dd class="cmt"><p>The function that is applied for its side-effect only to every component.</p></dd></dl><dl class="attributes block"> <dt>Definition Classes</dt><dd><a href="TupleOps.html" class="extype" name="fun.math.TupleOps">TupleOps</a></dd></dl></div>
+    </li><li name="fun.math.Numeric#isNaN" visbl="pub" data-isabs="true" fullComment="yes" group="Ungrouped">
+      <a id="isNaN:Boolean"></a>
+      <a id="isNaN:Boolean"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier">abstract </span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">isNaN</span><span class="result">: <span class="extype" name="scala.Boolean">Boolean</span></span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../index.html#fun.math.PosOps@isNaN:Boolean" title="Permalink" target="_top">
+        <img src="../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      <p class="shortcomment cmt">Whether any components are Not-a-Number (NaN).</p><div class="fullcomment"><div class="comment cmt"><p>Whether any components are Not-a-Number (NaN).</p></div><dl class="attributes block"> <dt>Definition Classes</dt><dd><a href="Numeric.html" class="extype" name="fun.math.Numeric">Numeric</a></dd></dl></div>
+    </li><li name="fun.math.TupleOps#map" visbl="pub" data-isabs="true" fullComment="yes" group="Ungrouped">
+      <a id="map(p:Elem=&gt;Elem):Repr"></a>
+      <a id="map((Elem)⇒Elem):P"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier">abstract </span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">map</span><span class="params">(<span name="p">p: (<span class="extype" name="fun.math.PosOps.Elem">Elem</span>) ⇒ <span class="extype" name="fun.math.PosOps.Elem">Elem</span></span>)</span><span class="result">: <span class="extype" name="fun.math.PosOps.P">P</span></span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../index.html#fun.math.PosOps@map(p:Elem=&gt;Elem):Repr" title="Permalink" target="_top">
+        <img src="../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      <p class="shortcomment cmt">Builds a new vector by applying a function to each component of this vector.</p><div class="fullcomment"><div class="comment cmt"><p>Builds a new vector by applying a function to each component of this vector.</p></div><dl class="attributes block"> <dt>Definition Classes</dt><dd><a href="TupleOps.html" class="extype" name="fun.math.TupleOps">TupleOps</a></dd></dl></div>
+    </li><li name="fun.math.TupleOps#max" visbl="pub" data-isabs="true" fullComment="yes" group="Ungrouped">
+      <a id="max:Elem"></a>
+      <a id="max:Elem"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier">abstract </span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">max</span><span class="result">: <span class="extype" name="fun.math.PosOps.Elem">Elem</span></span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../index.html#fun.math.PosOps@max:Elem" title="Permalink" target="_top">
+        <img src="../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      <p class="shortcomment cmt">The maximum valued component of this vector.</p><div class="fullcomment"><div class="comment cmt"><p>The maximum valued component of this vector.</p></div><dl class="attributes block"> <dt>Definition Classes</dt><dd><a href="TupleOps.html" class="extype" name="fun.math.TupleOps">TupleOps</a></dd></dl></div>
+    </li><li name="fun.math.TupleOps#max" visbl="pub" data-isabs="true" fullComment="yes" group="Ungrouped">
+      <a id="max(that:Repr):Repr"></a>
+      <a id="max(P):P"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier">abstract </span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">max</span><span class="params">(<span name="that">that: <span class="extype" name="fun.math.PosOps.P">P</span></span>)</span><span class="result">: <span class="extype" name="fun.math.PosOps.P">P</span></span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../index.html#fun.math.PosOps@max(that:Repr):Repr" title="Permalink" target="_top">
+        <img src="../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      <p class="shortcomment cmt">Builds a new vector who's components are the maximum of the corresponding components of this and another vector.</p><div class="fullcomment"><div class="comment cmt"><p>Builds a new vector who's components are the maximum of the corresponding components of this and another vector.</p></div><dl class="attributes block"> <dt>Definition Classes</dt><dd><a href="TupleOps.html" class="extype" name="fun.math.TupleOps">TupleOps</a></dd></dl></div>
+    </li><li name="fun.math.TupleOps#min" visbl="pub" data-isabs="true" fullComment="yes" group="Ungrouped">
+      <a id="min:Elem"></a>
+      <a id="min:Elem"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier">abstract </span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">min</span><span class="result">: <span class="extype" name="fun.math.PosOps.Elem">Elem</span></span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../index.html#fun.math.PosOps@min:Elem" title="Permalink" target="_top">
+        <img src="../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      <p class="shortcomment cmt">The minimum valued component of this vector.</p><div class="fullcomment"><div class="comment cmt"><p>The minimum valued component of this vector.</p></div><dl class="attributes block"> <dt>Definition Classes</dt><dd><a href="TupleOps.html" class="extype" name="fun.math.TupleOps">TupleOps</a></dd></dl></div>
+    </li><li name="fun.math.TupleOps#min" visbl="pub" data-isabs="true" fullComment="yes" group="Ungrouped">
+      <a id="min(that:Repr):Repr"></a>
+      <a id="min(P):P"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier">abstract </span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">min</span><span class="params">(<span name="that">that: <span class="extype" name="fun.math.PosOps.P">P</span></span>)</span><span class="result">: <span class="extype" name="fun.math.PosOps.P">P</span></span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../index.html#fun.math.PosOps@min(that:Repr):Repr" title="Permalink" target="_top">
+        <img src="../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      <p class="shortcomment cmt">Builds a new vector who's components are the minimum of the corresponding components of this and another vector.</p><div class="fullcomment"><div class="comment cmt"><p>Builds a new vector who's components are the minimum of the corresponding components of this and another vector.</p></div><dl class="attributes block"> <dt>Definition Classes</dt><dd><a href="TupleOps.html" class="extype" name="fun.math.TupleOps">TupleOps</a></dd></dl></div>
+    </li><li name="fun.math.TupleOps#putNative" visbl="pub" data-isabs="true" fullComment="yes" group="Ungrouped">
+      <a id="putNative(buf:java.nio.DoubleBuffer):Unit"></a>
+      <a id="putNative(DoubleBuffer):Unit"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier">abstract </span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">putNative</span><span class="params">(<span name="buf">buf: <span class="extype" name="java.nio.DoubleBuffer">DoubleBuffer</span></span>)</span><span class="result">: <span class="extype" name="scala.Unit">Unit</span></span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../index.html#fun.math.PosOps@putNative(buf:java.nio.DoubleBuffer):Unit" title="Permalink" target="_top">
+        <img src="../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      <p class="shortcomment cmt">Add the component values from this vector (as Doubles) starting at the current buffer position to a native array.</p><div class="fullcomment"><div class="comment cmt"><p>Add the component values from this vector (as Doubles) starting at the current buffer position to a native array.</p></div><dl class="attributes block"> <dt>Definition Classes</dt><dd><a href="TupleOps.html" class="extype" name="fun.math.TupleOps">TupleOps</a></dd></dl></div>
+    </li><li name="fun.math.TupleOps#putNative" visbl="pub" data-isabs="true" fullComment="yes" group="Ungrouped">
+      <a id="putNative(buf:java.nio.FloatBuffer):Unit"></a>
+      <a id="putNative(FloatBuffer):Unit"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier">abstract </span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">putNative</span><span class="params">(<span name="buf">buf: <span class="extype" name="java.nio.FloatBuffer">FloatBuffer</span></span>)</span><span class="result">: <span class="extype" name="scala.Unit">Unit</span></span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../index.html#fun.math.PosOps@putNative(buf:java.nio.FloatBuffer):Unit" title="Permalink" target="_top">
+        <img src="../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      <p class="shortcomment cmt">Add the component values from this vector (as Floats) starting at the current buffer position to a native array.</p><div class="fullcomment"><div class="comment cmt"><p>Add the component values from this vector (as Floats) starting at the current buffer position to a native array.</p></div><dl class="attributes block"> <dt>Definition Classes</dt><dd><a href="TupleOps.html" class="extype" name="fun.math.TupleOps">TupleOps</a></dd></dl></div>
+    </li><li name="fun.math.TupleOps#putNative" visbl="pub" data-isabs="true" fullComment="yes" group="Ungrouped">
+      <a id="putNative(buf:java.nio.LongBuffer):Unit"></a>
+      <a id="putNative(LongBuffer):Unit"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier">abstract </span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">putNative</span><span class="params">(<span name="buf">buf: <span class="extype" name="java.nio.LongBuffer">LongBuffer</span></span>)</span><span class="result">: <span class="extype" name="scala.Unit">Unit</span></span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../index.html#fun.math.PosOps@putNative(buf:java.nio.LongBuffer):Unit" title="Permalink" target="_top">
+        <img src="../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      <p class="shortcomment cmt">Add the component values from this vector (as Longs) starting at the current buffer position to a native array.</p><div class="fullcomment"><div class="comment cmt"><p>Add the component values from this vector (as Longs) starting at the current buffer position to a native array.</p></div><dl class="attributes block"> <dt>Definition Classes</dt><dd><a href="TupleOps.html" class="extype" name="fun.math.TupleOps">TupleOps</a></dd></dl></div>
+    </li><li name="fun.math.TupleOps#putNative" visbl="pub" data-isabs="true" fullComment="yes" group="Ungrouped">
+      <a id="putNative(buf:java.nio.IntBuffer):Unit"></a>
+      <a id="putNative(IntBuffer):Unit"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier">abstract </span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">putNative</span><span class="params">(<span name="buf">buf: <span class="extype" name="java.nio.IntBuffer">IntBuffer</span></span>)</span><span class="result">: <span class="extype" name="scala.Unit">Unit</span></span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../index.html#fun.math.PosOps@putNative(buf:java.nio.IntBuffer):Unit" title="Permalink" target="_top">
+        <img src="../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      <p class="shortcomment cmt">Add the component values from this vector (as Ints) starting at the current buffer position to a native array.</p><div class="fullcomment"><div class="comment cmt"><p>Add the component values from this vector (as Ints) starting at the current buffer position to a native array.</p></div><dl class="attributes block"> <dt>Definition Classes</dt><dd><a href="TupleOps.html" class="extype" name="fun.math.TupleOps">TupleOps</a></dd></dl></div>
+    </li><li name="fun.math.TupleOps#putNative" visbl="pub" data-isabs="true" fullComment="yes" group="Ungrouped">
+      <a id="putNative(buf:java.nio.ShortBuffer):Unit"></a>
+      <a id="putNative(ShortBuffer):Unit"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier">abstract </span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">putNative</span><span class="params">(<span name="buf">buf: <span class="extype" name="java.nio.ShortBuffer">ShortBuffer</span></span>)</span><span class="result">: <span class="extype" name="scala.Unit">Unit</span></span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../index.html#fun.math.PosOps@putNative(buf:java.nio.ShortBuffer):Unit" title="Permalink" target="_top">
+        <img src="../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      <p class="shortcomment cmt">Add the component values from this vector (as Shorts) starting at the current buffer position to a native array.</p><div class="fullcomment"><div class="comment cmt"><p>Add the component values from this vector (as Shorts) starting at the current buffer position to a native array.</p></div><dl class="attributes block"> <dt>Definition Classes</dt><dd><a href="TupleOps.html" class="extype" name="fun.math.TupleOps">TupleOps</a></dd></dl></div>
+    </li><li name="fun.math.TupleOps#putNative" visbl="pub" data-isabs="true" fullComment="yes" group="Ungrouped">
+      <a id="putNative(buf:java.nio.CharBuffer):Unit"></a>
+      <a id="putNative(CharBuffer):Unit"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier">abstract </span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">putNative</span><span class="params">(<span name="buf">buf: <span class="extype" name="java.nio.CharBuffer">CharBuffer</span></span>)</span><span class="result">: <span class="extype" name="scala.Unit">Unit</span></span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../index.html#fun.math.PosOps@putNative(buf:java.nio.CharBuffer):Unit" title="Permalink" target="_top">
+        <img src="../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      <p class="shortcomment cmt">Add the component values from this vector (as Chars) starting at the current buffer position to a native array.</p><div class="fullcomment"><div class="comment cmt"><p>Add the component values from this vector (as Chars) starting at the current buffer position to a native array.</p></div><dl class="attributes block"> <dt>Definition Classes</dt><dd><a href="TupleOps.html" class="extype" name="fun.math.TupleOps">TupleOps</a></dd></dl></div>
+    </li><li name="fun.math.TupleOps#reduce" visbl="pub" data-isabs="true" fullComment="yes" group="Ungrouped">
+      <a id="reduce(p:(Elem,Elem)=&gt;Elem):Elem"></a>
+      <a id="reduce((Elem,Elem)⇒Elem):Elem"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier">abstract </span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">reduce</span><span class="params">(<span name="p">p: (<span class="extype" name="fun.math.PosOps.Elem">Elem</span>, <span class="extype" name="fun.math.PosOps.Elem">Elem</span>) ⇒ <span class="extype" name="fun.math.PosOps.Elem">Elem</span></span>)</span><span class="result">: <span class="extype" name="fun.math.PosOps.Elem">Elem</span></span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../index.html#fun.math.PosOps@reduce(p:(Elem,Elem)=&gt;Elem):Elem" title="Permalink" target="_top">
+        <img src="../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      <p class="shortcomment cmt">Reduces the elements of this vector using the specified associative binary operator.</p><div class="fullcomment"><div class="comment cmt"><p>Reduces the elements of this vector using the specified associative binary operator.</p></div><dl class="attributes block"> <dt>Definition Classes</dt><dd><a href="TupleOps.html" class="extype" name="fun.math.TupleOps">TupleOps</a></dd></dl></div>
+    </li><li name="fun.math.TupleOps#toArray" visbl="pub" data-isabs="true" fullComment="yes" group="Ungrouped">
+      <a id="toArray:Array[Elem]"></a>
+      <a id="toArray:Array[Elem]"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier">abstract </span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">toArray</span><span class="result">: <span class="extype" name="scala.Array">Array</span>[<span class="extype" name="fun.math.PosOps.Elem">Elem</span>]</span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../index.html#fun.math.PosOps@toArray:Array[Elem]" title="Permalink" target="_top">
+        <img src="../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      <p class="shortcomment cmt">Convert to an array of components.</p><div class="fullcomment"><div class="comment cmt"><p>Convert to an array of components.</p></div><dl class="attributes block"> <dt>Definition Classes</dt><dd><a href="TupleOps.html" class="extype" name="fun.math.TupleOps">TupleOps</a></dd></dl></div>
+    </li><li name="fun.math.TupleOps#toIndex1i" visbl="pub" data-isabs="true" fullComment="yes" group="Ungrouped">
+      <a id="toIndex1i:fun.math.Index1i"></a>
+      <a id="toIndex1i:Index1i"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier">abstract </span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">toIndex1i</span><span class="result">: <a href="Index1i.html" class="extype" name="fun.math.Index1i">Index1i</a></span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../index.html#fun.math.PosOps@toIndex1i:fun.math.Index1i" title="Permalink" target="_top">
+        <img src="../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      <p class="shortcomment cmt">Convert to a 1-dimensional index (ignoring the fractional part).</p><div class="fullcomment"><div class="comment cmt"><p>Convert to a 1-dimensional index (ignoring the fractional part).</p></div><dl class="attributes block"> <dt>Definition Classes</dt><dd><a href="TupleOps.html" class="extype" name="fun.math.TupleOps">TupleOps</a></dd></dl></div>
+    </li><li name="fun.math.TupleOps#toIndex2i" visbl="pub" data-isabs="true" fullComment="yes" group="Ungrouped">
+      <a id="toIndex2i:fun.math.Index2i"></a>
+      <a id="toIndex2i:Index2i"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier">abstract </span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">toIndex2i</span><span class="result">: <a href="Index2i.html" class="extype" name="fun.math.Index2i">Index2i</a></span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../index.html#fun.math.PosOps@toIndex2i:fun.math.Index2i" title="Permalink" target="_top">
+        <img src="../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      <p class="shortcomment cmt">Convert to a 2-dimensional index (ignoring the fractional part).</p><div class="fullcomment"><div class="comment cmt"><p>Convert to a 2-dimensional index (ignoring the fractional part).</p></div><dl class="attributes block"> <dt>Definition Classes</dt><dd><a href="TupleOps.html" class="extype" name="fun.math.TupleOps">TupleOps</a></dd></dl></div>
+    </li><li name="fun.math.TupleOps#toIndex3i" visbl="pub" data-isabs="true" fullComment="yes" group="Ungrouped">
+      <a id="toIndex3i:fun.math.Index3i"></a>
+      <a id="toIndex3i:Index3i"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier">abstract </span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">toIndex3i</span><span class="result">: <a href="Index3i.html" class="extype" name="fun.math.Index3i">Index3i</a></span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../index.html#fun.math.PosOps@toIndex3i:fun.math.Index3i" title="Permalink" target="_top">
+        <img src="../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      <p class="shortcomment cmt">Convert to a 3-dimensional index (ignoring the fractional part).</p><div class="fullcomment"><div class="comment cmt"><p>Convert to a 3-dimensional index (ignoring the fractional part).</p></div><dl class="attributes block"> <dt>Definition Classes</dt><dd><a href="TupleOps.html" class="extype" name="fun.math.TupleOps">TupleOps</a></dd></dl></div>
+    </li><li name="fun.math.TupleOps#toList" visbl="pub" data-isabs="true" fullComment="yes" group="Ungrouped">
+      <a id="toList:List[Elem]"></a>
+      <a id="toList:List[Elem]"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier">abstract </span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">toList</span><span class="result">: <span class="extype" name="scala.List">List</span>[<span class="extype" name="fun.math.PosOps.Elem">Elem</span>]</span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../index.html#fun.math.PosOps@toList:List[Elem]" title="Permalink" target="_top">
+        <img src="../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      <p class="shortcomment cmt">Convert to a list of components.</p><div class="fullcomment"><div class="comment cmt"><p>Convert to a list of components.</p></div><dl class="attributes block"> <dt>Definition Classes</dt><dd><a href="TupleOps.html" class="extype" name="fun.math.TupleOps">TupleOps</a></dd></dl></div>
+    </li><li name="fun.math.TupleOps#toPos1d" visbl="pub" data-isabs="true" fullComment="yes" group="Ungrouped">
+      <a id="toPos1d:fun.math.Pos1d"></a>
+      <a id="toPos1d:Pos1d"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier">abstract </span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">toPos1d</span><span class="result">: <a href="Pos1d.html" class="extype" name="fun.math.Pos1d">Pos1d</a></span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../index.html#fun.math.PosOps@toPos1d:fun.math.Pos1d" title="Permalink" target="_top">
+        <img src="../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      <p class="shortcomment cmt">Convert to a 1-dimensional position.</p><div class="fullcomment"><div class="comment cmt"><p>Convert to a 1-dimensional position.</p></div><dl class="attributes block"> <dt>Definition Classes</dt><dd><a href="TupleOps.html" class="extype" name="fun.math.TupleOps">TupleOps</a></dd></dl></div>
+    </li><li name="fun.math.TupleOps#toPos2d" visbl="pub" data-isabs="true" fullComment="yes" group="Ungrouped">
+      <a id="toPos2d:fun.math.Pos2d"></a>
+      <a id="toPos2d:Pos2d"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier">abstract </span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">toPos2d</span><span class="result">: <a href="Pos2d.html" class="extype" name="fun.math.Pos2d">Pos2d</a></span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../index.html#fun.math.PosOps@toPos2d:fun.math.Pos2d" title="Permalink" target="_top">
+        <img src="../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      <p class="shortcomment cmt">Convert to a 2-dimensional position.</p><div class="fullcomment"><div class="comment cmt"><p>Convert to a 2-dimensional position.</p></div><dl class="attributes block"> <dt>Definition Classes</dt><dd><a href="TupleOps.html" class="extype" name="fun.math.TupleOps">TupleOps</a></dd></dl></div>
+    </li><li name="fun.math.TupleOps#toPos3d" visbl="pub" data-isabs="true" fullComment="yes" group="Ungrouped">
+      <a id="toPos3d:fun.math.Pos3d"></a>
+      <a id="toPos3d:Pos3d"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier">abstract </span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">toPos3d</span><span class="result">: <a href="Pos3d.html" class="extype" name="fun.math.Pos3d">Pos3d</a></span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../index.html#fun.math.PosOps@toPos3d:fun.math.Pos3d" title="Permalink" target="_top">
+        <img src="../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      <p class="shortcomment cmt">Convert to a 3-dimensional position.</p><div class="fullcomment"><div class="comment cmt"><p>Convert to a 3-dimensional position.</p></div><dl class="attributes block"> <dt>Definition Classes</dt><dd><a href="TupleOps.html" class="extype" name="fun.math.TupleOps">TupleOps</a></dd></dl></div>
+    </li><li name="fun.math.TupleOps#toPretty" visbl="pub" data-isabs="true" fullComment="yes" group="Ungrouped">
+      <a id="toPretty:String"></a>
+      <a id="toPretty:String"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier">abstract </span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">toPretty</span><span class="result">: <span class="extype" name="scala.Predef.String">String</span></span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../index.html#fun.math.PosOps@toPretty:String" title="Permalink" target="_top">
+        <img src="../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      <p class="shortcomment cmt">Convert to a more compact String representation.</p><div class="fullcomment"><div class="comment cmt"><p>Convert to a more compact String representation.</p></div><dl class="attributes block"> <dt>Definition Classes</dt><dd><a href="TupleOps.html" class="extype" name="fun.math.TupleOps">TupleOps</a></dd></dl></div>
+    </li><li name="fun.math.TupleOps#toVec1d" visbl="pub" data-isabs="true" fullComment="yes" group="Ungrouped">
+      <a id="toVec1d:fun.math.Vec1d"></a>
+      <a id="toVec1d:Vec1d"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier">abstract </span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">toVec1d</span><span class="result">: <a href="Vec1d.html" class="extype" name="fun.math.Vec1d">Vec1d</a></span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../index.html#fun.math.PosOps@toVec1d:fun.math.Vec1d" title="Permalink" target="_top">
+        <img src="../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      <p class="shortcomment cmt">Convert to a 1-dimensional vector.</p><div class="fullcomment"><div class="comment cmt"><p>Convert to a 1-dimensional vector.</p></div><dl class="attributes block"> <dt>Definition Classes</dt><dd><a href="TupleOps.html" class="extype" name="fun.math.TupleOps">TupleOps</a></dd></dl></div>
+    </li><li name="fun.math.TupleOps#toVec2d" visbl="pub" data-isabs="true" fullComment="yes" group="Ungrouped">
+      <a id="toVec2d:fun.math.Vec2d"></a>
+      <a id="toVec2d:Vec2d"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier">abstract </span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">toVec2d</span><span class="result">: <a href="Vec2d.html" class="extype" name="fun.math.Vec2d">Vec2d</a></span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../index.html#fun.math.PosOps@toVec2d:fun.math.Vec2d" title="Permalink" target="_top">
+        <img src="../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      <p class="shortcomment cmt">Convert to a 2-dimensional vector.</p><div class="fullcomment"><div class="comment cmt"><p>Convert to a 2-dimensional vector.</p></div><dl class="attributes block"> <dt>Definition Classes</dt><dd><a href="TupleOps.html" class="extype" name="fun.math.TupleOps">TupleOps</a></dd></dl></div>
+    </li><li name="fun.math.TupleOps#toVec3d" visbl="pub" data-isabs="true" fullComment="yes" group="Ungrouped">
+      <a id="toVec3d:fun.math.Vec3d"></a>
+      <a id="toVec3d:Vec3d"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier">abstract </span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">toVec3d</span><span class="result">: <a href="Vec3d.html" class="extype" name="fun.math.Vec3d">Vec3d</a></span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../index.html#fun.math.PosOps@toVec3d:fun.math.Vec3d" title="Permalink" target="_top">
+        <img src="../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      <p class="shortcomment cmt">Convert to a 3-dimensional vector.</p><div class="fullcomment"><div class="comment cmt"><p>Convert to a 3-dimensional vector.</p></div><dl class="attributes block"> <dt>Definition Classes</dt><dd><a href="TupleOps.html" class="extype" name="fun.math.TupleOps">TupleOps</a></dd></dl></div>
+    </li><li name="fun.math.TupleOps#toVec4d" visbl="pub" data-isabs="true" fullComment="yes" group="Ungrouped">
+      <a id="toVec4d:fun.math.Vec4d"></a>
+      <a id="toVec4d:Vec4d"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier">abstract </span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">toVec4d</span><span class="result">: <a href="Vec4d.html" class="extype" name="fun.math.Vec4d">Vec4d</a></span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../index.html#fun.math.PosOps@toVec4d:fun.math.Vec4d" title="Permalink" target="_top">
+        <img src="../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      <p class="shortcomment cmt">Convert to a 4-dimensional vector.</p><div class="fullcomment"><div class="comment cmt"><p>Convert to a 4-dimensional vector.</p></div><dl class="attributes block"> <dt>Definition Classes</dt><dd><a href="TupleOps.html" class="extype" name="fun.math.TupleOps">TupleOps</a></dd></dl></div>
+    </li><li name="fun.math.TupleOps#toVecNd" visbl="pub" data-isabs="true" fullComment="yes" group="Ungrouped">
+      <a id="toVecNd:fun.math.VecNd"></a>
+      <a id="toVecNd:VecNd"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier">abstract </span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">toVecNd</span><span class="result">: <a href="VecNd.html" class="extype" name="fun.math.VecNd">VecNd</a></span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../index.html#fun.math.PosOps@toVecNd:fun.math.VecNd" title="Permalink" target="_top">
+        <img src="../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      <p class="shortcomment cmt">Convert to a N-dimensional vector.</p><div class="fullcomment"><div class="comment cmt"><p>Convert to a N-dimensional vector.</p></div><dl class="attributes block"> <dt>Definition Classes</dt><dd><a href="TupleOps.html" class="extype" name="fun.math.TupleOps">TupleOps</a></dd></dl></div>
+    </li><li name="fun.math.TupleOps#toVecSd" visbl="pub" data-isabs="true" fullComment="yes" group="Ungrouped">
+      <a id="toVecSd:fun.math.VecSd"></a>
+      <a id="toVecSd:VecSd"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier">abstract </span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">toVecSd</span><span class="result">: <a href="VecSd.html" class="extype" name="fun.math.VecSd">VecSd</a></span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../index.html#fun.math.PosOps@toVecSd:fun.math.VecSd" title="Permalink" target="_top">
+        <img src="../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      <p class="shortcomment cmt">Convert to a N-dimensional sparse vector.</p><div class="fullcomment"><div class="comment cmt"><p>Convert to a N-dimensional sparse vector.</p></div><dl class="attributes block"> <dt>Definition Classes</dt><dd><a href="TupleOps.html" class="extype" name="fun.math.TupleOps">TupleOps</a></dd></dl></div>
+    </li><li name="fun.math.TupleOps#unary_-" visbl="pub" data-isabs="true" fullComment="yes" group="Ungrouped">
+      <a id="unary_-:Repr"></a>
+      <a id="unary_-:P"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier">abstract </span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span title="gt4s: unary_$minus" class="name">unary_-</span><span class="result">: <span class="extype" name="fun.math.PosOps.P">P</span></span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../index.html#fun.math.PosOps@unary_-:Repr" title="Permalink" target="_top">
+        <img src="../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      <p class="shortcomment cmt">Negate all components.</p><div class="fullcomment"><div class="comment cmt"><p>Negate all components.</p></div><dl class="attributes block"> <dt>Definition Classes</dt><dd><a href="TupleOps.html" class="extype" name="fun.math.TupleOps">TupleOps</a></dd></dl></div>
+    </li></ol>
+            </div>
+
+        <div id="values" class="values members">
+              <h3>Concrete Value Members</h3>
+              <ol><li name="scala.AnyRef#!=" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="!=(x$1:Any):Boolean"></a>
+      <a id="!=(Any):Boolean"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier">final </span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span title="gt4s: $bang$eq" class="name">!=</span><span class="params">(<span name="arg0">arg0: <span class="extype" name="scala.Any">Any</span></span>)</span><span class="result">: <span class="extype" name="scala.Boolean">Boolean</span></span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../index.html#fun.math.PosOps@!=(x$1:Any):Boolean" title="Permalink" target="_top">
+        <img src="../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>AnyRef → Any</dd></dl></div>
+    </li><li name="scala.AnyRef###" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="##():Int"></a>
+      <a id="##():Int"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier">final </span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span title="gt4s: $hash$hash" class="name">##</span><span class="params">()</span><span class="result">: <span class="extype" name="scala.Int">Int</span></span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../index.html#fun.math.PosOps@##():Int" title="Permalink" target="_top">
+        <img src="../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>AnyRef → Any</dd></dl></div>
+    </li><li name="scala.AnyRef#==" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="==(x$1:Any):Boolean"></a>
+      <a id="==(Any):Boolean"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier">final </span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span title="gt4s: $eq$eq" class="name">==</span><span class="params">(<span name="arg0">arg0: <span class="extype" name="scala.Any">Any</span></span>)</span><span class="result">: <span class="extype" name="scala.Boolean">Boolean</span></span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../index.html#fun.math.PosOps@==(x$1:Any):Boolean" title="Permalink" target="_top">
+        <img src="../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>AnyRef → Any</dd></dl></div>
+    </li><li name="scala.Any#asInstanceOf" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="asInstanceOf[T0]:T0"></a>
+      <a id="asInstanceOf[T0]:T0"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier">final </span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">asInstanceOf</span><span class="tparams">[<span name="T0">T0</span>]</span><span class="result">: <span class="extype" name="scala.Any.asInstanceOf.T0">T0</span></span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../index.html#fun.math.PosOps@asInstanceOf[T0]:T0" title="Permalink" target="_top">
+        <img src="../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>Any</dd></dl></div>
+    </li><li name="scala.AnyRef#clone" visbl="prt" data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="clone():Object"></a>
+      <a id="clone():AnyRef"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">clone</span><span class="params">()</span><span class="result">: <span class="extype" name="scala.AnyRef">AnyRef</span></span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../index.html#fun.math.PosOps@clone():Object" title="Permalink" target="_top">
+        <img src="../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      <div class="fullcomment"><dl class="attributes block"> <dt>Attributes</dt><dd>protected[<a href="../../java$lang.html" class="extype" name="java.lang">java.lang</a>] </dd><dt>Definition Classes</dt><dd>AnyRef</dd><dt>Annotations</dt><dd>
+                <span class="name">@throws</span><span class="args">(<span>
+      
+      <span class="defval" name="classOf[java.lang.CloneNotSupportedException]">...</span>
+    </span>)</span>
+              
+        </dd></dl></div>
+    </li><li name="scala.AnyRef#eq" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="eq(x$1:AnyRef):Boolean"></a>
+      <a id="eq(AnyRef):Boolean"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier">final </span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">eq</span><span class="params">(<span name="arg0">arg0: <span class="extype" name="scala.AnyRef">AnyRef</span></span>)</span><span class="result">: <span class="extype" name="scala.Boolean">Boolean</span></span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../index.html#fun.math.PosOps@eq(x$1:AnyRef):Boolean" title="Permalink" target="_top">
+        <img src="../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>AnyRef</dd></dl></div>
+    </li><li name="scala.AnyRef#equals" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="equals(x$1:Any):Boolean"></a>
+      <a id="equals(Any):Boolean"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">equals</span><span class="params">(<span name="arg0">arg0: <span class="extype" name="scala.Any">Any</span></span>)</span><span class="result">: <span class="extype" name="scala.Boolean">Boolean</span></span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../index.html#fun.math.PosOps@equals(x$1:Any):Boolean" title="Permalink" target="_top">
+        <img src="../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>AnyRef → Any</dd></dl></div>
+    </li><li name="scala.AnyRef#finalize" visbl="prt" data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="finalize():Unit"></a>
+      <a id="finalize():Unit"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">finalize</span><span class="params">()</span><span class="result">: <span class="extype" name="scala.Unit">Unit</span></span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../index.html#fun.math.PosOps@finalize():Unit" title="Permalink" target="_top">
+        <img src="../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      <div class="fullcomment"><dl class="attributes block"> <dt>Attributes</dt><dd>protected[<a href="../../java$lang.html" class="extype" name="java.lang">java.lang</a>] </dd><dt>Definition Classes</dt><dd>AnyRef</dd><dt>Annotations</dt><dd>
+                <span class="name">@throws</span><span class="args">(<span>
+      
+      <span class="symbol">classOf[java.lang.Throwable]</span>
+    </span>)</span>
+              
+        </dd></dl></div>
+    </li><li name="scala.AnyRef#getClass" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="getClass():Class[_]"></a>
+      <a id="getClass():Class[_]"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier">final </span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">getClass</span><span class="params">()</span><span class="result">: <span class="extype" name="java.lang.Class">Class</span>[_]</span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../index.html#fun.math.PosOps@getClass():Class[_]" title="Permalink" target="_top">
+        <img src="../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>AnyRef → Any</dd></dl></div>
+    </li><li name="scala.AnyRef#hashCode" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="hashCode():Int"></a>
+      <a id="hashCode():Int"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">hashCode</span><span class="params">()</span><span class="result">: <span class="extype" name="scala.Int">Int</span></span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../index.html#fun.math.PosOps@hashCode():Int" title="Permalink" target="_top">
+        <img src="../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>AnyRef → Any</dd></dl></div>
+    </li><li name="scala.Any#isInstanceOf" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="isInstanceOf[T0]:Boolean"></a>
+      <a id="isInstanceOf[T0]:Boolean"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier">final </span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">isInstanceOf</span><span class="tparams">[<span name="T0">T0</span>]</span><span class="result">: <span class="extype" name="scala.Boolean">Boolean</span></span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../index.html#fun.math.PosOps@isInstanceOf[T0]:Boolean" title="Permalink" target="_top">
+        <img src="../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>Any</dd></dl></div>
+    </li><li name="scala.AnyRef#ne" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="ne(x$1:AnyRef):Boolean"></a>
+      <a id="ne(AnyRef):Boolean"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier">final </span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">ne</span><span class="params">(<span name="arg0">arg0: <span class="extype" name="scala.AnyRef">AnyRef</span></span>)</span><span class="result">: <span class="extype" name="scala.Boolean">Boolean</span></span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../index.html#fun.math.PosOps@ne(x$1:AnyRef):Boolean" title="Permalink" target="_top">
+        <img src="../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>AnyRef</dd></dl></div>
+    </li><li name="scala.AnyRef#notify" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="notify():Unit"></a>
+      <a id="notify():Unit"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier">final </span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">notify</span><span class="params">()</span><span class="result">: <span class="extype" name="scala.Unit">Unit</span></span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../index.html#fun.math.PosOps@notify():Unit" title="Permalink" target="_top">
+        <img src="../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>AnyRef</dd></dl></div>
+    </li><li name="scala.AnyRef#notifyAll" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="notifyAll():Unit"></a>
+      <a id="notifyAll():Unit"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier">final </span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">notifyAll</span><span class="params">()</span><span class="result">: <span class="extype" name="scala.Unit">Unit</span></span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../index.html#fun.math.PosOps@notifyAll():Unit" title="Permalink" target="_top">
+        <img src="../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>AnyRef</dd></dl></div>
+    </li><li name="scala.AnyRef#synchronized" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="synchronized[T0](x$1:=&gt;T0):T0"></a>
+      <a id="synchronized[T0](⇒T0):T0"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier">final </span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">synchronized</span><span class="tparams">[<span name="T0">T0</span>]</span><span class="params">(<span name="arg0">arg0: ⇒ <span class="extype" name="java.lang.AnyRef.synchronized.T0">T0</span></span>)</span><span class="result">: <span class="extype" name="java.lang.AnyRef.synchronized.T0">T0</span></span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../index.html#fun.math.PosOps@synchronized[T0](x$1:=&gt;T0):T0" title="Permalink" target="_top">
+        <img src="../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>AnyRef</dd></dl></div>
+    </li><li name="scala.AnyRef#toString" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="toString():String"></a>
+      <a id="toString():String"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">toString</span><span class="params">()</span><span class="result">: <span class="extype" name="java.lang.String">String</span></span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../index.html#fun.math.PosOps@toString():String" title="Permalink" target="_top">
+        <img src="../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>AnyRef → Any</dd></dl></div>
+    </li><li name="scala.AnyRef#wait" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="wait():Unit"></a>
+      <a id="wait():Unit"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier">final </span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">wait</span><span class="params">()</span><span class="result">: <span class="extype" name="scala.Unit">Unit</span></span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../index.html#fun.math.PosOps@wait():Unit" title="Permalink" target="_top">
+        <img src="../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>AnyRef</dd><dt>Annotations</dt><dd>
+                <span class="name">@throws</span><span class="args">(<span>
+      
+      <span class="defval" name="classOf[java.lang.InterruptedException]">...</span>
+    </span>)</span>
+              
+        </dd></dl></div>
+    </li><li name="scala.AnyRef#wait" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="wait(x$1:Long,x$2:Int):Unit"></a>
+      <a id="wait(Long,Int):Unit"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier">final </span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">wait</span><span class="params">(<span name="arg0">arg0: <span class="extype" name="scala.Long">Long</span></span>, <span name="arg1">arg1: <span class="extype" name="scala.Int">Int</span></span>)</span><span class="result">: <span class="extype" name="scala.Unit">Unit</span></span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../index.html#fun.math.PosOps@wait(x$1:Long,x$2:Int):Unit" title="Permalink" target="_top">
+        <img src="../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>AnyRef</dd><dt>Annotations</dt><dd>
+                <span class="name">@throws</span><span class="args">(<span>
+      
+      <span class="defval" name="classOf[java.lang.InterruptedException]">...</span>
+    </span>)</span>
+              
+        </dd></dl></div>
+    </li><li name="scala.AnyRef#wait" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="wait(x$1:Long):Unit"></a>
+      <a id="wait(Long):Unit"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier">final </span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">wait</span><span class="params">(<span name="arg0">arg0: <span class="extype" name="scala.Long">Long</span></span>)</span><span class="result">: <span class="extype" name="scala.Unit">Unit</span></span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../index.html#fun.math.PosOps@wait(x$1:Long):Unit" title="Permalink" target="_top">
+        <img src="../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>AnyRef</dd><dt>Annotations</dt><dd>
+                <span class="name">@throws</span><span class="args">(<span>
+      
+      <span class="defval" name="classOf[java.lang.InterruptedException]">...</span>
+    </span>)</span>
+              
+        </dd></dl></div>
+    </li></ol>
+            </div>
+
+        
+
+        
+        </div>
+
+        <div id="inheritedMembers">
+        <div class="parent" name="fun.math.TupleOps">
+              <h3>Inherited from <a href="TupleOps.html" class="extype" name="fun.math.TupleOps">TupleOps</a>[<span class="extype" name="fun.math.PosOps.Elem">Elem</span>, <span class="extype" name="fun.math.PosOps.P">P</span>, <span class="extype" name="fun.math.PosOps.V">V</span>]</h3>
+            </div><div class="parent" name="fun.math.Numeric">
+              <h3>Inherited from <a href="Numeric.html" class="extype" name="fun.math.Numeric">Numeric</a></h3>
+            </div><div class="parent" name="scala.AnyRef">
+              <h3>Inherited from <span class="extype" name="scala.AnyRef">AnyRef</span></h3>
+            </div><div class="parent" name="scala.Any">
+              <h3>Inherited from <span class="extype" name="scala.Any">Any</span></h3>
+            </div>
+        
+        </div>
+
+        <div id="groupedMembers">
+        <div class="group" name="Ungrouped">
+              <h3>Ungrouped</h3>
+              
+            </div>
+        </div>
+
+      </div>
+
+      <div id="tooltip"></div>
+
+      <div id="footer">  </div>
+
+
+    </body>
+      </html>
